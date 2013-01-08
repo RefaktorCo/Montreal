@@ -4,30 +4,34 @@ $share_url = $base_url.'/node/'.$node->nid;
 ?>
 
 <?php if (!$page): ?>
-  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix row blog white"<?php print $attributes; ?>>
 <?php endif; ?>
+    <div class="six columns">
 
   <?php if ($user_picture || $display_submitted || !$page): ?>
     <?php print render($title_prefix); ?>
 
-      <h3 class="post_title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
+      <h4 class="blacktext light"<?php print $title_attributes; ?>><?php print $title; ?></h4>
       
     <?php print render($title_suffix); ?>
   
     <?php if ($display_submitted): ?>
-      <ul class="meta">
-        <li><i class="icon-user"></i> by <?php print $name; ?></li>
-        <li><i class="icon-calendar"></i> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
-        <li><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a></li>
-        
-     </ul>
-     <?php if ($field_tags):?>
-     <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
-     <?php endif; ?>
-         
+    
+      <!-- POST META -->
+			<p>
+				<i class="icon-time greytext"></i>
+				<?php if ($field_tags):?>
+				<a class="smallfont greytext" href="#"><?php print format_date($node->created, 'custom', 'M d, Y'); ?></a>
+				&nbsp; &nbsp; <i class="greytext icon-folder-open"></i>
+				<?php print render($content['field_tags']); ?>
+			  <?php endif; ?>
+			</p>
+    
+      
+             
    <?php endif; ?>
    
-    <?php print render($content['field_image']); ?>
+
 
  
   <?php endif; ?>
@@ -44,24 +48,19 @@ $share_url = $base_url.'/node/'.$node->nid;
     ?>
   </div>
   
-
-  <div class="post_share_wrap">
-    <ul class="post_share">
-      <li><a href="http://twitter.com/home?status=<?php print $share_url; ?>"><i class="social foundicon-twitter"></i></a></li>
-      <li><a href="http://www.facebook.com/sharer.php?u=<?php print $share_url; ?>"><i class="social foundicon-facebook"></i></a></li>
-      <li><a href="http://www.stumbleupon.com/submit?url=<?php print $share_url; ?>&amp;title=<?php print $title; ?>"><i class="social foundicon-stumble-upon"></i></a></li>
-      <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php print $share_url; ?>&amp;title=<?php print $title; ?>&amp;summary={articleSummary}&amp;source=<?php print $base_url; ?>"><i class="social foundicon-linkedin"></i></a></li>
-      <li><a href="http://reddit.com/submit?url=<?php print $share_url; ?>"><i class="social foundicon-reddit"></i></a></li>
-      <li><a href="mailto:user@domain.com?subject=Check%20out%20this%20great%20post&amp;body=<?php print $share_url; ?>"><i class="general foundicon-mail"></i></a></li>
-    </ul>  
-  </div>
-
-  <div class="read_more"> 
+   <div class="read_more"> 
   	<?php if($teaser): ?>
   	<a class="small button" href="<?php print $node_url;?>">read more</a>
     <?php endif;?>
   </div>
-  <hr>
+    </div>
+   <!--POST IMAGE -->
+	<div class="five columns push_one">
+       <?php print render($content['field_image']); ?> 
+	</div>
+  
+ 
+
 
 
 

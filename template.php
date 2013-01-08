@@ -69,7 +69,7 @@ function montreal_field($variables) {
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);
     }
-    $output .= implode(', ', $rendered_tags);
+    $output .= implode(' / ', $rendered_tags);
   }
   
   elseif ($variables['element']['#field_name'] == 'field_image') {
