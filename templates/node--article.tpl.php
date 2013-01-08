@@ -26,10 +26,10 @@ $share_url = $base_url.'/node/'.$node->nid;
      <?php endif; ?>
          
    <?php endif; ?>
-  <div class="featured">
-  <?php print render($content['field_image']); ?>
-  <?php print render($content['field_second_image']); ?>
-  </div>
+   
+    <?php print render($content['field_image']); ?>
+
+ 
   <?php endif; ?>
   
   <div class="article_content"<?php print $content_attributes; ?>>

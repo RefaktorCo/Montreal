@@ -4,7 +4,7 @@
 <div class="bigpadding_back">
 </div>
  
-    <div class="container">      
+    <div class="container white">      
     <div class="row">
       <div class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
         <div id="main_content">

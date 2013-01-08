@@ -1,4 +1,4 @@
-<?php haiku_header($page);?>
+<?php montreal_header($page);?>
    
         
   <div id="heading_wrapper">
@@ -46,4 +46,4 @@
     
   </div>    
      
-<?php haiku_footer($page);?>
+<?php montreal_footer($page);?>
