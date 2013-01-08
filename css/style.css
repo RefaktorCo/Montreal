@@ -2,7 +2,7 @@
 
 ??? Gumby by Digital Surgeons. ???
 
-*** WEBSITE DESIGNED AND DEVELOPED BY HASAN ALI ***
+*** DESIGN BY HASAN ALI, DRUPALIZED BY REFAKTOR ***
 
 ========================================================================*/
 /* ==
@@ -187,6 +187,12 @@ padding-top: 20px !important;
 
 .midbottompadding {
 padding-bottom: 20px !important;
+}
+
+.bigpadding_back {
+padding-top: 50px !important;
+padding-bottom: 50px !important;
+background: url('../img/stripes.png'); 
 }
 
 .bigpadding {

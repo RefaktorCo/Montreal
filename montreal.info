@@ -19,8 +19,6 @@ scripts[] = js/jquery.ui.totop.js
 scripts[] = js/easing.js
 scripts[] = js/plugins.js
 scripts[] = js/main.js
-scripts[] = js/supersized.js
-scripts[] = js/slideshow.js
 scripts[] = js/montreal.js
 
 scripts[] = js/style_switch.js

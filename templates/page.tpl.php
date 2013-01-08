@@ -1,21 +1,12 @@
 <?php montreal_header($page);?>
   
-  <div id="heading_wrapper">
-    <div id="heading_wrapper_after">
-   	  <div class="row">
-        <div class="six columns">
-          <h2 class="page_heading_text"><?php print $title; ?></h2>
-        </div>
-        <div class="six columns">  
-          <div id="breadcrumbs"><h3><?php if (theme_get_setting('breadcrumbs') == '1') {print $breadcrumb . $title; } ?></h3></div>
-        </div>  
-      </div>
-    </div>
-  </div> 
+ <!-- STRIPES BACKGROUND -->
+<div class="bigpadding_back">
+</div>
  
-          
+    <div class="container">      
     <div class="row">
-      <div id ="main_content_wrap" class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
+      <div class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
         <div id="main_content">
           <?php print render($title_prefix); ?>
           <?php print render($title_suffix); ?>
@@ -54,7 +45,7 @@
       </div>
       <?php endif; ?>
     </div>
-   <div class="bottom_spacer"></div>    
+    </div>
 <?php print $messages; ?>
   
 <?php montreal_footer($page);?>
