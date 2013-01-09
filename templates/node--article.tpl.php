@@ -58,7 +58,7 @@ $share_url = $base_url.'/node/'.$node->nid;
   	</p>
     <?php endif;?>
 
-    </div>
+   
    <!--POST IMAGE -->
 
    
