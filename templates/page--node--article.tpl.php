@@ -1,10 +1,10 @@
-<?php montreal_header($page);?>
+<?php montreal_header($page); global $root; ?>
    
-        
+  <div class="container" style="background:url(<?php echo $root; ?>/img/stripes.png);">      
             
-    <div class="row">
+    <section class="row white">
     
-      <div id ="main_content_wrap" class="<?php if (theme_get_setting('blog_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
+   
         <div id="main_content">
           <?php print render($title_prefix); ?>
           <?php print render($title_suffix); ?>
@@ -13,8 +13,8 @@
         </div>
       </div>
   
-      <?php if (theme_get_setting('blog_layout') == 'sidebar_right'): ?>
-      <div class="four columns">
+     
+      <div class="four columns push_one grey sidebar">
         <div id="sidebar_wrap">
       	<?php if ($page['sidebar_first']): ?>
       	<aside id="sidebar-first" role="complementary" class="sidebar clearfix">
@@ -28,9 +28,9 @@
         <?php endif; ?>
         </div>        
       </div>
-      <?php endif; ?>
+     
       
-    </div>
+    </section>
     
   </div>    
      

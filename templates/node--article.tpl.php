@@ -4,9 +4,9 @@ $share_url = $base_url.'/node/'.$node->nid;
 ?>
 
 <?php if (!$page): ?>
-  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix row blog white"<?php print $attributes; ?>>
+  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
 <?php endif; ?>
-    <div class="six columns">
+    
 
   <?php if ($user_picture || $display_submitted || !$page): ?>
     <?php print render($title_prefix); ?>
@@ -31,10 +31,12 @@ $share_url = $base_url.'/node/'.$node->nid;
              
    <?php endif; ?>
    
-
+  <?php print render($content['field_image']); ?> 
 
  
   <?php endif; ?>
+  
+    
   
   <div class="article_content"<?php print $content_attributes; ?>>
     <?php
@@ -58,10 +60,9 @@ $share_url = $base_url.'/node/'.$node->nid;
 
     </div>
    <!--POST IMAGE -->
-	<div class="five columns push_one">
-       <?php print render($content['field_image']); ?> 
-	</div>
-  
+
+   
+
  
 
 
