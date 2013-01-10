@@ -3,22 +3,19 @@ global $root, $base_url;
 $share_url = $base_url.'/node/'.$node->nid;
 ?>
 
-	<div class="six columns">
-	  <div class="recent_posts_wrap">
-	    <div class="recent_post_photo">
-	      <?php print render($content['field_image']); ?>
-	    </div>  
-	    <div class="recent_post_info">  
-	      <div class="recent_post_info_text">
-	          <h4><?php print $title; ?></h4>
-	          <i class="general foundicon-calendar"></i><?php print format_date($node->created, 'custom', 'M d, Y'); ?>
-	          <i class="general foundicon-mic"></i><a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?></a>
-	          <h4><a href="<?php print $node_url;?>">read more</a></h4>
-	      </div>
-	     
-	      <div class="clearfix"></div>
-	    </div>
-	  </div>  
-	</div>
 
- 
+	
+	<article class="row blog white">
+	  <div class="eight columns centered">
+      <a href="<?php print $node_url;?>" title="Read Note"><h4 class="blacktext italic center"><?php print $title; ?></h4></a>
+      <!-- POST META -->
+			<p class="post_meta center">
+			  <i class="greytext icon-user"></i><span class="smallfont greytext"> by <?php print $name; ?></span> &nbsp; &nbsp;
+				<i class="greytext icon-time"></i><span class="smallfont greytext"> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></span> &nbsp; &nbsp;
+				<i class="greytext icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a>&nbsp; &nbsp; 
+				<?php if ($field_tags):?>
+				<i class="greytext icon-folder-open"></i><?php print render($content['field_tags']); ?>
+			  <?php endif; ?>
+			</p>
+	  </div>
+	</article>

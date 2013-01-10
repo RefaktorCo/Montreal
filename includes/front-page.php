@@ -93,60 +93,9 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 		</p>
 	</div>
 	</section>
-	<!-- POST ONE -->
-	<article class="row blog white">
-	<div class="eight columns centered">
-		<!-- POST TITLE -->
-		<a href="/blogsingle.html" title="Read Note">
-		<h4 class="blacktext italic center">Beautiful interactive creative template.</h4>
-		</a>
-		<!-- POST META -->
-		<p class="center">
-			<i class="icon-time greytext"></i>
-			<a class="smallfont greytext" href="#">29/12/12</a>
-			&nbsp; &nbsp; <i class="greytext icon-folder-open"></i>
-			<a class="smallfont greytext" href="#">DESIGN</a> / <a class="smallfont greytext" href="#">DEVELOPMENT</a>
-			&nbsp; &nbsp; <i class="greytext icon-link"></i>
-			<a class="smallfont greytext" href="/blogsingle.html">READ POST</a>
-		</p>
-	</div>
-	</article>
-	<!-- POST TWO -->
-	<article class="row blog white">
-	<div class="eight columns centered">
-		<!-- POST TITLE -->
-		<a href="/blogsingle.html" title="Read Note">
-		<h4 class="blacktext italic center">Useful talks and videos on social media promotion.</h4>
-		</a>
-		<!-- POST META -->
-		<p class="center">
-			<i class="icon-time greytext"></i>
-			<a class="smallfont greytext" href="#">29/12/12</a>
-			&nbsp; &nbsp; <i class="greytext icon-folder-open"></i>
-			<a class="smallfont greytext" href="#">DESIGN</a> / <a class="smallfont greytext" href="#">DEVELOPMENT</a>
-			&nbsp; &nbsp; <i class="greytext icon-link"></i>
-			<a class="smallfont greytext" href="/blogsingle.html">READ POST</a>
-		</p>
-	</div>
-	</article>
-	<!-- POST THREE -->
-	<article class="row blog white">
-	<div class="eight columns centered">
-		<!-- POST TITLE -->
-		<a href="/blogsingle.html" title="Read Note">
-		<h4 class="blacktext italic center">How to succeed in web design.</h4>
-		</a>
-		<!-- POST META -->
-		<p class="center">
-			<i class="icon-time greytext"></i>
-			<a class="smallfont greytext" href="#">29/12/12</a>
-			&nbsp; &nbsp; <i class="greytext icon-folder-open"></i>
-			<a class="smallfont greytext" href="#">DESIGN</a> / <a class="smallfont greytext" href="#">DEVELOPMENT</a>
-			&nbsp; &nbsp; <i class="greytext icon-link"></i>
-			<a class="smallfont greytext" href="/blogsingle.html">READ POST</a>
-		</p>
-	</div>
-	</article>
+	
+	<?php print render($page['front_blog']); ?>
+	
 </div>
 <!-- END BLOG CONTAINER -->
 
