@@ -50,7 +50,7 @@ settings[breadcrumbs] = '1'
 settings[branding_type] = 'text'
 
 settings[enable_highlight] = '1'
-settings[highlight_text] = 'Haiku is modern. A clean layout for your site. Fast and responsive.'
+settings[highlight_text] = '"There's no such thing as simple. Simple is hard"'
 
 settings[enable_slider] = '0'
 settings[slides_number] = '3'

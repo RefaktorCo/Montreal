@@ -72,7 +72,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	<!-- QUOTE -->
 	<div class="alpha eleven columns centered">
-		<h2 class="italic center whitetext">"There's no such thing as simple. Simple is hard"</h2>
+		<h2 class="italic center whitetext"><?php echo theme_get_setting('highlight_text');?></h2>
 	</div>
 	<!-- WHITE HORIZONTAL -->
 	<div class="alpha centered six columns whitehorizontal smallmargin">
@@ -83,15 +83,15 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 
 <!-- BLOG CONTENT CONTAINER WITH STRIPE PAGE BACKGROUND -->
 <div class="container midpadding">
+
 	<section class="row midpadding white smallbottommargin">
-	<h3 class="blacktext bold midmargin center">OUR RECENT NOTES</h3>
-	<div class="three columns alpha centered blackhorizontal">
-	</div>
-	<div class="four columns centered smalltoppadding">
-		<p class="center">
-			<a class="smallfont greytext" href="/blog.html">VIEW ALL NOTES</a>
-		</p>
-	</div>
+		<h3 class="blacktext bold midmargin center">OUR RECENT NOTES</h3>
+		<div class="three columns alpha centered blackhorizontal"></div>
+		<div class="four columns centered smalltoppadding">
+			<p class="center">
+				<a class="smallfont greytext" href="/blog.html">VIEW ALL NOTES</a>
+			</p>
+		</div>
 	</section>
 	
 	<?php print render($page['front_blog']); ?>
@@ -112,6 +112,8 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	</section>
 </div>
+
+
 <script src="<?php echo $root;?>/js/supersized.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
