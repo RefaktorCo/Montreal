@@ -162,6 +162,18 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         '#title' => 'Enable Image Slider',
         '#default_value' => theme_get_setting('enable_slider'),
       );
+      
+      // Slider Caption
+      $form['options']['front_page']['slider']['slider_caption'] = array(
+        '#type' => 'textarea',
+        '#title' => 'Slider Caption',
+        '#default_value' => theme_get_setting('slider_caption'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_slider"]' => array('checked' => FALSE)
+          )
+        )
+      );
             
       // Enable Slider
       $form['options']['front_page']['slider']['slides_number'] = array(
@@ -213,13 +225,6 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
             '#description' => 'Upload a slide image.',
           );
           
-                    
-          $form['options']['front_page']['slider']['slide_'.$i.'']['slide_caption_'.$i.''] = array(
-            '#type' => 'textfield',
-            '#title' => 'Caption for Slide '.$i.'',
-            '#default_value' => theme_get_setting('slide_caption_'.$i.''),
-          );
-
 	    $i++;    
       }
       

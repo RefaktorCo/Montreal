@@ -9,13 +9,8 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <div class="container slideshow" >
 	<section class="row largepadding">
 	<div class="six columns bigpadding">
-		<!-- SLIDESHOW STATEMENT -->
-		<h1 class="bigtoppadding whitetext"><span class="light">WE CREATE</span><br/>BRANDS PEOPLE LOVE</h1>
-		<h5 class="white blacktext smallsidepadding">MONTREAL DESIGN STUDIO</h5>
-		<p class="whitetext meta">
-			 We've cleaned up the air, but polluted the soul. We write more, but learn less. We plan more, but accomplish less. We've learned to rush, but not to wait. We write more, but learn less. We plan more, but accomplish less.
-		</p>
-	</div>
+		<!-- SLIDESHOW CAPTION -->
+		<?php echo theme_get_setting('slider_caption');?>	</div>
 	</section>
 </div>
 <!-- END SLIDESHOW CONTAINER -->		
@@ -147,13 +142,12 @@ jQuery(document).ready(function ($) {
 					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 					thumb_links				:	1,			// Individual thumb links for each slide
 					thumbnail_navigation    :  0,			// Thumbnail navigation
-				  slides :  	[	// Slideshow Images
-									{image : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/h11.jpeg', thumb : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/bg.jpg'},
-								{image : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/h22.jpeg', thumb : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/bg.jpg'},
-									{image : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/h33.jpeg', thumb : 'http://localhost:8888/development/montreal/sites/all/themes/montreal//preview/bg.jpg'},
-									{image : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/h44.jpeg', thumb : 'http://localhost:8888/development/montreal/sites/all/themes/montreal/preview/bg.jpg'}
-									
-							],
+				  slides :  	
+				  	[	// Slideshow Images
+		          <?php $i = '1'; while ($i <= $slide_number) { ?>
+							{image : '<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>'},
+							<?php $i++; } ?>
+						],
 												
 					// Theme Options			   
 					progress_bar			:	1,			// Timer for each slide							
