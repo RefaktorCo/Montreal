@@ -1,6 +1,6 @@
   jQuery(document).ready(function ($) {
       
-
+    $('.post_meta a').addClass('smallfont greytext');
     
     $('.menu_wrap ul').addClass('menu');
         

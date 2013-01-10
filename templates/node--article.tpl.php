@@ -18,10 +18,10 @@ $share_url = $base_url.'/node/'.$node->nid;
     <?php if ($display_submitted): ?>
     
       <!-- POST META -->
-			<p>
+			<p class="post_meta">
 				<i class="icon-time greytext"></i>
 				<?php if ($field_tags):?>
-				<a class="smallfont greytext" href="#"><?php print format_date($node->created, 'custom', 'M d, Y'); ?></a>
+				<a href="#"><?php print format_date($node->created, 'custom', 'M d, Y'); ?></a>
 				&nbsp; &nbsp; <i class="greytext icon-folder-open"></i>
 				<?php print render($content['field_tags']); ?>
 			  <?php endif; ?>
