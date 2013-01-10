@@ -3337,6 +3337,10 @@ border: 1px solid #CCC;
 margin-bottom: 20px !important;
 }
 
+.icon-folder-open {
+margin-right: 2px;	
+}
+
 /* Comments */
 
 .comment {
