@@ -3341,6 +3341,16 @@ margin-bottom: 20px !important;
 margin-right: 2px;	
 }
 
+.article_content p {
+font-size:12px !important;
+font-size:1.2rem !important;	
+}
+
+#sidebar-first .content p {
+font-size:12px !important;
+font-size:1.2rem !important;	
+}
+
 /* Comments */
 
 .comment {

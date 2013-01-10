@@ -1,5 +1,7 @@
   jQuery(document).ready(function ($) {
-      
+  
+    $('#sidebar-first .content').after('<div class="twelve columns blackhorizontal midmargin"></div>');
+       
     $('.post_meta a').addClass('smallfont greytext');
     
     $('.menu_wrap ul').addClass('menu');
