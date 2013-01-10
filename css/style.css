@@ -3351,6 +3351,16 @@ font-size:12px !important;
 font-size:1.2rem !important;	
 }
 
+ul.pager { display: block; height: 24px; margin-left: -5px; }
+ul.pager li { float: left; display: block; height: 24px; color: #999; font-size: 15px; margin-left: 5px; }
+ul.pager li a, ul.pager .pager-current.first a { display: block; padding: 6px 12px 4px; color: #555; font-family:inherit;font-size:12px; background:#fff;}
+ul.pager li.pager-current first a, ul.pager li:hover a { border-bottom: solid 2px #3a3a3a; color: #141414;-webkit-transition-duration: .2s;
+-moz-transition-duration: .2s;
+-o-transition-duration: .2s;
+-ms-transition-duration: .2s; }
+ul.pager li.unavailable a { cursor: default; color: #999; }
+ul.pager li.unavailable:hover a { border-bottom: none; }
+
 /* Comments */
 
 .comment {
