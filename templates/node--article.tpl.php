@@ -19,11 +19,11 @@ $share_url = $base_url.'/node/'.$node->nid;
     
       <!-- POST META -->
 			<p class="post_meta">
-				<i class="icon-time greytext"></i>
+			  <i class="greytext icon-user"></i><span class="smallfont greytext"> by <?php print $name; ?></span> &nbsp; &nbsp;
+				<i class="greytext icon-time"></i><a href="#"><?php print format_date($node->created, 'custom', 'M d, Y'); ?></a>&nbsp; &nbsp;
+				<i class="greytext icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a>&nbsp; &nbsp; 
 				<?php if ($field_tags):?>
-				<a href="#"><?php print format_date($node->created, 'custom', 'M d, Y'); ?></a>
-				&nbsp; &nbsp; <i class="greytext icon-folder-open"></i>
-				<?php print render($content['field_tags']); ?>
+				<i class="greytext icon-folder-open"></i><?php print render($content['field_tags']); ?>
 			  <?php endif; ?>
 			</p>
     
