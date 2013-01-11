@@ -228,7 +228,45 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
 	    $i++;    
       }
       
-     // Highlight
+    // Recent Projects
+    $form['options']['front_page']['recent_projects'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Recent Projects</h3>',
+      
+    );
+    
+      // Enable Recent Projects
+      $form['options']['front_page']['recent_projects']['enable_recent_projects'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Enable Recent Projects Section',
+        '#default_value' => theme_get_setting('enable_recent_projects'),
+      );
+      
+      // Recent Projects Title
+      $form['options']['front_page']['recent_projects']['recent_projects_title'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Recent Projects Title',
+        '#default_value' => theme_get_setting('recent_projects_title'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_recent_projects"]' => array('checked' => FALSE)
+          )
+        )
+      );  
+      
+     // Recent Projects Link
+     $form['options']['front_page']['recent_projects']['recent_projects_link'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Link to Recent Projects (Portfolio)',
+        '#default_value' => theme_get_setting('recent_projects_link'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_recent_projects"]' => array('checked' => FALSE)
+          )
+        )
+      );      
+      
+    // Highlight
     $form['options']['front_page']['highlight'] = array(
       '#type' => 'fieldset', 
       '#title' => '<div class="plus"></div><h3 class="options_heading">Highlight</h3>',
@@ -254,34 +292,7 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         )
       );
         
-    // Services
-    $form['options']['front_page']['services'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Services</h3>',
-      
-    );
-    
-	    // Enable Services
-	    $form['options']['front_page']['services']['enable_services'] = array(
-	      '#type' => 'checkbox',
-	      '#title' => 'Enable Services Section',
-	      '#default_value' => theme_get_setting('enable_services'),
-	    );
-	    
-	  // Information
-    $form['options']['front_page']['information'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Information</h3>',
-      
-    );
-    
-      // Enable Information
-      $form['options']['front_page']['information']['enable_information'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Information',
-        '#default_value' => theme_get_setting('enable_information'),
-      );
-            
+                
     // Recent Posts
     $form['options']['front_page']['recent_posts'] = array(
       '#type' => 'fieldset',
@@ -308,54 +319,41 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         )
       );  
       
-    // Recent Projects
-    $form['options']['front_page']['recent_projects'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Recent Projects</h3>',
-      
-    );
-    
-      // Enable Services
-      $form['options']['front_page']['recent_projects']['enable_recent_projects'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Recent Projects Section',
-        '#default_value' => theme_get_setting('enable_recent_projects'),
-      );
-      
-      //Services Title
-      $form['options']['front_page']['recent_projects']['recent_projects_title'] =array(
+      //Recent Posts Link
+      $form['options']['front_page']['recent_posts']['recent_posts_link'] =array(
         '#type' => 'textfield',
-        '#title' => 'Recent Projects Title',
-        '#default_value' => theme_get_setting('recent_projects_title'),
+        '#title' => 'Link to Posts Page',
+        '#default_value' => theme_get_setting('recent_posts_link'),
         '#states' => array (
           'invisible' => array(
-            'input[name="enable_recent_projects"]' => array('checked' => FALSE)
+            'input[name="enable_recent_posts"]' => array('checked' => FALSE)
           )
         )
-      );     
+      );  
+      
       
     // Clients
-    $form['options']['front_page']['clients'] = array(
+    $form['options']['front_page']['twitter_feed'] = array(
       '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Clients</h3>',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Twitter Feed</h3>',
       
     );
     
       // Enable clients
-      $form['options']['front_page']['clients']['enable_clients'] = array(
+      $form['options']['front_page']['twitter_feed']['enable_twitter_feed'] = array(
         '#type' => 'checkbox',
-        '#title' => 'Enable Clients',
-        '#default_value' => theme_get_setting('enable_clients'),
+        '#title' => 'Enable Twitter Feed',
+        '#default_value' => theme_get_setting('enable_twitter_feed'),
       );
       
       //Clients Title
-      $form['options']['front_page']['clients']['clients_title'] =array(
+      $form['options']['front_page']['twitter_feed']['twitter_handle'] =array(
         '#type' => 'textfield',
-        '#title' => 'Clients Title',
-        '#default_value' => theme_get_setting('clients_title'),
+        '#title' => 'Twitter Handle',
+        '#default_value' => theme_get_setting('twitter_handle'),
         '#states' => array (
           'invisible' => array(
-            'input[name="enable_clients"]' => array('checked' => FALSE)
+            'input[name="enable_twitter_feed"]' => array('checked' => FALSE)
           )
         )
       );  

@@ -4,6 +4,7 @@
   $slide_number = theme_get_setting('slides_number');
 ?>
 
+<?php if (theme_get_setting('enable_slider') == '1') : ?>
 <!-- SLIDESHOW CONTAINER WITH STRIPES BACKGROUND. CHANGE THE BELOE BG URL TO USE YOUR OWN BACKGROUND
 PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <div class="container slideshow" >
@@ -13,20 +14,23 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 		<?php echo theme_get_setting('slider_caption');?>	</div>
 	</section>
 </div>
-<!-- END SLIDESHOW CONTAINER -->		
+<!-- END SLIDESHOW CONTAINER -->	
+<?php endif; ?>
+
+<?php if (theme_get_setting('enable_recent_projects') == '1') : ?>	
 <!-- THICK STRIPE BORDER -->
 <div class="smallpadding">
 </div>
 <!-- PORTFOLIO CONTAINER -->
 <div class="container white bigpadding">
 	<section class="row smallbottompadding">
-	<h3 class="blacktext bold midbottommargin center">OUR RECENT WORK</h3>
+	<h3 class="blacktext bold midbottommargin center"><?php echo theme_get_setting('recent_projects_title');?></h3>
 	<!-- BLACKHORIZONTAL -->
 	<div class="three columns alpha centered blackhorizontal">
 	</div>
 	<div class="four columns centered smalltoppadding">
 		<p class="center">
-			<a class="smallfont greytext" href="/portfolio.html">VIEW ALL PORTFOLIO</a>
+			<a class="smallfont greytext" href="<?php echo theme_get_setting('recent_projects_link');?>">VIEW ALL PORTFOLIO</a>
 		</p>
 	</div>
 	</section>
@@ -56,6 +60,9 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</section>
 </div>
 <!-- end of  portfolio container -->    
+<?php endif; ?>
+
+<?php if (theme_get_setting('enable_highlight') == '1') : ?>
 <!-- THICK STRIPE BORDER -->
 <div class="smallpadding">
 </div>
@@ -74,26 +81,34 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	</section>
 </div>
+<?php endif; ?>
 
-
+<?php if (theme_get_setting('enable_recent_posts') == '1') : ?>
 <!-- BLOG CONTENT CONTAINER WITH STRIPE PAGE BACKGROUND -->
 <div class="container midpadding">
 
 	<section class="row midpadding white smallbottommargin">
-		<h3 class="blacktext bold midmargin center">OUR RECENT NOTES</h3>
+		<h3 class="blacktext bold midmargin center"><?php echo theme_get_setting('recent_posts_title');?></h3>
 		<div class="three columns alpha centered blackhorizontal"></div>
 		<div class="four columns centered smalltoppadding">
 			<p class="center">
-				<a class="smallfont greytext" href="/blog.html">VIEW ALL NOTES</a>
+				<a class="smallfont greytext" href="<?php echo theme_get_setting('recent_posts_link');?>">VIEW ALL NOTES</a>
 			</p>
 		</div>
 	</section>
+	<?php if(!$page['front_blog']) {?>
 	
-	<?php print render($page['front_blog']); ?>
+	<div class="row white">
+	  <h4>Refer to the /documentation folder inside the theme for instructions on how to properly use this section.</h4>
+	</div>
+	
+	<?php } else { print render($page['front_blog']); } ?>
 	
 </div>
 <!-- END BLOG CONTAINER -->
+<?php endif;?>
 
+<?php if (theme_get_setting('enable_twitter_feed') == '1') : ?>
 <!-- twitter container -->
 <div class="container white">
 	<section class="row bigpadding">
@@ -102,16 +117,33 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 		<div class="tweet">
 		</div>
 		<a href="#" class="blacktext">
-		<h6 class="center bold meta">TWITTER USERNAME</h6>
+		<h6 class="center bold meta"><?php echo theme_get_setting('twitter_handle');?></h6>
 		</a>
 	</div>
 	</section>
 </div>
-
+<?php endif; ?>
 
 <script src="<?php echo $root;?>/js/supersized.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
+
+  // twitter 
+  jQuery(document).ready(function ($) {
+        $(".tweet").tweet({
+            username: "<?php echo theme_get_setting('twitter_handle');?>",
+            join_text: "auto",
+            avatar_size: null,
+            count: 1,
+            auto_join_text_default: " we said,", 
+            auto_join_text_ed: " we",
+            auto_join_text_ing: " we were",
+            auto_join_text_reply: " we replied to",
+            auto_join_text_url: " we were checking out",
+            loading_text: "loading tweets..."
+        });
+    });
+    
   $.supersized({
 				
 					// Functionality

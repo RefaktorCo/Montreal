@@ -1,19 +1,3 @@
-// twitter 
-  jQuery(document).ready(function ($) {
-        $(".tweet").tweet({
-            username: "envato",
-            join_text: "auto",
-            avatar_size: null,
-            count: 1,
-            auto_join_text_default: " we said,", 
-            auto_join_text_ed: " we",
-            auto_join_text_ing: " we were",
-            auto_join_text_reply: " we replied to",
-            auto_join_text_url: " we were checking out",
-            loading_text: "loading tweets..."
-        });
-    });
-
 // Initialize the plugin with no custom options
 		  jQuery(document).ready(function ($) {
 			// I just set some of the options

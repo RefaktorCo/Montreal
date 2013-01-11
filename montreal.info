@@ -64,7 +64,7 @@ settings[enable_highlight] = '1'
 settings[highlight_text] = 'Haiku is modern.  A clean layout for your site. Fast and responsive.'
 
 settings[enable_recent_posts] = '0'
-settings[recent_posts_title] = 'Recent Posts'
+settings[recent_posts_title] = 'Our Recent Notes'
 
 settings[enable_recent_projects] = '0'
 settings[recent_projects_title] = 'Recent Projects'
