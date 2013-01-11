@@ -124,7 +124,6 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 </div>
 <?php endif; ?>
 
-<script src="<?php echo $root;?>/js/supersized.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
 
@@ -143,6 +142,13 @@ jQuery(document).ready(function ($) {
             loading_text: "loading tweets..."
         });
     });
+  });
+</script>
+
+<?php if (theme_get_setting('enable_slider') == '1') : ?>
+<script src="<?php echo $root;?>/js/supersized.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function ($) {
     
   $.supersized({
 				
@@ -189,7 +195,7 @@ jQuery(document).ready(function ($) {
 });
 
 </script>
-
+<?php endif; ?>
 
 
   <!-- end main wrapper -->    
