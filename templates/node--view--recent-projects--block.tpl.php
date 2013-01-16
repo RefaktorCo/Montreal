@@ -4,7 +4,7 @@
 	$tags = str_replace(' ', '/',$tags);
 ?>
 
-	<div class="item four columns alpha">
+	<div class="item four columns recent_projects_item">
 	  <?php print render($content['field_basic_portfolio_image']); ?>
 	   <h5 class="blacktext extrabold smalltoppadding"><a href="<?php print $node_url;?>"><?php print $title; ?></a></h5>
      <h6 class="blacktext"><?php echo $tags;?></h6>

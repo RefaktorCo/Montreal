@@ -35,7 +35,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	</section>
 	<!-- BASIC PORTFOLIO ITEM ROW -->
-	<section class="row midbottompadding">
+	<section class="row midbottompadding recent_projects">
 	<?php if(!$page['recent_projects']) {?>
 	
 	  <h4>Refer to the /documentation folder inside the theme for instructions on how to properly use this section.</h4>

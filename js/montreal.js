@@ -2,6 +2,8 @@
   
     $('#sidebar-first .content').after('<div class="twelve columns blackhorizontal midmargin"></div>');
        
+    $('.recent_projects_item:first').addClass('alpha');
+    
     $('.post_meta a').addClass('smallfont greytext');
     
     $('.menu_wrap ul').addClass('menu');
