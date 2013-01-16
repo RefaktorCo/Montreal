@@ -4,6 +4,8 @@
        
     $('.recent_projects_item:first').addClass('alpha');
     
+    $('.portfolio_item .griditem:even').addClass('alpha');
+    
     $('.post_meta a').addClass('smallfont greytext');
     
     $('.menu_wrap ul').addClass('menu');
