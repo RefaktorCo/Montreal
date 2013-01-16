@@ -1,18 +1,8 @@
-<?php montreal_header($page);?>
+<?php global $root; montreal_header($page);?>
       
-	<div id="heading_wrapper">
-    <div id="heading_wrapper_after">
-   	  <div class="row">
-        <div class="six columns">
-          <h2 class="page_heading_text"><?php print $title; ?></h2>
-        </div>
-        <div class="six columns">  
-          <div id="breadcrumbs"><h3><?php if (theme_get_setting('breadcrumbs') == '1') {print $breadcrumb . $title; } ?></h3></div>
-        </div>  
-      </div>
-    </div>
-  </div> 
-  
+	<div class="container bigpadding" style="background:url(<?php echo $root;?>/img/stripes.png);">
+  </div>
+	  
   <div class="row">
     <div class="twelve columns">
 
