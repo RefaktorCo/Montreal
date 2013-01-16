@@ -1,7 +1,7 @@
 <?php 
 	global $root, $base_url;
 	$tags = render($content['field_basic_portfolio_categories']);
-	$tags = str_replace(' ', '/',$tags);
+	$tags = str_replace(',', ' /',$tags);
 ?>
 
 	<div class="item four columns recent_projects_item">

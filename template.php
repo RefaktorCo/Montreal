@@ -89,7 +89,7 @@ function montreal_field($variables) {
   }
 
   
-  elseif ($variables['element']['#field_name'] == 'field_portfolio_tags') {
+  elseif ($variables['element']['#field_name'] == 'field_basic_portfolio_categories') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);
