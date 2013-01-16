@@ -36,27 +36,12 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</section>
 	<!-- BASIC PORTFOLIO ITEM ROW -->
 	<section class="row midbottompadding">
-	<!-- ITEM ONE -->
-	<div class="item four columns alpha">
-		<img src="<?php echo $root;?>/preview/preview1.jpg" alt="item">
-		<h5 class="blacktext extrabold smalltoppadding">PROJECT TITLE<span class="right light">01</span></h5>
-		<h6 class="blacktext">WEB DESIGN / UI/ UX</h6>
-		<a href="/itembasic.html" class="blacktext smallfont">VIEW PROJECT</a>
-	</div>
-	<!-- ITEM TWO -->
-	<div class="item four columns">
-		<img src="<?php echo $root;?>/preview/preview1.jpg" alt="item">
-		<h5 class="blacktext extrabold smalltoppadding">PROJECT TITLE<span class="right light">02</span></h5>
-		<h6 class="blacktext">WEB DESIGN / UI/ UX</h6>
-		<a href="/itembasic.html" class="blacktext smallfont">VIEW PROJECT</a>
-	</div>
-	<!-- ITEM THREE -->
-	<div class="item four columns">
-		<img src="<?php echo $root;?>/preview/preview1.jpg" alt="item">
-		<h5 class="blacktext extrabold smalltoppadding">PROJECT TITLE<span class="right light">03</span></h5>
-		<h6 class="blacktext">WEB DESIGN / UI/ UX</h6>
-		<a href="/itembasic.html" class="blacktext smallfont">VIEW PROJECT</a>
-	</div>
+	<?php if(!$page['recent_projects']) {?>
+	
+	  <h4>Refer to the /documentation folder inside the theme for instructions on how to properly use this section.</h4>
+
+	<?php } else { print render($page['recent_projects']); } ?>
+
 	</section>
 </div>
 <!-- end of  portfolio container -->    
