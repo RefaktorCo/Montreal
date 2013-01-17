@@ -1,11 +1,11 @@
 <?php global $root; montreal_header($page);?>
       
-	<div class="container bigpadding" style="background:url(<?php echo $root;?>/img/stripes.png);">
+	<div class="bigpadding" style="background:url(<?php echo $root;?>/img/stripes.png);">
   </div>
 	  
-  <div class="container white bigpadding">
-	  <section class="row">
-	  	<h3 class="blacktext bold midbottommargin center">OUR RECENT WORK</h3>
+  <div class="container black nopadding">
+	  <section class="row bigtoppadding">
+	  	<h3 class="whitetext bold midbottommargin center">SOME OF OUR WORK</h3>
 			<div class="five columns alpha centered blackhorizontal">
 			</div>
 			<div class="four columns alpha centered midtopmargin">
@@ -15,9 +15,9 @@
 			</div>
 	  </section>
 
-      <!-- Begin Isotope filters -->
-           
-      <section class="row bigtoppadding portfolio_item">
+      <!-- DRAG SCROLL -->
+	  <div class="drag">
+		  <div id="scroll">
         <!-- Begin Isotope content -->
         
           <?php print render($title_prefix); ?>
@@ -26,7 +26,7 @@
           <?php print render($page['content']); ?>
         
         
-      </section>
-  </div>
+		  </div>
+	  </div>  
  
 <?php montreal_footer($page);?>
