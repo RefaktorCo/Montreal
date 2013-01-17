@@ -4,16 +4,16 @@
   </div>
 	  
   <div class="container black nopadding">
-	  <section class="row bigtoppadding">
-	  	<h3 class="whitetext bold midbottommargin center">SOME OF OUR WORK</h3>
-			<div class="five columns alpha centered blackhorizontal">
+	  	<section class="row bigtoppadding">
+			<h3 class="whitetext bold midbottommargin center">SOME OF OUR WORK</h3>
+			<div class="five columns alpha centered whitehorizontal">
 			</div>
-			<div class="four columns alpha centered midtopmargin">
+			<div class="four columns centered smalltoppadding">
 				<p class="center meta">
-					We have worked on some amazing project with some great clients.
+					Click and drag portfolio items to left or right.
 				</p>
 			</div>
-	  </section>
+			</section>
 
       <!-- DRAG SCROLL -->
 	  <div class="drag">
