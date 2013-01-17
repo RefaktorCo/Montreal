@@ -3,12 +3,30 @@ global $root, $base_url;
 $share_url = $base_url.'/node/'.$node->nid;
 ?>
 
-  <div id="single_portfolio" class="row">
-  <div class="eight columns">
-    <div class="portfolio_image"><?php print render($content['field_portfolio_image']); ?></div>
-  </div>
-  
-  <div class="four columns">  
+ <div class="container white bigpadding">
+	<section class="row">
+	
+		<!-- LEFT SLIDER -->
+		<div class="eight columns blackvertical">
+			<div class="flexslider">
+			<!-- SLIDES -->
+			<ul class="slides">
+				<li>
+				<?php print render($content['field_basic_portfolio_image']); ?>
+				</li>
+				<li>
+				<?php print render($content['field_basic_portfolio_image']); ?>
+				</li>
+				<li>
+				<?php print render($content['field_basic_portfolio_image']); ?>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+  <!-- RIGHT SIDE -->
+	<div class="four columns">
+	
 	  <?php if (!$page): ?>
 	  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 		<?php endif; ?>
@@ -36,6 +54,5 @@ $share_url = $base_url.'/node/'.$node->nid;
   </article> <!-- /.node -->
 <?php endif; ?>
 
-  </div>
-  </div>
-  <div class="bottom_spacer"></div>   
+	</section>
+</div>
