@@ -4,6 +4,8 @@
        
     $('.recent_projects_item:first').addClass('alpha');
     
+    $('.portfolio_basic_item:nth-child(3n+1)').addClass('alpha');
+    
     $('.greyvertical p').addClass('meta leftpadding smalltoppadding');
     
     $('.portfolio_item .griditem:even').addClass('alpha');

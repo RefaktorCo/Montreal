@@ -4,8 +4,6 @@
   $tags = str_replace(',', '/',$tags);
   $tags_big = str_replace('/', '<br/>',$tags);
 ?>
-
-
   
   <div class="greyvertical midtopmargin item leftpadding rightpadding">
     <?php print render($content['field_basic_portfolio_image']); ?>

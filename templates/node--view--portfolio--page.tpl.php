@@ -5,19 +5,9 @@
   $tags_big = str_replace('/', '<br/>',$tags);
 ?>
 
-
-  
-  <div class="six columns griditem ">
-    <?php print render($content['field_basic_portfolio_image']); ?>
-    <a href="<?php print $node_url;?>">
-    <div class="gridinfo">
-			<h3 class="whitetext extrabold bigtoppadding center"><?php print $title; ?></h3>
-			<h5 class="whitetext center"><?php echo $tags; ?></h5>
-			<span class="smallfont space">VIEW PROJECT</span>
-		</div>
-		<!-- SHOWS AFTER TWO 1.6S OF HOVER -->
-		<div class="gridblack">
-			<h2 class="whitetext"><?php echo $tags_big; ?></h2>
-		</div>
-		</a>
+  <div class="item four columns portfolio_basic_item">
+	  <?php print render($content['field_basic_portfolio_image']); ?>
+	   <h5 class="blacktext extrabold smalltoppadding"><a href="<?php print $node_url;?>"><?php print $title; ?></a></h5>
+     <h6 class="blacktext"><?php echo $tags;?></h6>
+     <a href="<?php print $node_url;?>" class="blacktext smallfont">View Project</a>
 	</div>
