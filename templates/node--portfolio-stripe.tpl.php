@@ -9,13 +9,13 @@ $share_url = $base_url.'/node/'.$node->nid;
 			<!-- SLIDES -->
 			<ul class="slides">
 				<li>
-				<?php print render($content['field_basic_portfolio_image']); ?>
+				<?php print render($content['field_portfolio_stripe_slide_1']); ?>
 				</li>
 				<li>
-				<?php print render($content['field_basic_portfolio_image']); ?>
+				<?php print render($content['field_portfolio_stripe_slide_2']); ?>
 				</li>
 				<li>
-				<?php print render($content['field_basic_portfolio_image']); ?>
+				<?php print render($content['field_portfolio_stripe_slide_3']); ?>
 				</li>
 			</ul>
 	  </div>
@@ -34,7 +34,8 @@ $share_url = $base_url.'/node/'.$node->nid;
 	      hide($content['taxonomy_forums']);
 	      hide($content['comments']);
 	      hide($content['links']);
-	      hide($content['field_basic_portfolio_categories']);
+	      hide($content['field_portfolio_stripe_image']);
+	      hide($content['field_portfolio_stripe_tags']);
 	      print render($content);
 	    ?>
 	  </div>
