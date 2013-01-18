@@ -8,15 +8,19 @@ $share_url = $base_url.'/node/'.$node->nid;
 		<div class="flexslider">
 			<!-- SLIDES -->
 			<ul class="slides">
-				<li>
-				<?php print render($content['field_portfolio_stripe_slide_1']); ?>
-				</li>
-				<li>
-				<?php print render($content['field_portfolio_stripe_slide_2']); ?>
-				</li>
-				<li>
-				<?php print render($content['field_portfolio_stripe_slide_3']); ?>
-				</li>
+			
+				<?php if (render($content['field_portfolio_stripe_slide_1'])) : ?>
+				  <li><?php print render($content['field_portfolio_stripe_slide_1']); ?></li>
+				<?php endif; ?>
+				
+				<?php if (render($content['field_portfolio_stripe_slide_2'])) : ?>
+				  <li><?php print render($content['field_portfolio_stripe_slide_3']); ?></li>
+				<?php endif; ?>
+				
+				<?php if (render($content['field_portfolio_stripe_slide_3'])) : ?>
+				  <li><?php print render($content['field_portfolio_stripe_slide_3']); ?></li>
+				<?php endif; ?>
+				
 			</ul>
 	  </div>
   </div>
