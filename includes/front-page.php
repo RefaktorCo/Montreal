@@ -70,7 +70,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 
 <?php if (theme_get_setting('enable_recent_posts') == '1') : ?>
 <!-- BLOG CONTENT CONTAINER WITH STRIPE PAGE BACKGROUND -->
-<div class="container midpadding">
+<div class="container midpadding" style="background: url('<?php echo $root; ?>/img/stripes.png');">
 
 	<section class="row midpadding white smallbottommargin">
 		<h3 class="blacktext bold midmargin center"><?php echo theme_get_setting('recent_posts_title');?></h3>
