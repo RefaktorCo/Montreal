@@ -397,7 +397,7 @@ background:#e6e6e6;
 overflow-x:visible;
 overflow-y:hidden;
 padding:0 0 !important;
-height:420px;
+height:450px;
 }
 
 .dragbig{
@@ -3461,6 +3461,11 @@ margin-left: 80px !important;
 .comment_text {
   width: 80%; 
   height: 150px;
+}
+
+
+.greyvertical img {
+	margin-bottom: 10px;
 }
 
 /* Start: Recommended Isotope styles */
