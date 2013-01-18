@@ -13,7 +13,15 @@
     <h5 class="whitetext extrabold icon-circle-arrow-right smalltoppadding">&nbsp; <?php print $title; ?></h5>
 		<h6 class="whitetext leftpadding"><?php echo $tags; ?></h6>
 		<p class="meta leftpadding smalltoppadding">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+			<?php
+      // Hide comments, tags, and links now so that we can render them later.
+      hide($content['taxonomy_forums']);
+      hide($content['comments']);
+      hide($content['links']);
+      hide($content['field_tags']);
+      hide($content['field_image']);
+      print render($content);
+    ?>
 		</p>
 		
 	  <a href="<?php print $node_url;?>" class="whitetext smallfont leftpadding">VIEW PROJECT</a>
