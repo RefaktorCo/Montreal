@@ -35,7 +35,7 @@ function montreal_footer($page){
     </div>
 	</div>
 	<!-- END TOP ROW -->
-	<?php endif; ?>
+	<?php } ?> 
 	
 	<?php if (theme_get_setting('enable_secondary_footer') == '1') { ?>
 	<!-- GREY HORIZONTAL -->
@@ -50,7 +50,7 @@ function montreal_footer($page){
     <?php } else { print render($page['footer_full']); }?>  
   </div> 	
   </div>
-  <?php endif; ?>
+   <?php } ?> 
 </div>
 </footer>
     
