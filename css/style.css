@@ -151,7 +151,6 @@ margin:0 auto;
 .smallpadding {
 padding-top: 10px !important;
 padding-bottom: 10px !important;
-background: url('../img/stripes.png'); 
 }
 
 .smallsidepadding {
@@ -1284,6 +1283,7 @@ opacity: 1;
 width:100%;
 max-width:1007px;
 margin:0 auto;
+padding-top: 65px !important;
 }
 
 .gridblock{
