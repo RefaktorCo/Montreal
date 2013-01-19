@@ -8,15 +8,17 @@ $share_url = $base_url.'/node/'.$node->nid;
 		<div class="flexslider">
 			<!-- SLIDES -->
 			<ul class="slides">
-				<li>
-				<?php print render($content['field_basic_portfolio_image']); ?>
-				</li>
-				<li>
-				<?php print render($content['field_basic_portfolio_image']); ?>
-				</li>
-				<li>
-				<?php print render($content['field_basic_portfolio_image']); ?>
-				</li>
+				<?php if (render($content['field_portfolio_basic_slide_1'])) : ?>
+				  <li><?php print render($content['field_portfolio_basic_slide_1']); ?></li>
+				<?php endif; ?>
+				
+				<?php if (render($content['field_portfolio_basic_slide_2'])) : ?>
+				  <li><?php print render($content['field_portfolio_basic_slide_3']); ?></li>
+				<?php endif; ?>
+				
+				<?php if (render($content['field_portfolio_basic_slide_3'])) : ?>
+				  <li><?php print render($content['field_portfolio_basic_slide_3']); ?></li>
+				<?php endif; ?>
 			</ul>
 	  </div>
   </div>
@@ -34,7 +36,8 @@ $share_url = $base_url.'/node/'.$node->nid;
 	      hide($content['taxonomy_forums']);
 	      hide($content['comments']);
 	      hide($content['links']);
-	      hide($content['field_basic_portfolio_categories']);
+	      hide($content['field_portfolio_basic_image']);
+	      hide($content['field_portfolio_basic_tags']);
 	      print render($content);
 	    ?>
 	  </div>

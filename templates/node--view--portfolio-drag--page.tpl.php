@@ -1,15 +1,14 @@
 <?php 
   global $root, $base_url; 
-  $tags = render($content['field_basic_portfolio_categories']);
-  $tags = str_replace(',', '/',$tags);
-  $tags_big = str_replace('/', '<br/>',$tags);
+  $tags = render($content['field_portfolio_basic_tags']);
+  $tags = str_replace(',', ' /',$tags);
 ?>
   
   <div class="greyvertical midtopmargin item leftpadding rightpadding">
-    <?php print render($content['field_basic_portfolio_image']); ?>
+    <?php print render($content['field_portfolio_basic_image']); ?>
     
     <h5 class="whitetext extrabold icon-circle-arrow-right smalltoppadding">&nbsp; <?php print $title; ?></h5>
-		<h6 class="whitetext leftpadding"><?php echo $tags; ?></h6>
+		<h6 class="whitetext leftpadding"><?php echo $tags; ?></h6><br>
 	
 			<?php
       // Hide comments, tags, and links now so that we can render them later.
