@@ -3467,6 +3467,10 @@ margin-left: 80px !important;
 	margin-bottom: 10px;
 }
 
+footer form .field {
+margin-bottom: -5px;
+}
+
 /* Start: Recommended Isotope styles */
 
 #filters {
