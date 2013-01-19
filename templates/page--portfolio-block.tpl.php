@@ -8,5 +8,6 @@
     <?php print render($page['content']); ?>
         
  </div>
+ <div style="clear:both"></div>
  
 <?php montreal_footer($page);?>
