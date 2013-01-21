@@ -20,7 +20,7 @@ function montreal_header($page){
       	<div class="eight columns"> 
           <div id="nav">
             <!-- begin menu -->
-           <nav id="navigationmain" class="navbar">
+           <nav id="navigationmain">
              
              
 				          <?php print theme('links__system_main_menu', array(

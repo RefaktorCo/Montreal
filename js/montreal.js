@@ -12,7 +12,7 @@
     
     $('.post_meta a').addClass('smallfont greytext');
     
-    $('#navigationmain ul').removeClass('menu');
+    $('.menu_wrap ul').addClass('menu');
     
     $('.dropdown ul').each(function(){
       $(this).add( $(this).next() ).wrapAll('<div class="dropdown"></div>');
