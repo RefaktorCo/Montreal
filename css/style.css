@@ -3520,8 +3520,16 @@ footer form .field {
 margin-bottom: -5px;
 }
 
+.node_title {
+text-transform: uppercase;
+}
+
 .mobile-menu{
 display: none;
+}
+
+.post_meta {
+text-transform: uppercase;
 }
 
 @media screen and (max-width: 1024px) { 

@@ -11,7 +11,7 @@ $share_url = $base_url.'/node/'.$node->nid;
   <?php if ($user_picture || $display_submitted || !$page): ?>
     <?php print render($title_prefix); ?>
 
-      <h4 class="blacktext light"<?php print $title_attributes; ?>><?php print $title; ?></h4>
+      <h4 class="blacktext light node_title"<?php print $title_attributes; ?>><?php print $title; ?></h4>
       
     <?php print render($title_suffix); ?>
   
