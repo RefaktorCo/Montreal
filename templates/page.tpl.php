@@ -7,8 +7,7 @@
     <div class="container white">      
     <div class="row">
       <div class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
-        <div id="main_content">
-          <?php print render($title_prefix); ?>
+                 <?php print render($title_prefix); ?>
           <?php print render($title_suffix); ?>
          	 
          	 <?php if ($tabs = render($tabs)): ?>
@@ -24,7 +23,7 @@
 		      <?php endif; ?>
          	
          	<?php print render($page['content']); ?>
-        </div>
+      
       </div>
   
       <?php if (theme_get_setting('page_layout') == 'sidebar_right'): ?>
