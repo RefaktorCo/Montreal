@@ -15,6 +15,7 @@ scripts[] = js/gumby.js
 scripts[] = js/modernizr-2.0.6.min.js
 
 scripts[] = js/mobile-map.js
+scripts[] = js/mobile-menu.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/easing.js
 scripts[] = js/plugins.js

@@ -16,7 +16,7 @@
     
     $('.dropdown ul').removeClass('menu');
     
-    $('#navigationmain ul.menu').attr('id', 'menu');
+    $('#navigationmain').mobileMenu();
     
         
     $(window).load(function(){
