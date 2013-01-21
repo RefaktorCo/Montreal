@@ -15,7 +15,7 @@
     $('.menu_wrap ul').addClass('menu');
     
     $('.dropdown ul').each(function(){
-      $(this).add( $(this).next() ).wrapAll('<div class="dropdown"></div>');
+      $(this).add( $(this).next() ).wrapAll('<div class="dropdown dropdown_wrap"></div>');
     })
         
     $(window).load(function(){
