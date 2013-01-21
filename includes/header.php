@@ -21,7 +21,7 @@ function montreal_header($page){
           <div id="nav">
             <!-- begin menu -->
            <nav id="navigationmain" class="navbar">
-             <a href="#" class="toggle" data-for=".navbar > ul"><img src="<?php echo $root; ?>/img/icon_nav_toggle.gif" /></a>
+             
              
 				          <?php print theme('links__system_main_menu', array(
 				            'attributes' => array(
