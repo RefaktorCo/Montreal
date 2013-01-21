@@ -105,12 +105,3 @@ return (true); /// means selected
 		$("a[rel^='prettyPhoto']").prettyPhoto();
 	});
 
- 
-// navivation 
-
-
-selectnav('menu', {
-  label: '### Table of content ### ',
-  nested: true,
-  indent: '-'
-});
