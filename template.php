@@ -28,7 +28,7 @@ function montreal_menu_link(array $variables) {
   
   
   if ($element['#below']) {
-    $element['#attributes']['class'][] = 'has-dropdown';
+    $element['#attributes']['class'][] = 'dropdown';
   }
   
   if ($element['#href'] == '<front>' && drupal_is_front_page()) {

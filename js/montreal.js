@@ -12,7 +12,7 @@
     
     $('.post_meta a').addClass('smallfont greytext');
     
-    $('.menu_wrap ul').addClass('menu');
+    $('#navigationmain ul').removeClass('menu');
         
     $(window).load(function(){
      
