@@ -3527,11 +3527,31 @@ display: none;
 @media screen and (max-width: 1024px) { 
 	.mobile-menu {
 	display: block;  
+	padding: 10px;
+	background-color: #fff;
+	font-family: inherit;
+	width: 100%;
+	border-radius: 4px;
+	text-shadow: 0 1px 1px white;
+	font-family: inherit;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	}
 	  
 	#navigationmain {
 	display: none;  
 	}
+}
+
+@media screen and (max-width: 767px) { 
+  header {
+  height: 100px !important;
+  }
+  .mobile-menu {
+	margin-top: -15px !important;
+  }
 }
 
 
