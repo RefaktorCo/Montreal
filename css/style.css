@@ -848,7 +848,7 @@ transition: ease-in-out .2s;
 .dropdown_wrap ul:before{
 content: '' !important;
 display: block !important;
-border-color: transparent transparent #000 transparent !important;
+border-color: transparent transparent #fff transparent !important;
 border-style: solid !important;
 border-width: 10px !important;
 position: absolute !important;
