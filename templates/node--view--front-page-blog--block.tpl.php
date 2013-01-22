@@ -3,8 +3,6 @@ global $root, $base_url;
 $share_url = $base_url.'/node/'.$node->nid;
 ?>
 
-
-	
 	<article class="row blog white">
 	  <div class="eight columns centered">
       <a href="<?php print $node_url;?>" title="Read Note"><h4 class="blacktext italic center"><?php print $title; ?></h4></a>
@@ -13,7 +11,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 			  <i class="greytext icon-user"></i><span class="smallfont greytext"> by <?php print $name; ?></span> &nbsp; &nbsp;
 				<i class="greytext icon-time"></i><span class="smallfont greytext"> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></span> &nbsp; &nbsp;
 				<i class="greytext icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a>&nbsp; &nbsp; 
-				<?php if ($field_tags):?>
+				<?php if (render($content['field_tags'])): ?>
 				<i class="greytext icon-folder-open"></i><?php print render($content['field_tags']); ?>
 			  <?php endif; ?>
 			</p>

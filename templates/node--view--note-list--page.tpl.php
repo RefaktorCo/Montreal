@@ -28,19 +28,10 @@ $share_url = $base_url.'/node/'.$node->nid;
 			  &nbsp; &nbsp; <i class="greytext icon-link"></i>
 			  <a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
 			</p>
-    
-      
-             
+        
    <?php endif; ?>
-   
 
-
- 
   <?php endif; ?>
-  
-  
-
-
 
   <?php print render($content['comments']); ?>
 

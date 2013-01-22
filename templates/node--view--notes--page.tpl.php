@@ -25,15 +25,10 @@ $share_url = $base_url.'/node/'.$node->nid;
 				<?php if ($field_tags):?>
 				<i class="greytext icon-folder-open"></i><?php print render($content['field_tags']); ?>
 			  <?php endif; ?>
-			</p>
-    
-      
+			</p> 
              
    <?php endif; ?>
-   
 
-
- 
   <?php endif; ?>
   
   <div class="article_content"<?php print $content_attributes; ?>>
@@ -47,7 +42,6 @@ $share_url = $base_url.'/node/'.$node->nid;
       print render($content);
     ?>
   </div>
-  
     
   	<?php if($teaser): ?>
   	<p class="meta">
@@ -62,11 +56,6 @@ $share_url = $base_url.'/node/'.$node->nid;
        <?php print render($content['field_image']); ?> 
 	</div>
   
- 
-
-
-
-
   <?php print render($content['comments']); ?>
 
 <?php if (!$page): ?>

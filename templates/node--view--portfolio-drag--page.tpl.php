@@ -20,7 +20,6 @@
       print render($content);
     ?>
 		
-		
 	  <a href="<?php print $node_url;?>" class="whitetext smallfont leftpadding">VIEW PROJECT</a>
 	
 	</div>

@@ -39,7 +39,7 @@
  
   	  Forum category:<?php print render($content['taxonomy_forums']); ?>
  
-    <?php if ($field_tags):?>
+    <?php if (render($content['field_tags'])): ?>
       <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
     <?php endif; ?>
     

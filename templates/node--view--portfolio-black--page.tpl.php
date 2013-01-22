@@ -6,8 +6,6 @@
   $tags_big = str_replace(',', '<br>',$tags_big);
 ?>
 
-
-  
   <div class="six columns griditem ">
     <?php print render($content['field_portfolio_basic_image']); ?>
     <a href="<?php print $node_url;?>">
@@ -22,4 +20,3 @@
 		</div>
 		</a>
 	</div>
-	
