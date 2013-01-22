@@ -1,6 +1,6 @@
 <?php montreal_header($page);?>
   
- <!-- STRIPES BACKGROUND -->
+<!-- STRIPES BACKGROUND -->
 <div class="bigpadding_back">
 </div>
  

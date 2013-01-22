@@ -4,8 +4,8 @@
 <div class="bigpadding_back">
 </div>
           
-  <div class="row">
-    <div id ="main_content_wrap" class="twelve columns">
+     <div class="container white">      
+    <div class="row">
       <div id="main_content">
         <div class="error_wrap">
           <div class="error_img">

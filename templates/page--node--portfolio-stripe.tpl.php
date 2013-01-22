@@ -18,4 +18,3 @@
   </div>
 	          
 <?php montreal_footer($page);?>
-  
