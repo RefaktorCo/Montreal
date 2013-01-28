@@ -21,7 +21,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 				<?php endif; ?>
 			</ul>
 	  </div>
-  </div><?php print render($content['field_portfolio_basic_banner']); ?>
+  </div>
 
   <!-- RIGHT SIDE -->
 	<div class="four columns">
@@ -48,6 +48,3 @@ $share_url = $base_url.'/node/'.$node->nid;
 	  <?php endif; ?>
 	</div>
 	
-	<style type="text/css">
-	  #basic_banner {background-image:url(<?php echo file_create_url($node->field_portfolio_basic_banner['und'][0]['uri']); ?>) !important;}
-	</style>
