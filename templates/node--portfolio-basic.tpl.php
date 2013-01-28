@@ -13,7 +13,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 				<?php endif; ?>
 				
 				<?php if (render($content['field_portfolio_basic_slide_2'])) : ?>
-				  <li><?php print render($content['field_portfolio_basic_slide_3']); ?></li>
+				  <li><?php print render($content['field_portfolio_basic_slide_2']); ?></li>
 				<?php endif; ?>
 				
 				<?php if (render($content['field_portfolio_basic_slide_3'])) : ?>
@@ -21,7 +21,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 				<?php endif; ?>
 			</ul>
 	  </div>
-  </div>
+  </div><?php print render($content['field_portfolio_basic_banner']); ?>
 
   <!-- RIGHT SIDE -->
 	<div class="four columns">
@@ -38,6 +38,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 	      hide($content['links']);
 	      hide($content['field_portfolio_basic_image']);
 	      hide($content['field_portfolio_basic_tags']);
+	      hide($content['field_portfolio_basic_banner']);
 	      print render($content);
 	    ?>
 	  </div>
@@ -46,3 +47,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 	  </article> <!-- /.node -->
 	  <?php endif; ?>
 	</div>
+	
+	<style type="text/css">
+	  #basic_banner {background-image:url(<?php echo file_create_url($node->field_portfolio_basic_banner['und'][0]['uri']); ?>) !important;}
+	</style>
