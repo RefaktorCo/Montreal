@@ -1,13 +1,10 @@
 <?php 
 	global $root; 
 	$banner_image = file_create_url($node->field_portfolio_basic_banner['und'][0]['uri']); 
-	$check_banner = $node->field_portfolio_basic_banner['und'][0];
-	
-montreal_header($page); 
-
+	montreal_header($page); 
 ?>
 
-  <?php if ($check_banner == "") : ?>
+  <?php if ($node->field_portfolio_basic_banner['und'][0] == "") : ?>
   <div id="basic_banner" class="container bigtoppadding midtoppadding" style="background:url(<?php echo $root; ?>/img/stripes.png);">
 	  <section class="row midbottompadding bigtoppadding">
 		  <h2 class="black whitetext bold leftpadding rightpadding"><?php print $title; ?></h2>
@@ -15,7 +12,7 @@ montreal_header($page);
   </div>   
   <?php endif; ?>
   
-  <?php if ($check_banner != "") : ?>
+  <?php if ($node->field_portfolio_basic_banner['und'][0] != "") : ?>
   <div class="container bigpadding" style="background:url(<?php echo $banner_image; ?>);background-position:center;">
 	  <section class="row largetoppadding bigbottompadding">
 	    <h2 class="whitetext bold midbottommargin center"><?php print $title; ?></h2>
@@ -24,7 +21,6 @@ montreal_header($page);
   </div>
   <?php endif; ?>
   
-
   <div class="container white bigpadding">
 	  <section class="row">      
   

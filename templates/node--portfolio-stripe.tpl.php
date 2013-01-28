@@ -1,9 +1,4 @@
-<?php 
-global $root, $base_url;
-$share_url = $base_url.'/node/'.$node->nid;
-?>
-	
-	<!-- LEFT SLIDER -->
+  <!-- LEFT SLIDER -->
 	<div class="eight columns blackvertical">
 		<div class="flexslider">
 			<!-- SLIDES -->
