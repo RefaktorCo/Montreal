@@ -1,11 +1,11 @@
-<?php montreal_header($page);?>
+<?php global $root; montreal_header($page);?>
   
 <!-- STRIPES BACKGROUND -->
-<div class="bigpadding_back">
-</div>
+<div class="container" style="background:url(<?php echo $root; ?>/img/stripes.png);">
  
-    <div class="container white">      
-    <div class="row">
+  <section class="row white bigpadding">
+
+<section class="row bigtoppadding midbottompadding">
       <div class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
                  <?php print render($title_prefix); ?>
           <?php print render($title_suffix); ?>
@@ -43,7 +43,7 @@
         </div>        
       </div>
       <?php endif; ?>
-    </div>
+</section></section>
     </div>
 <?php print $messages; ?>
   
