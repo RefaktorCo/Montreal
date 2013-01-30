@@ -1,5 +1,15 @@
   jQuery(document).ready(function ($) {
   
+     $(".carousel_item_wrapper").hover(
+      function(){
+          $(this).children(".carousel_item_hover").fadeTo(400,.9).show();
+      },
+      function(){
+          $(this).children(".carousel_item_hover").fadeTo(400,0);
+      }
+    );
+
+  
     $('#sidebar-first .content').after('<div class="twelve columns blackhorizontal midmargin"></div>');
        
     $('.recent_projects_item:first').addClass('alpha');
