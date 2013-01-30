@@ -14,7 +14,7 @@
       </div>
   
 	    <div class="carousel_item_hover">
-		    <p><a href="<?php echo file_create_url($node->field_portfolio_basic_image['und'][0]['uri']); ?>" rel="prettyPhoto[gal]" title="<?php print $title; ?>"><img src="<?php echo $root;?>/images/magnify.png" alt="magnify"></a></p>
+		    <p><a href="<?php echo file_create_url($node->field_portfolio_basic_image['und'][0]['uri']); ?>" rel="prettyPhoto" title="<?php print $title; ?>"><img src="<?php echo $root;?>/images/magnify.png" alt="<?php print $title; ?>"></a></p>
 		  </div>
 	  </div>  
 	  <h5 class="blacktext extrabold smalltoppadding"><a href="<?php print $node_url;?>"><?php print $title; ?></a></h5>

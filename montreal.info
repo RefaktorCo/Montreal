@@ -34,8 +34,6 @@ regions[information]   = Front Page Information
 
 regions[front_blog]    = Front Page Blog
 
-regions[contact_template]  = Contact Template
-
 regions[recent_projects] = Recent Projects
 
 regions[clients]      = Front Page Clients
