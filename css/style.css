@@ -3533,36 +3533,39 @@ text-transform: uppercase;
 }
 
 .carousel_item_wrapper {
-	text-align: center;
-	position: relative;
-	clear: both;
+text-align: center;
+position: relative;
+clear: both;
 }
 
 .carousel_item_content {
-	opacity: 1;
+opacity: 1;
 }
 
 .carousel_item_description {
-	background: #F8F8F8;
-	border-bottom: 1px solid #E8E8E8;
-	margin-bottom: 20px;
-	margin-top: -6px;
-	text-align: center;
-	padding: 1px 0px;
-	position: relative;
+background: #F8F8F8;
+border-bottom: 1px solid #E8E8E8;
+margin-bottom: 20px;
+margin-top: -6px;
+text-align: center;
+padding: 1px 0px;
+position: relative;
 }
 
 .carousel_item_hover {
-	display: block;
-	color: #fff;
-	opacity: 0;
-	height: 100%;
-	width: 100%;
-	top: 0%;
-	position: absolute;
-	
-	background: #999;
+display: block;
+color: #fff;
+opacity: 0;
+height: 100%;
+width: 100%;
+top: 0%;
+position: absolute;
+background: #999;
+}
 
+.carousel_item_hover p {
+text-align: center;
+padding-top: 66px;
 }
 
 
