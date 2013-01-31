@@ -621,6 +621,7 @@ padding-left:0px;
 
 .tabs ul {
 border-bottom: 1px solid #111 !important;
+padding-bottom: 1px;
 }
 
 .tabs li a {
