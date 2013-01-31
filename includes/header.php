@@ -1,5 +1,5 @@
 <?php 
-function montreal_header($page){
+  function montreal_header($page){
   global $root; 
 ?>
 
@@ -20,34 +20,29 @@ function montreal_header($page){
       	<div class="eight columns"> 
           <div id="nav">
             <!-- begin menu -->
-           <nav id="navigationmain">
-             
-             
-				          <?php print theme('links__system_main_menu', array(
-				            'attributes' => array(
-				              'id' => 'main-menu-links',
-				              'class' => array('links', 'clearfix'),
-				            ),
-				            'heading' => array(
-				              'text' => t('Main menu'),
-				              'level' => 'h2',
-				              'class' => array('element-invisible'),
-				            ),
-				          )); 
-				          ?>
+            <nav id="navigationmain">
             
-             </nav>
-				      </div> 
-				        
-				    </div> 
+		          <?php print theme('links__system_main_menu', array(
+		            'attributes' => array(
+		              'id' => 'main-menu-links',
+		              'class' => array('links', 'clearfix'),
+		            ),
+		            'heading' => array(
+		              'text' => t('Main menu'),
+		              'level' => 'h2',
+		              'class' => array('element-invisible'),
+		            ),
+		          )); 
+		          ?>
+            
+            </nav>
+				  </div>    
+				</div> 
 				 
-            <!-- end menu -->   
-          </section> 
-        </div>
-        <!-- end main span2 -->  
-       
-       <?php //(used for demo only) montreal_style_switch(); ?>
-          
+      <!-- end menu -->   
+      </section> 
+    </div>
+    <!-- end main span2 -->            
   </header> 
  
 <?php }
