@@ -199,9 +199,19 @@ function montreal_preprocess_html(&$vars){
       'type' => 'text/css',
     ),
   );
-  $gumby = array(
+  $ui = array(
     '#tag' => 'link', 
     '#weight' => 6,
+    '#attributes' => array( 
+      'href' => ''.$root.'/css/ui.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
+  );
+  $gumby = array(
+    '#tag' => 'link', 
+    '#weight' => 7,
     '#attributes' => array( 
       'href' => ''.$root.'/css/gumby.css', 
       'rel' => 'stylesheet',
@@ -296,6 +306,7 @@ function montreal_preprocess_html(&$vars){
 
   //drupal_add_html_head( $font, 'google_font_open_sans' );
   //drupal_add_html_head( $condensed, 'google_font_condensed' );
+  drupal_add_html_head( $ui, 'ui_style' );
   drupal_add_html_head( $gumby, 'gumby_style' );
   drupal_add_html_head( $style, 'main_style' );
   //drupal_add_html_head( $color, 'color_style' );

@@ -5,7 +5,6 @@ engine = phptemplate
 
 stylesheets[all][] = /css/text.css
 stylesheets[all][] = /css/imports.css
-stylesheets[all][] = /css/ui.css
 stylesheets[all][] = /css/ie.css
 scripts[] = js/jquery.js
 scripts[] = js/jquery-ui-1.8.23.custom.min.js
@@ -21,8 +20,6 @@ scripts[] = js/easing.js
 scripts[] = js/plugins.js
 scripts[] = js/main.js
 scripts[] = js/montreal.js
-
-scripts[] = js/style_switch.js
 
 regions[content]        = Content
 regions[sidebar_first]  = First Sidebar
