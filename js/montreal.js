@@ -19,7 +19,7 @@
        
     $('.recent_projects .front_portfolio_basic_item:first').addClass('alpha');
     
-    $('.portfolio_basic_item:nth-child(3n+1)').addClass('alpha');
+    $('.portfolio_item .portfolio_basic_item:nth-child(3n+1)').addClass('alpha');
     
     $('.greyvertical p').addClass('meta leftpadding smalltoppadding');
     
