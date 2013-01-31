@@ -4,7 +4,7 @@
 	$tags = str_replace(',', ' /',$tags);
 ?>
 
-<div class="item four columns portfolio_basic_item">
+<div class="item four columns front_portfolio_basic_item">
 
   <div class="carousel_item_wrapper"> 
     <div class="carousel_item_content">

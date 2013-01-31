@@ -17,7 +17,7 @@
   
     $('#sidebar-first .content').after('<div class="twelve columns blackhorizontal midmargin"></div>');
        
-    $('.recent_projects_item:first').addClass('alpha');
+    $('.recent_projects .front_portfolio_basic_item:first').addClass('alpha');
     
     $('.portfolio_basic_item:nth-child(3n+1)').addClass('alpha');
     

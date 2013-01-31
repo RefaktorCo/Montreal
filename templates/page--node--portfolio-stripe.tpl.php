@@ -21,6 +21,21 @@
 </div>
 <?php endif; ?>
 
+<?php if ($tabs = render($tabs)): ?>
+  <div class="container white midpadding">
+    <div class="row">
+	    <div id="drupal_tabs" class="tabs midtoppadding">
+	      <?php print render($tabs); ?>
+	    </div>
+    </div>
+  </div>
+<?php endif; ?>
+<?php print render($page['help']); ?>
+<?php if ($action_links): ?>
+  <ul class="action-links">
+    <?php print render($action_links); ?>
+  </ul>
+<?php endif; ?>
 
 <div class="container white bigpadding">
   <section class="row">      
