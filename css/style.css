@@ -3596,13 +3596,22 @@ input[type="text"]{
 height: 35px;
 border: 1px solid black;
 font-size: 14px;
-width: 98%;
+width: 330px;
 padding-left: 5px;	
+}
+
+#project_planner input[type="text"]{
+width: 98%;
 }
 
 .white form textarea {
 border: 1px solid black;
 font-size: 14px;
+}
+
+.blacktext a {
+color: #111;
+text-transform: uppercase;
 }
 
 input[type="submit"]{

@@ -44,14 +44,7 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'fieldset',
     '#title' => 'General',
   );
-  
-    // Breadcrumbs
-    $form['options']['general']['breadcrumbs'] = array(
-      '#type' => 'checkbox',
-      '#title' => 'Breadcrumbs',
-      '#default_value' => theme_get_setting('breadcrumbs'),
-    );
-        
+          
     // SEO
     $form['options']['general']['seo'] = array(
       '#type' => 'fieldset',
@@ -364,36 +357,18 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'fieldset',
     '#title' => 'Layout',
   );
-  
-     // Enable boxed layout
-      $form['options']['layout']['enable_boxed_layout'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable boxed layout',
-        '#default_value' => theme_get_setting('enable_boxed_layout'),
-      );
-          
+            
     // Page Layout
     $form['options']['layout']['page_layout'] = array(
       '#type' => 'radios',
-      '#title' => 'Select a page layout:',
+      '#title' => 'Select a basic page layout:',
       '#default_value' => theme_get_setting('page_layout'),
       '#options' => array(
         'sidebar_right' => 'Sidebar Right',
         'full_width' => 'Full Width',
       ),
     );
-    
-    // Blog Layout
-    $form['options']['layout']['blog_layout'] = array(
-      '#type' => 'radios',
-      '#title' => 'Select a blog layout:',
-      '#default_value' => theme_get_setting('blog_layout'),
-      '#options' => array(
-        'sidebar_right' => 'Sidebar Right',
-        'full_width' => 'Full Width',
-      ),
-    );
-   
+       
   // Design
   $form['options']['design'] = array(
     '#type' => 'fieldset',

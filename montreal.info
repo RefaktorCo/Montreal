@@ -41,8 +41,6 @@ regions[footer_3]       = Footer Box 3
 regions[footer_4]       = Footer Box 4
 regions[footer_full]    = Footer Full Width
 
-settings[breadcrumbs] = '1'
-
 settings[branding_type] = 'text'
 
 settings[enable_highlight] = '1'
