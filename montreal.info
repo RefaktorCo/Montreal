@@ -63,21 +63,6 @@ settings[recent_posts_title] = 'Our Recent Notes'
 settings[enable_recent_projects] = '0'
 settings[recent_projects_title] = 'Recent Projects'
 
-settings[enable_clients] = '1'
-settings[clients_title] = 'Our Clients'
-
-settings[color_scheme] = 'red'
-
-settings[body_background] ='#ECECEC'
-settings[enable_background_pattern] = '0'
-settings[background_select] = 'retina_wood'
-
-settings[main_wrapper_background] ='#FFF'
-settings[enable_main_wrapper_pattern] = '1'
-settings[main_wrapper_pattern_select] = 'subtle_dots'
-
-settings[enable_boxed_layout] = '0'
-
 settings[page_layout] = 'full_width'
 settings[blog_layout] = 'sidebar_right'
 
@@ -91,15 +76,6 @@ settings[h5] = '14px'
 settings[h6] = '12px'
 
 settings[enable_primary_footer] = '1'
-
-settings[twitter_icon] = '1'
-settings[facebook_icon] = '1'
-settings[rss_icon] = '1'
-settings[google_plus_icon] = '1'
-settings[pinterest_icon] = '0'
-settings[linkedin_icon] = '0'
-settings[flickr_icon] = '0'
-settings[youtube_icon] = '0'
 
 settings[enable_secondary_footer] = '1'
 settings[secondary_footer_text] = 'Design by <a href="http://refaktor.co" target="_blank">Refaktor</a>'

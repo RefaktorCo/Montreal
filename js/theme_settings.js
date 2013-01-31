@@ -112,6 +112,13 @@ jQuery(document).ready(function ($) {
 	$('#edit-css .plus').toggleClass('minus');
   });
   
+  $("#edit-twitter-feed .fieldset-wrapper").hide();
+  $("#edit-twitter-feed .fieldset-legend").click(function(){
+	$("#edit-twitter-feed .fieldset-wrapper").slideToggle("slow");
+	$(this).toggleClass("active");
+	$('#edit-twitter-feed .plus').toggleClass('minus');
+  });
+  
   $("#edit-font .fieldset-wrapper").hide();
   $("#edit-font .fieldset-legend").click(function(){
 	$("#edit-font .fieldset-wrapper").slideToggle("slow");
