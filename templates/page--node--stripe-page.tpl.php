@@ -7,7 +7,7 @@
     <div class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "eight columns"; } else { echo "twelve columns"; } ?>">
 
     <?php if ($tabs = render($tabs)): ?>
-			<div id="drupal_tabs" class="tabs">
+			<div id="drupal_tabs" class="tabs bigpadding">
 			  <?php print render($tabs); ?>
 			</div>
 		<?php endif; ?>
