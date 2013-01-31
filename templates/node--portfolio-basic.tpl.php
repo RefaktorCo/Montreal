@@ -41,5 +41,5 @@
 	  <?php if (!$page): ?>
 	  </article> <!-- /.node -->
 	  <?php endif; ?>
+	  
 	</div>
-	

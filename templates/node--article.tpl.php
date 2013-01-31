@@ -1,22 +1,18 @@
 <?php 
 global $root, $base_url;
-$share_url = $base_url.'/node/'.$node->nid;
 ?>
 
 <?php if (!$page): ?>
-  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
 <?php endif; ?>
     
-
   <?php if ($user_picture || $display_submitted || !$page): ?>
+  
     <?php print render($title_prefix); ?>
-
-      <h2 class="blacktext bold node_title"<?php print $title_attributes; ?>><?php print $title; ?></h2>
-      
+    <h2 class="blacktext bold node_title"<?php print $title_attributes; ?>><?php print $title; ?></h2>
     <?php print render($title_suffix); ?>
   
     <?php if ($display_submitted): ?>
-    
       <!-- POST META -->
 			<p class="post_meta">
 			  <i class="greytext icon-user"></i><span class="smallfont greytext"> by <?php print $name; ?></span> &nbsp; &nbsp;
@@ -25,19 +21,13 @@ $share_url = $base_url.'/node/'.$node->nid;
 				<?php if (render($content['field_tags'])): ?>
 				<i class="greytext icon-folder-open"></i><?php print render($content['field_tags']); ?>
 			  <?php endif; ?>
-			</p>
-    
-      
-             
-   <?php endif; ?>
+			</p>         
+    <?php endif; ?>
    
-  <?php print render($content['field_image']); ?> 
-
- 
-  <?php endif; ?>
-  
+    <?php print render($content['field_image']); ?> 
     
-  
+  <?php endif; ?>
+    
   <div class="article_content"<?php print $content_attributes; ?>>
     <?php
       // Hide comments, tags, and links now so that we can render them later.
@@ -49,20 +39,16 @@ $share_url = $base_url.'/node/'.$node->nid;
       print render($content);
     ?>
   </div>
-  
-    
-  	<?php if($teaser): ?>
-  	<p class="meta">
-  	  <i class="greytext icon-link"></i>
-			<a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
-  	</p>
-    <?php endif;?>
-
-   
-   <!--POST IMAGE -->
+ 
+	<?php if($teaser): ?>
+	<p class="meta">
+	  <i class="greytext icon-link"></i>
+		<a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
+	</p>
+  <?php endif;?>
 
   <?php print render($content['comments']); ?>
 
 <?php if (!$page): ?>
-  </article> <!-- /.node -->
+</article> <!-- /.node -->
 <?php endif; ?>
