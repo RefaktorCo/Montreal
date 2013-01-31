@@ -1,10 +1,5 @@
-<?php 
-global $root, $base_url;
-$share_url = $base_url.'/node/'.$node->nid;
-?>
-
 <?php if (!$page): ?>
-  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
 <?php endif; ?>
       
   <div class="article_content"<?php print $content_attributes; ?>>
@@ -18,20 +13,16 @@ $share_url = $base_url.'/node/'.$node->nid;
       print render($content);
     ?>
   </div>
-  
     
-  	<?php if($teaser): ?>
+  <?php if($teaser): ?>
   	<p class="meta">
   	  <i class="greytext icon-link"></i>
 			<a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
   	</p>
-    <?php endif;?>
-
-   
-   <!--POST IMAGE -->
+  <?php endif;?>
 
   <?php print render($content['comments']); ?>
 
 <?php if (!$page): ?>
-  </article> <!-- /.node -->
+</article> <!-- /.node -->
 <?php endif; ?>

@@ -1,18 +1,13 @@
-<?php 
-global $root, $base_url;
-$share_url = $base_url.'/node/'.$node->nid;
-?>
-
 <?php if (!$page): ?>
-  <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix row blog white"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix row blog white"<?php print $attributes; ?>>
 <?php endif; ?>
-    <div class="eight columns centered">
+  
+  <div class="eight columns centered">
 
   <?php if ($user_picture || $display_submitted || !$page): ?>
+  
     <?php print render($title_prefix); ?>
-
-      <h4 class="blacktext italic center"<?php print $title_attributes; ?>><?php print $title; ?></h4>
-      
+    <h4 class="blacktext italic center"<?php print $title_attributes; ?>><?php print $title; ?></h4>
     <?php print render($title_suffix); ?>
   
     <?php if ($display_submitted): ?>
@@ -29,12 +24,12 @@ $share_url = $base_url.'/node/'.$node->nid;
 			  <a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
 			</p>
         
-   <?php endif; ?>
+    <?php endif; ?>
 
   <?php endif; ?>
-
-  <?php print render($content['comments']); ?>
+  
+  </div>
 
 <?php if (!$page): ?>
-  </article> <!-- /.node -->
+ </article> <!-- /.node -->
 <?php endif; ?>
