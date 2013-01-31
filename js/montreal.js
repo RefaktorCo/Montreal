@@ -9,6 +9,9 @@
       }
     );
 
+    $('#project_planner .webform-component-textfield').addClass('six columns project_planner_item');
+    
+    $('.project_planner_item:even').addClass('alpha');
   
     $('#sidebar-first .content').after('<div class="twelve columns blackhorizontal midmargin"></div>');
        
