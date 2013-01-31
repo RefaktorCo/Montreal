@@ -1,4 +1,4 @@
-===Haiku Changelog===
+===Montreal Changelog===
 
-1.0 (12/31/12)
+1.0 (02/03/01)
   *Initial release.
