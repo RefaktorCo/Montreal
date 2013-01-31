@@ -368,124 +368,24 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         'full_width' => 'Full Width',
       ),
     );
-       
+    
+    // Blog Layout
+    $form['options']['layout']['blog_layout'] = array(
+      '#type' => 'radios',
+      '#title' => 'Select a blog post (single) layout:',
+      '#default_value' => theme_get_setting('blog_layout'),
+      '#options' => array(
+        'sidebar_right' => 'Sidebar Right',
+        'full_width' => 'Full Width',
+      ),
+    );
+   
   // Design
   $form['options']['design'] = array(
     '#type' => 'fieldset',
     '#title' => 'Design',
   );
   
-   // Colors
-    $form['options']['design']['colors'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Color Scheme</h3>',
-    );
-  
-      // Color Scheme
-      $form['options']['design']['colors']['color_scheme'] = array(
-        '#type' => 'select',
-        '#title' => 'Color Scheme',
-        '#default_value' => theme_get_setting('color_scheme'),
-        '#options' => array(
-          'black' => 'Black',
-          'blue' => 'Blue',
-          'light-blue' => 'light-blue',
-          'green' => 'Green',
-          'yellow' => 'Yellow',
-          'purple' => 'Purple',
-          'orange' => 'Orange',
-          'red' => 'Red (default)',
-        ),
-      );
-      
-    // Background
-    $form['options']['design']['background'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Background</h3>',
-    );
-    
-      // Background Color
-      $form['options']['design']['background']['body_background'] =array(
-        '#type' => 'textfield',
-        '#title' => 'Body background color',
-        '#default_value' => theme_get_setting('body_background'),
-      );    
-      
-     // Enable background pattern
-      $form['options']['design']['background']['enable_background_pattern'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable background pattern',
-        '#default_value' => theme_get_setting('enable_background_pattern'),
-      );
-    
-      // Background
-    $form['options']['design']['background']['background_select'] = array(
-      '#type' => 'radios',
-      '#title' => 'Select a background pattern:',
-      '#default_value' => theme_get_setting('background_select'),
-      '#options' => array(
-        'retina_wood' => 'item',
-        'debut_dark' => 'item',
-        'noisy_grid' => 'item',
-        'dark_wood' => 'item',
-        'cartographer' => 'item',
-        'bedge' => 'item',
-        'illusion' => 'item',
-        'nistri' => 'item',
-      ),
-      
-      '#states' => array (
-          'invisible' => array(
-            'input[name="enable_background_pattern"]' => array('checked' => FALSE)
-          )
-        )
-
-    );  
-    
-    // Background
-    $form['options']['design']['main_wrapper'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Main Wrapper</h3>',
-    );
-    
-      // Background Color
-      $form['options']['design']['main_wrapper']['main_wrapper_background'] =array(
-        '#type' => 'textfield',
-        '#title' => 'Main wrapper background color',
-        '#default_value' => theme_get_setting('main_wrapper_background'),
-      );    
-      
-     // Enable background pattern
-      $form['options']['design']['main_wrapper']['enable_main_wrapper_pattern'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable main wrapper pattern',
-        '#default_value' => theme_get_setting('enable_main_wrapper_pattern'),
-      );
-    
-      // Background
-    $form['options']['design']['main_wrapper']['main_wrapper_pattern_select'] = array(
-      '#type' => 'radios',
-      '#title' => 'Select a main wrapper pattern:',
-      '#default_value' => theme_get_setting('main_wrapper_pattern_select'),
-      '#options' => array(
-        'subtle_dots' => 'item',
-        'debut_light' => 'item',
-        'cream_dust' => 'item',
-        'gray_jean' => 'item',
-        'dust' => 'item',
-        'linen' => 'item',
-        'retina_dust' => 'item',
-        'striped_lens' => 'item',
-      ),
-        '#states' => array (
-          'invisible' => array(
-            'input[name="enable_main_wrapper_pattern"]' => array('checked' => FALSE)
-          )
-        )
-
-    );  
-
-      
     // CSS
     $form['options']['design']['css'] = array(
       '#type' => 'fieldset',
