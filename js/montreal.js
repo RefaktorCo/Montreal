@@ -8,6 +8,8 @@
           $(this).children(".carousel_item_hover").fadeTo(400,0);
       }
     );
+    
+    $().UItoTop({ easingType: 'easeOutQuart' });
 
     $('#project_planner .webform-component-textfield').addClass('six columns project_planner_item');
     
