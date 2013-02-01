@@ -270,6 +270,20 @@ slides : [ // Slideshow Images
 
 <h2>Project Planner</h2>
 
+<p>Montreal utilizes the <a href="http://drupal.org/project/webform">Webform</a> module and a custom template called webform-form.tpl to create the <a href="http://refaktorthemes.com/montreal/project-planner" target="_blank">Project Planner</a> seen on the demo. We will outline step by step below how to recreate this feature if you did not do the full Drupal 7 install:</p>
+
+1. Install and activate the <a href="http://drupal.org/project/webform">Webform</a> module and configure it for use on the Stripe page content type (refer to the Content Types portion of this documentation if you don't already have this content type). <br><br>
+
+2. Navigate to /node/add/stripe-page (refer to the Content Types portion of this documentation if you don't already have this content type), give it a title and copy the contents of /examples/project_planner.php (feel free to modify this to your liking) into the node body. <strong>Hint:</strong> if you haven't already activate the PHP filter module and set the text format to PHP Code. This has less formatting issues than even the Full HTML option. <br><br>
+
+3. After you've saved the initial page content click on the Webform tab and start setting up the form to your liking. If you would like to follow along with the demo settings refer to the image below: <br> <br>
+
+<img src="images/project_planner.png"> <br><br>
+
+4. After you've set up your form you can click through the emails and form settings tabs to configure the behavior of the form to your liking. If you would like to duplicate the functionality on the demo, create a new page called Thank You (use the example code from /examples/thanks.php) and under the form settings tab on your Project Planner page use that page URL in the Redirection location option to redirect users to that page after they fill out the form.
+
+
+
 <h2>Notes (posts)</h2>
 <p>If you plan to have a blog on your site, be sure to read through this portion of the documentation which outlines a couple things to keep in mind. The theme uses a custom page template called page--blog.tpl which is designed to be used with a page titled Blog. If you plan on using a blog with Montreal, it is recommended that your blog page be called "blog" or that you rename this template file accordingly. There is a theme setting which allows you to have a sidebar on the right-hand side of the blog page, or to have it be full width with no sidebar. </p>
 <p>
