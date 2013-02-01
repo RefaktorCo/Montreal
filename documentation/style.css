@@ -1,4 +1,4 @@
-#wrapper{margin:0 20px 0 220px}
+#wrapper{margin:0 20px 0 235px}
 a{color:#369}
 body{font-size:16px;line-height:24px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0}
 article{max-width:944px;margin:auto}
@@ -10,7 +10,7 @@ p,ul{margin-top:0;margin-bottom:24px}
 small,aside{font-size:10px}
 code{word-wrap:break-word}
 .repo-stats iframe{float:right;margin-left:5px}
-#toc{top:0;left:0;height:100%;position:fixed;background:#333;box-shadow:inset -5px 0 5px 0 #000;width:200px;padding-top:20px;color:#fff}
+#toc{top:0;left:0;height:100%;position:fixed;background:#333;box-shadow:inset -5px 0 5px 0 #000;width:215px;padding-top:20px;color:#fff}
 #toc ul{margin:0;padding:0;list-style:none}
 #toc li{padding:5px 10px}
 #toc a{color:#fff;text-decoration:none;display:block}

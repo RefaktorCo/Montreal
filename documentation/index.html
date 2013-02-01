@@ -32,6 +32,7 @@ Option 2:
   <li>Visit yourdomain.com/admin/appearance/</li>
   <li>Scroll down to "DISABLED THEMES" and set and enable Montreal</li>
 </ul>
+
 <h3>Full Drupal Install</h3>
 <p>The following steps are designed for people that have experience manually installing Drupal and importing databases. If you do not feel comfortable performing these steps yourself, contact your server administrator for help. <strong>NOTE</strong> this option is for a completely new Drupal install. Do not import the provided SQL file into an existing Drupal database or you will lose all of your data!</p>
 <ol>
@@ -48,12 +49,25 @@ Option 2:
 <p>Montreal uses the Main Menu. Press "List Links" to access the menu overview. From there you can add/remove links, and set the order.</p>
 <b>NOTE:</b> <p>If you would like to use Montreal's built in drop down menu capability, make sure that the parent menu item (the one that indicates the drop down) has the "show as expanded" checkbox enabled.</p>
 <img src="images/menu-2.png">
-<p>To customize the styling of the menu you can edit the /css/style.css file and the /js/Montreal.js file. The short caption below each menu item is generated with Javascript using the following markup (simply change .menu_1 to whichever menu item you need to add a caption for:</p>
-<pre>$('.menu_1 a').append('&lt;p class=&quot;menu_tagline&quot;&gt;the beginning&lt;/p&gt;');</pre>
 
+<h2>Modules</h2>
+
+<h3>Recommended Modules</h3>
+<p>You can find all of the recommended modules in the full Drupal install that comes with the download files (drupal_7/sites/all/modules) but below is the full list and their URLS:</p>
+<ul>
+<li><a href="http://drupal.org/project/contact_form_blocks">Contact Form Blocks</a></li>
+<li><a href="http://drupal.org/project/ctools">ctools</a></li>
+<li><a href="http://drupal.org/project/devel">Devel</a></li>
+<li><a href="http://drupal.org/project/features">Features</a></li>
+<li><a href="http://drupal.org/project/views">Views</a></li>
+<li><a href="http://drupal.org/project/webform">Webform</a></li>
+</ul>
+
+<h3>Montreal Content Data</h3>
+<p>If you used option 1 to install the theme on an existing install that already has content we recommend you use our Montreal Content Data module to create the additional content types, fields and Views needed to fully utilize the theme. You will find it in the root of the directory that contains the download files. This module is a custom <a href="http://drupal.org/project/features" target="_blank">Features</a> module and will not run without it. We recommend copying all of the modules from the /drupal_7/sites/all/modules folder into your install if you do not already have them. After you have all the modules simply upload and activate the Montreal Content Data module and the content types, fields and Views will automatically be created.</p>
 
 <h2>Theme Settings</h2>
-<p>Montreal includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Montreal theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/Montreal. All options have default values set, but you should go through each one and adjust them to your liking.</p>
+<p>Montreal includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Montreal theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/montreal. All options have default values set, but you should go through each one and adjust them to your liking.</p>
 
 <h2>Front Page</h2>
 <p>By default Montreal uses a custom front page template that features several custom sections including the image slider. All of these sections are fully customizable and can also be disabled. You can use the theme settings to enable/disable any of these sections and set any necessary options. For full control of the front page template you can manually edit /includes/front-page.php</p>
@@ -61,11 +75,22 @@ Option 2:
 <h4>Image Slider</h4>
 
 <p>
-Montreal uses the Supersize slider for the front page to offer the full height sliding images inside the main slider area and inside the highlight section. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. 
+Montreal uses the Supersize slider for the front page to offer the full height sliding images inside the main slider area and inside the highlight section. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. The jQuery call at the bottom of page--front.tpl controls all aspects of the slider, and to call your own images without using the theme settings simply change the "slides" attribute as follows:
+<pre>
+
+slides : [ // Slideshow Images
+	{image : '/path/to/img.jpg'},
+	{image : '/path/to/img.jpg'},  
+	{image : '/path/to/img.jpg'},
+	{image : '/path/to/img.jpg'}
+			
+],
+
+</pre>
 </p>
 
 <h4>Recent Projects</h4>
-<p>The recent projects section is designed to showcase recent portfolio items in a carousel (see the Portfolio section of these docs for instructions on how to set up your portfolio items). This section utilizes a custom view template called node--view--recent-projects--block.tpl to achieve the look and feel seen on the demo. To properly use this section, make sure you have set up some portfolio items as described in the "Portfolio" section of the documentation. Once you have some portfolio items, either create a new view called Recent Projects (machine name must be recent_projects) with the number of portfolio items desired. To import the view used on the demo use the export code found in /includes/views_exports/recent-projects.txt</p>
+<p>The recent projects section is designed to showcase recent portfolio items in a carousel (see the Portfolio section of these docs for instructions on how to set up your portfolio items). This section utilizes a custom view template called node--view--recent-projects--block.tpl to achieve the look and feel seen on the demo. To properly use this section, make sure you have set up some portfolio items as described in the "Portfolio" section of the documentation. Once you have some portfolio items, either create a new view called Recent Projects (machine name must be recent_projects) of Portfolio Basic content (see the Portfolio documentation below for more info) content with an unformatted list of full content or use the Montreal Content Data module found in the root folder of the download files to automatically create all the content data for you.</p>
 
 <h4>Highlight</h4>
 
@@ -74,11 +99,11 @@ Montreal uses the Supersize slider for the front page to offer the full height s
 
 <h4>Recent Posts</h4>
 
-<p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Montreal uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the Montreal Content Data custom Features module to import all the Views and Content data for the theme.</p>
+<p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Montreal uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the Montreal Content Data module found in the root folder of the download files to automatically create all the content data for you.</p>
 
 <h4>Twitter Feed</h4>
 
-<p>This section will display the most recent Tweet for the Twitter handle you specify. Simply use the Twitter Feed option in the theme settings to set the handle.</p>
+<p>This section will display the most recent Tweet for the Twitter handle you specify. Simply use the Twitter Feed option in the theme settings(/admin/appearance/settings/montreal) to set the handle.</p>
 
 
 <h2>Portfolio</h2>
