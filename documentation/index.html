@@ -285,10 +285,24 @@ slides : [ // Slideshow Images
 
 
 <h2>Notes (posts)</h2>
-<p>If you plan to have a blog on your site, be sure to read through this portion of the documentation which outlines a couple things to keep in mind. The theme uses a custom page template called page--blog.tpl which is designed to be used with a page titled Blog. If you plan on using a blog with Montreal, it is recommended that your blog page be called "blog" or that you rename this template file accordingly. There is a theme setting which allows you to have a sidebar on the right-hand side of the blog page, or to have it be full width with no sidebar. </p>
-<p>
-Montreal also comes equipped with the functionality to use a simple image slider within the post (as seen on our demo). To make use of this feature, simply add a new image field to the article content type called second image (machine name: field_second_image). Then simply add a second image to the posts where you want to use the image slider and the theme will take care of the rest. If you want to use more than two images, simply add more image fields and update the /templates/node--article.tpl file in between the div class "featured" starting at line 29. If you look at the template you will see that it calls field_image and field_second_image between the div. Just add the necessary calls to each extra image field you've created.
-</p>
+<p>If you would like to use Article (recommended) or Blog posts on your site Montreal comes equipped with several templates that modify the look and feel of the posts list and single items. The default post page on the demo can be seen <a href="http://refaktorthemes.com/montreal/notes" target="_blank">here</a>, a single post can be seen <a href="http://refaktorthemes.com/montreal/node/9" target="_blank">here</a> and an alternate list format can be seen <a href="http://refaktorthemes.com/montreal/note-list" target="_blank">here.</a> We will cover each template below:</p>
+
+<h4>Default Notes View</h4>
+<p>The default page seen on the demo <a href="http://refaktorthemes.com/montreal/notes" target="_blank">here</a> is a View page. You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/notes.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you. The following theme files are associated with this template:</p>
+<ul>
+<li>/templates/page--notes.tpl</li>
+<li>/templates/node--view--notes--page.tpl</li>
+</ul>
+
+<h4>Note List</h4>
+<p>The <a href="http://refaktorthemes.com/montreal/note-list" target="_blank">Note List</a> is an alternative template for displaying a list of your posts and is also a View page.  You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/note_list.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you. The following theme files are associated with this template:</p>
+<ul>
+<li>/templates/page--notes-list.tpl</li>
+<li>/templates/node--view--notes-list--page.tpl</li>
+</ul>
+
+
+
 <h2>Footer</h2>
 <p>Montreal's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed. If you would like to display the social icons, use the icons heading in the Footer options to select the ones you want to display and enter the necessary URLS. Or you can place a block into the Footer 1 block region to remove the icons and use your own content. </p>
 <p>The secondary footer has a full width block region that can be used, or you can use the text option in the theme settings. By default it displays a credit link but you can change this to whatever you like by either using the option or by using the Footer Full Width block region.</p>
