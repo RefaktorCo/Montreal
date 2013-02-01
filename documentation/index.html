@@ -58,41 +58,64 @@ Option 2:
 <h2>Front Page</h2>
 <p>By default Montreal uses a custom front page template that features several custom sections including the image slider. All of these sections are fully customizable and can also be disabled. You can use the theme settings to enable/disable any of these sections and set any necessary options. For full control of the front page template you can manually edit /includes/front-page.php</p>
 
-<h3>Image Slider</h3>
+<h4>Image Slider</h4>
 
 <p>
 Montreal uses the Supersize slider for the front page to offer the full height sliding images inside the main slider area and inside the highlight section. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. 
 </p>
 
-<h3>Recent Projects</h3>
+<h4>Recent Projects</h4>
 <p>The recent projects section is designed to showcase recent portfolio items in a carousel (see the Portfolio section of these docs for instructions on how to set up your portfolio items). This section utilizes a custom view template called node--view--recent-projects--block.tpl to achieve the look and feel seen on the demo. To properly use this section, make sure you have set up some portfolio items as described in the "Portfolio" section of the documentation. Once you have some portfolio items, either create a new view called Recent Projects (machine name must be recent_projects) with the number of portfolio items desired. To import the view used on the demo use the export code found in /includes/views_exports/recent-projects.txt</p>
 
-<h3>Highlight</h3>
+<h4>Highlight</h4>
 
 <p>The Highlight section allows you to advertise a specific page or aspect of your site and also displays the main slider background in a parallax scrolling effect. The settings for the Highlight section are in the Front Page tab of the theme settings. You can enter your own text and even include HTML.</p>
 
 
-<h3>Recent Posts</h3>
+<h4>Recent Posts</h4>
 
 <p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Montreal uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the Montreal Content Data custom Features module to import all the Views and Content data for the theme.</p>
 
-<h3>Twitter Feed</h3>
+<h4>Twitter Feed</h4>
 
 <p>This section will display the most recent Tweet for the Twitter handle you specify. Simply use the Twitter Feed option in the theme settings to set the handle.</p>
 
 
 <h2>Portfolio</h2>
 <p>This portion of the docs will explain how to set up the portfolio page seen on the theme demo. The only module you will need is the <a href="http://drupal.org/project/views" target="_blank">Views module</a> which is needed to create the list of portfolio items.</p>
-<h3>Custom content type</h3>
+<h4>Custom content type</h4>
 <p>The first step is to create a new content type called <b>Portfolio Item</b>. To create a new content type visit /admin/structure/types and click "add content type". Title the new content type "Portfolio Item" (this is important), enter a brief description and save.</p>
 <p> Next you have to add two custom fields to this content type for the portfolio image and description tags. Press the "manage fields" link under Portfolio Item in the content type overview page and use the "Add new field" option. Enter "Portfolio image" in the label field and select "Image" as the field type. Press save when you are done, and you will now have an image uploader when creating a Portfolio item.  Do the same thing again, only this time use "Portfolio tags" as the label and "Text" as the field type. This field lets you add short tag words like "design" and "branding" to your portfolio items which are used to group sets of items together for use with the filter buttons seen on the demo. Here is what the fields for the "Portfolio Items" content type should look like when you are done:</p>
 <img src="images/portfolio-fields.png">
 <p>Creating a portfolio item is as simple as creating any other content type. Visit /admin/content, click "Add content" and select the new Portfolio Item type you just created. Enter the title, text, upload your image and add your tag or tags (only put a space between each tag, no commas) and press save.</p>
-<h3>Portfolio View</h3>
+<h4>Portfolio View</h4>
 <p>To create a Portfolio page to display all of your portfolio items as seen on our demo, you will need to use the <a href="http://drupal.org/project/views" target="_blank">Views module</a>. Once you have installed the module, visit /admin/structure/views and click "Add new view". Enter "Portfolio" into the view name text field, select Portfolio Item as the content type to pull from, make sure "create page" is checked off to make this a page view and tell it to pull an unformated list of full posts. You should also have it create a Menu link, but you can also do this later using the Menu options. You can also use the code found in /includes/views_exports/portfolio.txt to import the view. Below is what your view should look like when you're done:
 </p>
 <img src="images/portfolio-view.png">
 <p>The final step to completing your portfolio page is to open /templates/page--portfolio.tpl and edit the Isotope filters. Isotope is the jQuery library which easily allows you to group and switch between those groups of portfolio items as seen on the demo. The filters are a simple unordered list of HTML links with a data-option-value for each portfolio tag. You can see from the default values in the template that this will filter the portfolio items by all, photography, design and marketing. Just add a filter item for each of the tags you use for your portfolio items for optimum use. <strong>Note</strong> a future update to the theme will dynamically generate the portfolio item filters. For more information about what you can do with Isotope visit the official page <a href="http://isotope.metafizzy.co/">here</a>.</p>
+
+<h4>Basic</h4>
+
+<h4>Drag</h4>
+
+<h4>Stripe</h4>
+
+<h4>Black/White</h4>
+
+<h4>Block</h4>
+
+<h4>Single Basic</h4>
+
+<h4>Single Wide</h4>
+
+<h2>Page Types</h2>
+
+<h4>Basic</h4>
+
+<h4>Stripe</h4>
+
+<h4>Blank</h4>
+
 <h2>Blog</h2>
 <p>If you plan to have a blog on your site, be sure to read through this portion of the documentation which outlines a couple things to keep in mind. The theme uses a custom page template called page--blog.tpl which is designed to be used with a page titled Blog. If you plan on using a blog with Montreal, it is recommended that your blog page be called "blog" or that you rename this template file accordingly. There is a theme setting which allows you to have a sidebar on the right-hand side of the blog page, or to have it be full width with no sidebar. </p>
 <p>
