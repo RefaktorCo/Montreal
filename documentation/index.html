@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Haiku Documentation</title>
+<title>Montreal Documentation</title>
 <link href="http://fonts.googleapis.com/css?family=Voces" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="style.css"/>
 <script src="jquery.js"></script>
@@ -15,29 +15,29 @@
 
 <div id="wrapper">
 <h2>Overview</h2>
-<p>A minimalistic Drupal 7 theme powered by <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation 3</a> and <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>. Haiku features a fully responsive design, easy to use theme settings and follows Drupal coding standards. For theme support that cannot be found in this documentation, please visit our <a href="http://refaktor.co/support"> support forum</a>. Once you have registered please contact us via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a> with your forum username so you can be granted posting rights.</p>
+<p>A minimalistic Drupal 7 theme powered by <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation 3</a> and <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>. Montreal features a fully responsive design, easy to use theme settings and follows Drupal coding standards. For theme support that cannot be found in this documentation, please visit our <a href="http://refaktor.co/support"> support forum</a>. Once you have registered please contact us via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a> with your forum username so you can be granted posting rights.</p>
 <p>Updated: 12/12/12<br>Author: <a href="http://refaktor.co" target="_blank">Refaktor</a><br>Email: <a href="mailto:refaktor.co@gmail.com">refaktor.co@gmail.com</a><br>Docs powered by: <a href="https://github.com/jgallen23/toc" target="_blank">TOC</a></p>
 <h2>Installation</h2>
-<p>There are several ways Haiku can be installed. For existing sites that already have content, the first method will only involve the installation and activation of the theme. The second option includes a full Drupal 7 install with the same SQL database file used to create the theme demo. Please choose which installation method works best for you and follow the instructions.
+<p>There are several ways Montreal can be installed. For existing sites that already have content, the first method will only involve the installation and activation of the theme. The second option includes a full Drupal 7 install with the same SQL database file used to create the theme demo. Please choose which installation method works best for you and follow the instructions.
 <h3>Theme Only</h3>
 Option 1:
 <ul>
   <li>Visit yourdomain.com/admin/appearance/install</li>
-  <li>Upload the Haiku.zip file</li>
+  <li>Upload the Montreal.zip file</li>
   <li>Enable and set to default</li>
 </ul>
 Option 2:
 <ul>
-  <li>Extract the Haiku.zip file and upload via FTP to /sites/all/themes</li>
+  <li>Extract the Montreal.zip file and upload via FTP to /sites/all/themes</li>
   <li>Visit yourdomain.com/admin/appearance/</li>
-  <li>Scroll down to "DISABLED THEMES" and set and enable Haiku</li>
+  <li>Scroll down to "DISABLED THEMES" and set and enable Montreal</li>
 </ul>
 <h3>Full Drupal Install</h3>
 <p>The following steps are designed for people that have experience manually installing Drupal and importing databases. If you do not feel comfortable performing these steps yourself, contact your server administrator for help. <strong>NOTE</strong> this option is for a completely new Drupal install. Do not import the provided SQL file into an existing Drupal database or you will lose all of your data!</p>
 <ol>
 <li>Create a database for this installation of Drupal and import the SQL file that came with the theme.</li>
 <li>Follow <a href="http://drupal.org/documentation/install/settings-file" target="_blank"> these directions</a> to create the settings.php file. Save this file somewhere so you can copy it over to the Drupal installation we have provided.</li>
-<li>Copy the entire contents of the Drupal_7 folder to the location on your web server where you want your site to be accessed. If you want your primary domain to point to your install of Haiku, copy everything to the root folder. If you want your site to be accessed as a subsection of your domain (for example: yourdomain.com/drupal) then simply rename the Drupal_7 folder to the desired name and upload to the root of your server. Also be sure to copy over the settings.php file mentioned in the previous step</li>
+<li>Copy the entire contents of the Drupal_7 folder to the location on your web server where you want your site to be accessed. If you want your primary domain to point to your install of Montreal, copy everything to the root folder. If you want your site to be accessed as a subsection of your domain (for example: yourdomain.com/drupal) then simply rename the Drupal_7 folder to the desired name and upload to the root of your server. Also be sure to copy over the settings.php file mentioned in the previous step</li>
 <li>Login to your site with the username <strong>Steve</strong> and the password <strong>admin</strong> and visit /admin/people to change the admin username and password. The passwords for the three test users are the username and 1234, example: Frank1234 </li>
 <li>Go through the Drupal configuration found in /admin/config options and update all the necessary information to reflect your website. Also be sure to visit /admin/config/media/file-system and change the Temporary Directory.</li>
     
@@ -45,23 +45,23 @@ Option 2:
 <h2>Menu</h2>
 <p>To edit your menu visit yourdomain.com/admin/structure/menu (pictured below)</p>
 <img src="images/menu-1.png">
-<p>Haiku uses the Main Menu. Press "List Links" to access the menu overview. From there you can add/remove links, and set the order.</p>
-<b>NOTE:</b> <p>If you would like to use Haiku's built in drop down menu capability, make sure that the parent menu item (the one that indicates the drop down) has the "show as expanded" checkbox enabled.</p>
+<p>Montreal uses the Main Menu. Press "List Links" to access the menu overview. From there you can add/remove links, and set the order.</p>
+<b>NOTE:</b> <p>If you would like to use Montreal's built in drop down menu capability, make sure that the parent menu item (the one that indicates the drop down) has the "show as expanded" checkbox enabled.</p>
 <img src="images/menu-2.png">
-<p>To customize the styling of the menu you can edit the /css/style.css file and the /js/haiku.js file. The short caption below each menu item is generated with Javascript using the following markup (simply change .menu_1 to whichever menu item you need to add a caption for:</p>
+<p>To customize the styling of the menu you can edit the /css/style.css file and the /js/Montreal.js file. The short caption below each menu item is generated with Javascript using the following markup (simply change .menu_1 to whichever menu item you need to add a caption for:</p>
 <pre>$('.menu_1 a').append('&lt;p class=&quot;menu_tagline&quot;&gt;the beginning&lt;/p&gt;');</pre>
 
 
 <h2>Theme Settings</h2>
-<p>Haiku includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Haiku theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/haiku. All options have default values set, but you should go through each one and adjust them to your liking.</p>
+<p>Montreal includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Montreal theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/Montreal. All options have default values set, but you should go through each one and adjust them to your liking.</p>
 
 <h2>Front Page</h2>
-<p>By default Haiku uses a custom front page template that features several custom sections including the image slider. All of these sections are fully customizable and can also be disabled. You can use the theme settings to enable/disable any of these sections and set any necessary options. For full control of the front page template you can manually edit /includes/front-page.php</p>
+<p>By default Montreal uses a custom front page template that features several custom sections including the image slider. All of these sections are fully customizable and can also be disabled. You can use the theme settings to enable/disable any of these sections and set any necessary options. For full control of the front page template you can manually edit /includes/front-page.php</p>
 
 <h3>Image Slider</h3>
 
 <p>
-Haiku uses the Orbit slider built into foundation for the main image slider. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. You can set up as many slides as you like which support captions with HTML. 
+Montreal uses the Orbit slider built into foundation for the main image slider. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. You can set up as many slides as you like which support captions with HTML. 
 </p>
 
 <h3>Highlight</h3>
@@ -75,7 +75,7 @@ This is a full-width portion on the front page designed to showcase site service
 This is a full-width portion on the front page designed to showcase information about your company/information about the site. If you would like to use the default content, simply edit /includes/front-page.php accordingly. You can also add a block using the Front Page Information block region.
 
 <h3>Recent Posts</h3>
-<p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Haiku uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the view export code found in /includes/view_exports/front-page-blog.txt</p>
+<p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Montreal uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the view export code found in /includes/view_exports/front-page-blog.txt</p>
 
 <h3>Recent Projects</h3>
 <p>The recent projects section is designed to showcase recent portfolio items in a carousel (see the Portfolio section of these docs for instructions on how to set up your portfolio items). This section utilizes a custom view template called node--view--recent-projects--block.tpl to achieve the look and feel seen on the demo. To properly use this section, make sure you have set up some portfolio items as described in the "Portfolio" section of the documentation. Once you have some portfolio items, either create a new view called Recent Projects (machine name must be recent_projects) with the number of portfolio items desired. To import the view used on the demo use the export code found in /includes/views_exports/recent-projects.txt</p>
@@ -84,7 +84,7 @@ This is a full-width portion on the front page designed to showcase information 
 This is a full-width portion on the front page designed to showcase a series of client logos in a carousel. If you would like to use the default content, simply edit /includes/front-page.php accordingly. You can also add a block using the Front Page Clients block region.
 
 <h2>Widgets</h2>
-<p>Haiku includes styling and code for several widgets such as the faq, Twitter feed and quote rotator. See below for the necessary markup to use each kind of widget in a block or page</p>
+<p>Montreal includes styling and code for several widgets such as the faq, Twitter feed and quote rotator. See below for the necessary markup to use each kind of widget in a block or page</p>
 <h4>Twitter</h4>
 <pre>&lt;div class='tweet query'&gt;&lt;/div&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
@@ -163,18 +163,18 @@ $('ul#quotes').quote_rotator();
 <img src="images/portfolio-view.png">
 <p>The final step to completing your portfolio page is to open /templates/page--portfolio.tpl and edit the Isotope filters. Isotope is the jQuery library which easily allows you to group and switch between those groups of portfolio items as seen on the demo. The filters are a simple unordered list of HTML links with a data-option-value for each portfolio tag. You can see from the default values in the template that this will filter the portfolio items by all, photography, design and marketing. Just add a filter item for each of the tags you use for your portfolio items for optimum use. <strong>Note</strong> a future update to the theme will dynamically generate the portfolio item filters. For more information about what you can do with Isotope visit the official page <a href="http://isotope.metafizzy.co/">here</a>.</p>
 <h2>Blog</h2>
-<p>If you plan to have a blog on your site, be sure to read through this portion of the documentation which outlines a couple things to keep in mind. The theme uses a custom page template called page--blog.tpl which is designed to be used with a page titled Blog. If you plan on using a blog with Haiku, it is recommended that your blog page be called "blog" or that you rename this template file accordingly. There is a theme setting which allows you to have a sidebar on the right-hand side of the blog page, or to have it be full width with no sidebar. </p>
+<p>If you plan to have a blog on your site, be sure to read through this portion of the documentation which outlines a couple things to keep in mind. The theme uses a custom page template called page--blog.tpl which is designed to be used with a page titled Blog. If you plan on using a blog with Montreal, it is recommended that your blog page be called "blog" or that you rename this template file accordingly. There is a theme setting which allows you to have a sidebar on the right-hand side of the blog page, or to have it be full width with no sidebar. </p>
 <p>
-Haiku also comes equipped with the functionality to use a simple image slider within the post (as seen on our demo). To make use of this feature, simply add a new image field to the article content type called second image (machine name: field_second_image). Then simply add a second image to the posts where you want to use the image slider and the theme will take care of the rest. If you want to use more than two images, simply add more image fields and update the /templates/node--article.tpl file in between the div class "featured" starting at line 29. If you look at the template you will see that it calls field_image and field_second_image between the div. Just add the necessary calls to each extra image field you've created.
+Montreal also comes equipped with the functionality to use a simple image slider within the post (as seen on our demo). To make use of this feature, simply add a new image field to the article content type called second image (machine name: field_second_image). Then simply add a second image to the posts where you want to use the image slider and the theme will take care of the rest. If you want to use more than two images, simply add more image fields and update the /templates/node--article.tpl file in between the div class "featured" starting at line 29. If you look at the template you will see that it calls field_image and field_second_image between the div. Just add the necessary calls to each extra image field you've created.
 </p>
 <h2>Footer</h2>
-<p>Haiku's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed. If you would like to display the social icons, use the icons heading in the Footer options to select the ones you want to display and enter the necessary URLS. Or you can place a block into the Footer 1 block region to remove the icons and use your own content. </p>
+<p>Montreal's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed. If you would like to display the social icons, use the icons heading in the Footer options to select the ones you want to display and enter the necessary URLS. Or you can place a block into the Footer 1 block region to remove the icons and use your own content. </p>
 <p>The secondary footer has a full width block region that can be used, or you can use the text option in the theme settings. By default it displays a credit link but you can change this to whatever you like by either using the option or by using the Footer Full Width block region.</p>
 <p>You can also hide either of the footer regions by using the theme settings.</p>
 <h2>Block Regions</h2>
-<p>Haiku features 14 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+<p>Montreal features 14 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
 <h2>Thank You</h2>
-<p>Thank you very much for purchasing the Haiku responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>. Enjoy using Haiku!</p>
+<p>Thank you very much for purchasing the Montreal responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>. Enjoy using Montreal!</p>
 </p>&copy 2012 Refaktor.
 </div>
 <script>$('#toc').toc();</script></body></html>
