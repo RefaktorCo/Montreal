@@ -285,32 +285,69 @@ slides : [ // Slideshow Images
 
 
 <h2>Notes (posts)</h2>
-<p>If you would like to use Article (recommended) or Blog posts on your site Montreal comes equipped with several templates that modify the look and feel of the posts list and single items. The default post page on the demo can be seen <a href="http://refaktorthemes.com/montreal/notes" target="_blank">here</a>, a single post can be seen <a href="http://refaktorthemes.com/montreal/node/9" target="_blank">here</a> and an alternate list format can be seen <a href="http://refaktorthemes.com/montreal/note-list" target="_blank">here.</a> We will cover each template below:</p>
+<p>If you would like to use Article (recommended) or Blog posts on your site Montreal comes equipped with several templates that modify the look and feel of the posts list and single items. The default post page on the demo can be seen <a href="http://refaktorthemes.com/montreal/notes" target="_blank">here</a>, a single post can be seen <a href="http://refaktorthemes.com/montreal/node/9" target="_blank">here</a> and an alternate list format can be seen <a href="http://refaktorthemes.com/montreal/note-list" target="_blank">here.</a> There are no extra content types or custom fields that you need to set up and we will cover each template below:</p>
 
 <h4>Default Notes View</h4>
-<p>The default page seen on the demo <a href="http://refaktorthemes.com/montreal/notes" target="_blank">here</a> is a View page. You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/notes.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you. The following theme files are associated with this template:</p>
+<p>The default page seen on the demo <a href="http://refaktorthemes.com/montreal/notes" target="_blank">here</a> is a View page of the Article content type. You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/notes.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you. The following theme files are associated with this template:</p>
 <ul>
 <li>/templates/page--notes.tpl</li>
 <li>/templates/node--view--notes--page.tpl</li>
 </ul>
 
-<h4>Note List</h4>
-<p>The <a href="http://refaktorthemes.com/montreal/note-list" target="_blank">Note List</a> is an alternative template for displaying a list of your posts and is also a View page.  You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/note_list.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you. The following theme files are associated with this template:</p>
+<h4>Note List View</h4>
+<p>The <a href="http://refaktorthemes.com/montreal/note-list" target="_blank">Note List</a> is an alternative template for displaying a list of your posts and is also a View page of the Article content type.  You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/note_list.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you. The following theme files are associated with this template:</p>
 <ul>
 <li>/templates/page--notes-list.tpl</li>
 <li>/templates/node--view--notes-list--page.tpl</li>
 </ul>
 
-
-
+<h4>Note Single</h4>
+<p>The <a href="http://refaktorthemes.com/montreal/node/9" target="_blank">Note Single</a> is simply the layout of a single post of the Article or Blog content type on your site (we recommend using Article). The following theme files are associated with this template:</p>
+<ul>
+<li>/templates/node--article.tpl</li>
+<li>/templates/page--node--article.tpl</li>
+<li>/templates/node--blog.tpl</li>
+<li>/templates/page--node--blog.tpl</li>
+</ul>
+ 
+ 
 <h2>Footer</h2>
-<p>Montreal's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed. If you would like to display the social icons, use the icons heading in the Footer options to select the ones you want to display and enter the necessary URLS. Or you can place a block into the Footer 1 block region to remove the icons and use your own content. </p>
+<p>Montreal's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed.</p>
 <p>The secondary footer has a full width block region that can be used, or you can use the text option in the theme settings. By default it displays a credit link but you can change this to whatever you like by either using the option or by using the Footer Full Width block region.</p>
 <p>You can also hide either of the footer regions by using the theme settings.</p>
 <h2>Block Regions</h2>
 <p>Montreal features 10 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+
+<h2>Extras</h2>
+<h4>Code Examples</h4>
+<p>There are a variety of code examples in the /examples folder that correspond to various pages on the demo. You can use these as tools to replicate the visual appearance and functionality seen on the demo site.</p>
+<h4>Google Maps</h4>
+<p>The contact page on the demo site uses a Google Maps plugin (see /examples/contact.php). Below is the Javascript call that powers the map</p>
+<pre>
+    var map;
+    $(document).ready(function(){
+    prettyPrint();
+    map = new GMaps({
+    div: '#map',
+    lat: 48.8584,
+    lng: 2.2946,
+    });
+    map.addMarker({
+    lat: 48.8584,
+    lng: 2.2946,
+    title: 'MONTREAL Html Template',
+    click: function(e){
+    if(console.log)
+    console.log(e);
+    alert('You clicked in this marker');
+    }
+    });
+    });
+    //]]>	
+</pre>
+<p> The map is then called with an empty div with the ID map. You can use a website like the <a href="http://itouchmap.com/latlong.html">following</a> to get the latitude and longitude needed to use the Google Maps plugin.</p>
 <h2>Thank You</h2>
 <p>Thank you very much for purchasing the Montreal responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor#from" target="_blank">ThemeForest author page</a>. Enjoy using Montreal!</p>
-</p>&copy 2012 Refaktor.
+</p>&copy 2013 Refaktor.
 </div>
 <script>$('#toc').toc();</script></body></html>
