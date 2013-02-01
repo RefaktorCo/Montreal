@@ -66,6 +66,11 @@ Option 2:
 <h3>Montreal Content Data</h3>
 <p>If you used option 1 to install the theme on an existing install that already has content we recommend you use our Montreal Content Data module to create the additional content types, fields and Views needed to fully utilize the theme. You will find it in the root of the directory that contains the download files. This module is a custom <a href="http://drupal.org/project/features" target="_blank">Features</a> module and will not run without it. We recommend copying all of the modules from the /drupal_7/sites/all/modules folder into your install if you do not already have them. After you have all the modules simply upload and activate the Montreal Content Data module and the content types, fields and Views will automatically be created.</p>
 
+<h2>Content Types</h2>
+
+<h3>Portfolio</h3>
+<h3>Page</h3>
+
 <h2>Theme Settings</h2>
 <p>Montreal includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Montreal theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/montreal. All options have default values set, but you should go through each one and adjust them to your liking.</p>
 
@@ -106,22 +111,32 @@ slides : [ // Slideshow Images
 <p>This section will display the most recent Tweet for the Twitter handle you specify. Simply use the Twitter Feed option in the theme settings(/admin/appearance/settings/montreal) to set the handle.</p>
 
 
-<h2>Portfolio</h2>
-<p>This portion of the docs will explain how to set up the portfolio page seen on the theme demo. The only module you will need is the <a href="http://drupal.org/project/views" target="_blank">Views module</a> which is needed to create the list of portfolio items.</p>
-<h4>Custom content type</h4>
-<p>The first step is to create a new content type called <b>Portfolio Item</b>. To create a new content type visit /admin/structure/types and click "add content type". Title the new content type "Portfolio Item" (this is important), enter a brief description and save.</p>
-<p> Next you have to add two custom fields to this content type for the portfolio image and description tags. Press the "manage fields" link under Portfolio Item in the content type overview page and use the "Add new field" option. Enter "Portfolio image" in the label field and select "Image" as the field type. Press save when you are done, and you will now have an image uploader when creating a Portfolio item.  Do the same thing again, only this time use "Portfolio tags" as the label and "Text" as the field type. This field lets you add short tag words like "design" and "branding" to your portfolio items which are used to group sets of items together for use with the filter buttons seen on the demo. Here is what the fields for the "Portfolio Items" content type should look like when you are done:</p>
-<img src="images/portfolio-fields.png">
-<p>Creating a portfolio item is as simple as creating any other content type. Visit /admin/content, click "Add content" and select the new Portfolio Item type you just created. Enter the title, text, upload your image and add your tag or tags (only put a space between each tag, no commas) and press save.</p>
-<h4>Portfolio View</h4>
-<p>To create a Portfolio page to display all of your portfolio items as seen on our demo, you will need to use the <a href="http://drupal.org/project/views" target="_blank">Views module</a>. Once you have installed the module, visit /admin/structure/views and click "Add new view". Enter "Portfolio" into the view name text field, select Portfolio Item as the content type to pull from, make sure "create page" is checked off to make this a page view and tell it to pull an unformated list of full posts. You should also have it create a Menu link, but you can also do this later using the Menu options. You can also use the code found in /includes/views_exports/portfolio.txt to import the view. Below is what your view should look like when you're done:
-</p>
-<img src="images/portfolio-view.png">
-<p>The final step to completing your portfolio page is to open /templates/page--portfolio.tpl and edit the Isotope filters. Isotope is the jQuery library which easily allows you to group and switch between those groups of portfolio items as seen on the demo. The filters are a simple unordered list of HTML links with a data-option-value for each portfolio tag. You can see from the default values in the template that this will filter the portfolio items by all, photography, design and marketing. Just add a filter item for each of the tags you use for your portfolio items for optimum use. <strong>Note</strong> a future update to the theme will dynamically generate the portfolio item filters. For more information about what you can do with Isotope visit the official page <a href="http://isotope.metafizzy.co/">here</a>.</p>
+<h2>Portfolio Templates</h2>
+
+<p>One of the most unique and powerful features of Montreal is the different Portfolio template choices that are available. There are six different templates and two varieties of the single portfolio item. All of the different views can be seen on the <a href="http://refaktorthemes.com/montreal" target="_blank">demo</a> and we encourage you to look through them all to see which one(s) you may like to use.</p>
+
+<p>Below we will go over each of the different portfolio templates and the two single item templates and outline everything you need to know about how to properly use them on your site. If you did not do the full Drupal 7 install the only module you will need is Views, but we also highly recommend using the Montreal Content Data module to create all of the content types, fields and views for you. See the Modules section of the documentation further above this page for more information.</p>
 
 <h4>Basic</h4>
 
+<p>This is the default Portfolio template and it uses the Portfolio Basic content type (see the Content Types section of the documentation for more info). You can see an example of this Portfolio template on our <a href="http://refaktorthemes.com/montreal/portfolio" target="_blank">demo page</a>. The following theme files are associated with this template:</p>
+<ul>
+<li>/templates/page--portfolio.tpl</li>
+<li>/templates/node--view--portfolio--page.tpl</li>
+</ul>
+
+<p>This template requires a Views page called "Portfolio" that calls full content from the Portfolio Basic content type. You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/portfolio.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you.</p>
+
 <h4>Drag</h4>
+
+<p>This template uses a click and drag (or swipe gesture on touch devices) to navigate through the items. You can see an example of this template on our <a href="http://refaktorthemes.com/montreal/portfolio-drag" target="_blank">demo page</a>. The following theme files are associated with this template:</p>
+
+<ul>
+<li>/templates/page--portfolio-drag.tpl</li>
+<li>/templates/node--view--portfolio-drag--page.tpl</li>
+</ul>
+
+<p>This template requires a Views page called "Portfolio Drag" that calls full content from the Portfolio Basic content type. You can either use the Montreal Content Data module to create the view or you can use the export code found in /views_exports/portfolio_drag.txt. Visit /admin/structure/views/import and import the entire contents of that file and the View will be created for you.</p> 
 
 <h4>Stripe</h4>
 
