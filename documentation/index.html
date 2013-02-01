@@ -15,7 +15,7 @@
 
 <div id="wrapper">
 <h2>Overview</h2>
-<p>A minimalistic Drupal 7 theme powered by <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation 3</a> and <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a>. Montreal features a fully responsive design, easy to use theme settings and follows Drupal coding standards. For theme support that cannot be found in this documentation, please visit our <a href="http://refaktor.co/support"> support forum</a>. Once you have registered please contact us via the <a href="http://themeforest.net/user/refaktor#from" target="_blank">ThemeForest author page</a> with your forum username so you can be granted posting rights.</p>
+<p>Montreal is a unique modern interactive creative Drupal 7 theme perfect for creative single portfolios or creative agencies. It offers fullscreen slideshow, parallax homepage scrolling, 6 different portfolio templates and much more. For theme support that cannot be found in this documentation, please visit our <a href="http://refaktor.co/support"> support forum</a>. Once you have registered please contact us via the <a href="http://themeforest.net/user/refaktor#from" target="_blank">ThemeForest author page</a> with your forum username so you can be granted posting rights.</p>
 <p>Updated: 02/02/13<br>Author: <a href="http://refaktor.co" target="_blank">Refaktor</a><br>Email: <a href="mailto:refaktor.co@gmail.com">refaktor.co@gmail.com</a><br>Docs powered by: <a href="https://github.com/jgallen23/toc" target="_blank">TOC</a></p>
 <h2>Installation</h2>
 <p>There are several ways Montreal can be installed. For existing sites that already have content, the first method will only involve the installation and activation of the theme. The second option includes a full Drupal 7 install with the same SQL database file used to create the theme demo. Please choose which installation method works best for you and follow the instructions.
@@ -61,94 +61,25 @@ Option 2:
 <h3>Image Slider</h3>
 
 <p>
-Montreal uses the Orbit slider built into foundation for the main image slider. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. You can set up as many slides as you like which support captions with HTML. 
+Montreal uses the Supersize slider for the front page to offer the full height sliding images inside the main slider area and inside the highlight section. We have provided some simple theme settings to control the slider, or you can manually edit /includes/front-page.php to fully customize the slider. 
 </p>
-
-<h3>Highlight</h3>
-
-<p>The Highlight section allows you to advertise a specific page or aspect of your site. The settings for the Highlight section are in the Front Page tab of the theme settings. You can enter your own text and even include HTML.</p>
-
-<h3>Services</h3>
-This is a full-width portion on the front page designed to showcase site services and link to various pages on your site. If you would like to use the default content, simply edit /includes/front-page.php accordingly. You can also add a block using the Front Page Services block region.
-
-<h3>Information</h3>
-This is a full-width portion on the front page designed to showcase information about your company/information about the site. If you would like to use the default content, simply edit /includes/front-page.php accordingly. You can also add a block using the Front Page Information block region.
-
-<h3>Recent Posts</h3>
-<p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Montreal uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the view export code found in /includes/view_exports/front-page-blog.txt</p>
 
 <h3>Recent Projects</h3>
 <p>The recent projects section is designed to showcase recent portfolio items in a carousel (see the Portfolio section of these docs for instructions on how to set up your portfolio items). This section utilizes a custom view template called node--view--recent-projects--block.tpl to achieve the look and feel seen on the demo. To properly use this section, make sure you have set up some portfolio items as described in the "Portfolio" section of the documentation. Once you have some portfolio items, either create a new view called Recent Projects (machine name must be recent_projects) with the number of portfolio items desired. To import the view used on the demo use the export code found in /includes/views_exports/recent-projects.txt</p>
 
-<h3>Clients</h3>
-This is a full-width portion on the front page designed to showcase a series of client logos in a carousel. If you would like to use the default content, simply edit /includes/front-page.php accordingly. You can also add a block using the Front Page Clients block region.
+<h3>Highlight</h3>
 
-<h2>Widgets</h2>
-<p>Montreal includes styling and code for several widgets such as the faq, Twitter feed and quote rotator. See below for the necessary markup to use each kind of widget in a block or page</p>
-<h4>Twitter</h4>
-<pre>&lt;div class='tweet query'&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-                        
-    jQuery(document).ready(function ($) {
-      
-      $(&quot;.tweet&quot;).tweet({
-        username: &quot;envato&quot;,
-        avatar_size: 34,
-        count: 3,
-        loading_text: &quot;loading tweets...&quot;
-      });
-    
-    });
-    
-  &lt;/script&gt;</pre>
-<h4>FAQ</h4>
-<pre>&lt;ul class=&quot;faq&quot;&gt;
-  &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;faq-head title-color gdl-title&quot;&gt;&lt;span class=&quot;faq-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
-    &lt;div class=&quot;faq-content&quot;&gt;
-      faq Text
-    &lt;/div&gt;
-  &lt;/li&gt;
-    &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;faq-head title-color gdl-title&quot;&gt;&lt;span class=&quot;faq-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
-    &lt;div class=&quot;faq-content&quot;&gt;
-      faq Text
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</pre>
-<h4>Ad Block</h4>
-<pre>&lt;div class=&quot;ad_block&quot;&gt;
-  &lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;
-&lt;/div&gt;</pre>
-<h4>Popular Tags</h4>
-Use the <a href="http://drupal.org/project/views" target="_blank">Views module</a> to create a block view titled "Popular Tags" that is an HTML list of the taxonomy term "Tags". You can set the number limit to whatever you like, just make sure to name it "Popular Tags" and to make it an HTML list.
-<h4>Flickr</h4>
-Here is the JS and HTML markup for the Flickr Feed widget seen on the demo. For more information visit the plugin page <a href="http://www.newmediacampaigns.com/page/jquery-flickr-plugin" target="_blank">here</a>. 
-<pre>
-$('#flickr_widget').jflickrfeed({
-  limit: 6,
-  qstrings: {
-    id: '39415781@N06'
-  },
-  itemTemplate: '&lt;li&gt;&lt;a href=&quot;{{image_b}}&quot;&gt;&lt;img src=&quot;{{image_s}}&quot; alt=&quot;{{title}}&quot; /&gt;&lt;/a&gt;&lt;/li&gt;'
-});
-  
-&lt;ul id=&quot;flickr_widget&quot; class=&quot;thumbs&quot;&gt;&lt;/ul&gt;
-</pre>
-<h4>Rotating Quotes/Testimonials</h4>
-Here is the JS and HTML markup for the rotating customer testimonials seen on the front page of the demo (uses jquery.quote_rotator.js):
-<pre>
-$('ul#quotes').quote_rotator();
+<p>The Highlight section allows you to advertise a specific page or aspect of your site and also displays the main slider background in a parallax scrolling effect. The settings for the Highlight section are in the Front Page tab of the theme settings. You can enter your own text and even include HTML.</p>
 
-&lt;ul id=&quot;quotes&quot;&gt;
-  &lt;li&gt;
-    &lt;p&gt;Quote text goes here&lt;/p&gt;
-    - John Doe
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Here's another quote&lt;/p&gt;
-    - John Doe
-  &lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+
+<h3>Recent Posts</h3>
+
+<p>The recent posts section is a block region designed to showcase your site's most recent blog/article posts. Montreal uses a custom view template called node--view--front-page-blog--block.tpl to achieve the look and feel of this section seen on the demo. To properly use this section, either create a new view called Front Page Blog (machine name must be front_page_blog) with the desired number of blog/article teasers, or use the Montreal Content Data custom Features module to import all the Views and Content data for the theme.</p>
+
+<h3>Twitter Feed</h3>
+
+<p>This section will display the most recent Tweet for the Twitter handle you specify. Simply use the Twitter Feed option in the theme settings to set the handle.</p>
+
 
 <h2>Portfolio</h2>
 <p>This portion of the docs will explain how to set up the portfolio page seen on the theme demo. The only module you will need is the <a href="http://drupal.org/project/views" target="_blank">Views module</a> which is needed to create the list of portfolio items.</p>
@@ -172,9 +103,9 @@ Montreal also comes equipped with the functionality to use a simple image slider
 <p>The secondary footer has a full width block region that can be used, or you can use the text option in the theme settings. By default it displays a credit link but you can change this to whatever you like by either using the option or by using the Footer Full Width block region.</p>
 <p>You can also hide either of the footer regions by using the theme settings.</p>
 <h2>Block Regions</h2>
-<p>Montreal features 14 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+<p>Montreal features 10 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
 <h2>Thank You</h2>
-<p>Thank you very much for purchasing the Montreal responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>. Enjoy using Montreal!</p>
+<p>Thank you very much for purchasing the Montreal responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor#from" target="_blank">ThemeForest author page</a>. Enjoy using Montreal!</p>
 </p>&copy 2012 Refaktor.
 </div>
 <script>$('#toc').toc();</script></body></html>

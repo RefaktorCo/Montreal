@@ -24,15 +24,9 @@ regions[content]        = Content
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
 
-regions[services]      = Front Page Services
-
-regions[information]   = Front Page Information
-
 regions[front_blog]    = Front Page Blog
 
 regions[recent_projects] = Recent Projects
-
-regions[clients]      = Front Page Clients
 
 regions[footer_1]       = Footer Box 1
 regions[footer_2]       = Footer Box 2
