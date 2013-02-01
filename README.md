@@ -1,4 +1,0 @@
-Montreal
-========
-
-Montreal Drupal
