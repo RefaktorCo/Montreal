@@ -92,11 +92,45 @@ Option 2:
 
 <h4>Portfolio Stripe</h4>
 
+<p>This is the Portfolio content type that is used for the vast majority of the different Portfolio layouts. To create this content type manually navigate to /admin/structure/types/add and enter "Portfolio Stripe" into the title field (resulting in a machine name of portfolio_basic). You can enter a description if you like and all the default settings are sufficient. Next navigate to /admin/structure/types/manage/portfolio-basic/fields add all of the field items seen in the image below:</p>
+
+<img src="images/portfolio_stripe_fields.png">
+
+<h5>Stripe Image</h5>
+<p>This is the image that appears on the Portfolio Stripe view page. We recommend an image size of 225 by 960.</p>
+
+<h5>Stripe Tags</h5>
+<p>These are descriptive tags that appear on Portfolio Stripe view page. Separate them by commas, example: WEB DESIGN, UI, UX</p>
+
+<h5>Stripe Slide</h5>
+<p>These images appear in the image slider on the single item view of the portfolio item. You don't have to use all three if you do not want to. We recommend an image size of 700 by 500.</p>
+
+<h5>Stripe Banner</h5>
+<p>This is an optional image banner that if used gives the single item the appearance of the Item Wide template. We recommend that this banner be 1950 by 500 (can be shorter if you like). </p>
+
 <h3>Page</h3>
+
+<p>Aside from the basic page that comes standard with all Drupal installs, Montreal uses two additional content types for handling page content. Neither of which require any additional fields. Below we will outline each content type, their associated theme templates and how they are used in the demo.
 
 <h4>Blank Page</h4>
 
+This is a content type designed to use with full HTML and PHP code. There are no extra wrappers in the theme template that controls the output of this page and is used for several pages on the demo such as the <a href="http://refaktorthemes.com/montreal/about" target="_blank">about page</a>.To create this content type manually navigate to /admin/structure/types/add and enter "Blank Page" into the title field (resulting in a machine name of blank_page). The following theme files are associated with this template:</p>
+
+<ul>
+<li>/templates/page--node--blank-page.tpl</li>
+<li>/templates/node--blank-page.tpl</li>
+</ul>
+
+
 <h4>Stripe Page</h4>
+
+This is a full width page with a white background and a stripe border at the top. This is used on several pages on the demo such as the <a href="http://refaktorthemes.com/montreal/project-planner" target="_blank">project planner</a>. To create this content type manually navigate to /admin/structure/types/add and enter "Stripe Page" into the title field (resulting in a machine name of stripe_page).The following theme files are associated with this template:</p>
+
+<ul>
+<li>/templates/page--node--stripe-page.tpl</li>
+<li>/templates/node--stripe-page.tpl</li>
+</ul>
+
 
 <h2>Theme Settings</h2>
 <p>Montreal includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Montreal theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/montreal. All options have default values set, but you should go through each one and adjust them to your liking.</p>
@@ -234,18 +268,9 @@ slides : [ // Slideshow Images
 
 <p>For more information about properly setting up your Portfolio items please refer to the Content Types portion of this documentation.</p>
 
-
-<h2>Page Types</h2>
-
-<h4>Basic</h4>
-
-<h4>Stripe</h4>
-
-<h4>Blank</h4>
-
 <h2>Project Planner</h2>
 
-<h2>Blog</h2>
+<h2>Notes (posts)</h2>
 <p>If you plan to have a blog on your site, be sure to read through this portion of the documentation which outlines a couple things to keep in mind. The theme uses a custom page template called page--blog.tpl which is designed to be used with a page titled Blog. If you plan on using a blog with Montreal, it is recommended that your blog page be called "blog" or that you rename this template file accordingly. There is a theme setting which allows you to have a sidebar on the right-hand side of the blog page, or to have it be full width with no sidebar. </p>
 <p>
 Montreal also comes equipped with the functionality to use a simple image slider within the post (as seen on our demo). To make use of this feature, simply add a new image field to the article content type called second image (machine name: field_second_image). Then simply add a second image to the posts where you want to use the image slider and the theme will take care of the rest. If you want to use more than two images, simply add more image fields and update the /templates/node--article.tpl file in between the div class "featured" starting at line 29. If you look at the template you will see that it calls field_image and field_second_image between the div. Just add the necessary calls to each extra image field you've created.
