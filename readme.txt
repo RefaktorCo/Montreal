@@ -2,6 +2,7 @@
 
 Theme by Refaktor - http://refaktor.co 
 Demo - http://refaktorthemes.com/montreal
+Original design by Hasan Ali - http://themeforest.net/user/IamHasanAli
 
 Montreal is a unique modern interactive creative Drupal 7 theme perfect for creative single portfolios or creative agencies. It offers fullscreen slideshow, parallax homepage scrolling, 6 different portfolio templates and much more.
 
