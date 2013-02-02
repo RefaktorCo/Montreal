@@ -259,37 +259,7 @@ function montreal_preprocess_html(&$vars){
     '#weight' => 12,
   );
   
-  $box_layout = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#main_wrapper { max-width: 1080px; margin: 0 auto; } header {left: 0; right: 0; max-width: 1080px; margin: 0 auto;} #footer { max-width: 1080px; margin: 0 auto; position: absolute; left: 0; right: 0; }</style> ",
-    '#weight' => 13,
-  );
-
-  $background_color = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>body {background:".theme_get_setting('body_background').";}</style> ",
-    '#weight' => 14,
-  );
-
-  $background_image = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
-    '#weight' => 15,
-  );
   
-  $wrapper_background_color = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#main_wrapper {background:".theme_get_setting('main_wrapper_background').";}</style> ",
-    '#weight' => 16,
-  );
-
-   $wrapper_background_image = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>#main_wrapper {background-image:url(".$root."/images/wrapper-backgrounds/".theme_get_setting('main_wrapper_pattern_select').".png);}</style> ",
-    '#weight' => 17,
-  );
-
-    
   if (theme_get_setting('seo_title') != "") {
     drupal_add_html_head( $meta_title, 'meta_title' );
   }
@@ -309,21 +279,11 @@ function montreal_preprocess_html(&$vars){
   drupal_add_html_head( $ui, 'ui_style' );
   drupal_add_html_head( $gumby, 'gumby_style' );
   drupal_add_html_head( $style, 'main_style' );
-  //drupal_add_html_head( $color, 'color_style' );
   drupal_add_html_head( $viewport, 'meta_viewport' );
   //drupal_add_html_head( $font_family, 'font_family');
-  //drupal_add_html_head( $headings, 'headings');
+  drupal_add_html_head( $headings, 'headings');
   //drupal_add_html_head( $background_color, 'background_color');
   
-  if (theme_get_setting('enable_background_pattern') == "1") {
-    //drupal_add_html_head( $background_image, 'background_image');
-  }  
-  
-  //drupal_add_html_head( $wrapper_background_color, 'wrapper_background_color');
-  
-  if (theme_get_setting('enable_main_wrapper_pattern') == "1") {
-    //drupal_add_html_head( $wrapper_background_image, 'wrapper_background_image');
-  }  
 }
 
 /* Separate from montreal_preprocess_html so function can be called directly before </head> tag. */

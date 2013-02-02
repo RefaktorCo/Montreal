@@ -1,5 +1,5 @@
 <?php 
-	global $root; 
+	global $root, $base_url; 
 	$banner_image = file_create_url($node->field_portfolio_basic_banner['und'][0]['uri']); 
 	montreal_header($page); 
 ?>

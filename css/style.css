@@ -3493,6 +3493,7 @@ margin-left: 80px !important;
 .comment_avatar img {
   width: 60px; 
   height: 60px;
+  margin: 0px;
 }
 
 .comment {
