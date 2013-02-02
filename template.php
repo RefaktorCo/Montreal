@@ -274,16 +274,15 @@ function montreal_preprocess_html(&$vars){
     drupal_add_html_head( $box_layout, 'box_layout' );
   }
 
-  //drupal_add_html_head( $font, 'google_font_open_sans' );
-  //drupal_add_html_head( $condensed, 'google_font_condensed' );
+  drupal_add_html_head( $font, 'google_font_open_sans' );
+  drupal_add_html_head( $condensed, 'google_font_condensed' );
   drupal_add_html_head( $ui, 'ui_style' );
   drupal_add_html_head( $gumby, 'gumby_style' );
   drupal_add_html_head( $style, 'main_style' );
   drupal_add_html_head( $viewport, 'meta_viewport' );
-  //drupal_add_html_head( $font_family, 'font_family');
+  drupal_add_html_head( $font_family, 'font_family');
   drupal_add_html_head( $headings, 'headings');
-  //drupal_add_html_head( $background_color, 'background_color');
-  
+    
 }
 
 /* Separate from montreal_preprocess_html so function can be called directly before </head> tag. */

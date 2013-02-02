@@ -417,7 +417,7 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         '#title' => 'Select a font family',
         '#default_value' => theme_get_setting('font_family'),
         '#options' => array(
-          'proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif' => 'proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif (default)',
+          '"Oswald", sans-serif' => '"Oswald", sans-serif',
           'Open Sans Condensed, serif' => '"Open Sans Condensed", serif',
           'Arial, Helvetica, sans-serif' => 'Arial, Helvetica, sans-serif',
           'Georgia, serif' => 'Georgia, serif',

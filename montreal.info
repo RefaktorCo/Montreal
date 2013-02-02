@@ -59,7 +59,7 @@ settings[recent_projects_title] = 'Recent Projects'
 settings[page_layout] = 'full_width'
 settings[blog_layout] = 'sidebar_right'
 
-settings['font_family'] = 'proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif'
+settings['font_family'] = '"Oswald", sans-serif'
 
 settings[h1] = '36px'
 settings[h2] = '30px'
