@@ -22,8 +22,7 @@ Supersized(www.buildinternet.com/project/supersized) by Sam Dunn and released un
 prettyPhoto(http://www.no-margin-for-errors.com) by Stephane Caron released under the GNU(3).
 Font Awesome(http://fortawesome.github.com/Font-Awesome/) released under commercial Creative Commons license(4).
 
-
-The above images are released under a commercial-friendly Creative Commons license. All other files by Refaktor(http://refaktor.co) and released under the GNU(3) license.
+All other files by Refaktor(http://refaktor.co) and Hasan Ali(http://themeforest.net/user/IamHasanAli) and released under the GNU(3) license.
 
 ==License URLS==
 
