@@ -3694,6 +3694,10 @@ cursor: pointer;
 	#navigationmain {
 	display: none;  
 	}
+	
+	.slideshow {
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 767px) { 
@@ -3704,3 +3708,23 @@ cursor: pointer;
 	margin-top: -15px !important;
   }
 }
+
+@media screen and (max-width: 767px) { 
+ 
+  .slideshow h1 {
+	  font-size: 18px;
+  }
+  
+  .highlight_text {
+	  font-size: 3rem !important;
+  }
+  
+  .largepadding_back {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  
+  .blog h4 {
+	  font-size: 20px;
+  }
+  

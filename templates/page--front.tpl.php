@@ -60,7 +60,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	<!-- QUOTE -->
 	<div class="alpha eleven columns centered">
-		<h2 class="italic center whitetext"><?php echo theme_get_setting('highlight_text');?></h2>
+		<h2 class="italic center whitetext highlight_text"><?php echo theme_get_setting('highlight_text');?></h2>
 	</div>
 	<!-- WHITE HORIZONTAL -->
 	<div class="alpha centered six columns whitehorizontal smallmargin">
