@@ -1,4 +1,8 @@
 ===Montreal Changelog===
 
+1.0.1 (02/04/01)
+  *Removed call to missing JS file.
+  *Minor CSS tweaks.
+
 1.0 (02/03/01)
   *Initial release.
