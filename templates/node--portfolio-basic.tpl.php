@@ -3,17 +3,10 @@
 		<div class="flexslider">
 			<!-- SLIDES -->
 			<ul class="slides">
-				<?php if (render($content['field_portfolio_basic_slide_1'])) : ?>
-				  <li><?php print render($content['field_portfolio_basic_slide_1']); ?></li>
+				<?php if (render($content['field_portfolio_test_slider'])) : ?>
+				  <?php print render($content['field_portfolio_test_slider']); ?>
 				<?php endif; ?>
 				
-				<?php if (render($content['field_portfolio_basic_slide_2'])) : ?>
-				  <li><?php print render($content['field_portfolio_basic_slide_2']); ?></li>
-				<?php endif; ?>
-				
-				<?php if (render($content['field_portfolio_basic_slide_3'])) : ?>
-				  <li><?php print render($content['field_portfolio_basic_slide_3']); ?></li>
-				<?php endif; ?>
 			</ul>
 	  </div>
   </div>
@@ -34,6 +27,7 @@
 	      hide($content['field_portfolio_basic_image']);
 	      hide($content['field_portfolio_basic_tags']);
 	      hide($content['field_portfolio_basic_banner']);
+	      hide($content['field_portfolio_test_slider']);
 	      print render($content);
 	    ?>
 	  </div>
