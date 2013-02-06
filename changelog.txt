@@ -1,6 +1,7 @@
 ===Montreal Changelog===
 
 1.0.1 (02/06/01)
+  *Single portfolio item slider now handled by one image field (legacy support for previous method remains).
 	*Fixed Undefined Index error in page--node--portfolio-basic.tpl
   *Removed call to missing JS file.
   *Minor responsive CSS tweaks.
