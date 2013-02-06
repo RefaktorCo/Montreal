@@ -4,7 +4,7 @@
 	*Fixed Undefined Index error in page--node--portfolio-basic.tpl
   *Removed call to missing JS file.
   *Minor responsive CSS tweaks.
-  *Updated documentation to reflect changes and clarify some areas. 
+  *Updated documentation to clarify some areas. 
 
 1.0 (02/03/01)
   *Initial release.
