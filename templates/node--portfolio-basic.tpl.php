@@ -28,6 +28,9 @@
 	      hide($content['field_portfolio_basic_tags']);
 	      hide($content['field_portfolio_basic_banner']);
 	      hide($content['field_portfolio_test_slider']);
+	      hide($content['field_portfolio_basic_slide_1']);
+	      hide($content['field_portfolio_basic_slide_2']);
+	      hide($content['field_portfolio_basic_slide_3']);
 	      print render($content);
 	    ?>
 	  </div>
