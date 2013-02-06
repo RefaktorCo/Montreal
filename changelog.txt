@@ -1,8 +1,10 @@
 ===Montreal Changelog===
 
-1.0.1 (02/05/01)
+1.0.1 (02/06/01)
+  *Improved handling of image slider on single portfolio items.
   *Removed call to missing JS file.
   *Minor responsive CSS tweaks.
+  *Updated documentation to reflect changes and clarify some areas. 
 
 1.0 (02/03/01)
   *Initial release.
