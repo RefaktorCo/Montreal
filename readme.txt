@@ -1,6 +1,6 @@
 ===Montreal=== 
 
-Theme by Refaktor - http://refaktor.co 
+Theme by Refaktor - http://refaktorthemes.com 
 Demo - http://refaktorthemes.com/montreal
 Original design by Hasan Ali - http://themeforest.net/user/IamHasanAli
 
@@ -22,7 +22,7 @@ Supersized(www.buildinternet.com/project/supersized) by Sam Dunn and released un
 prettyPhoto(http://www.no-margin-for-errors.com) by Stephane Caron released under the GNU(3).
 Font Awesome(http://fortawesome.github.com/Font-Awesome/) released under commercial Creative Commons license(4).
 
-All other files by Refaktor(http://refaktor.co) and Hasan Ali(http://themeforest.net/user/IamHasanAli) and released under the GNU(3) license.
+All other files by Refaktor(http://refaktorthemes.com) and Hasan Ali(http://themeforest.net/user/IamHasanAli) and released under the GNU(3) license.
 
 ==License URLS==
 

@@ -70,4 +70,4 @@ settings[h6] = '12px'
 settings[enable_primary_footer] = '1'
 
 settings[enable_secondary_footer] = '1'
-settings[secondary_footer_text] = 'Design by <a href="http://refaktor.co" target="_blank">Refaktor</a>'
+settings[secondary_footer_text] = 'Design by <a href="http://refaktorthemes.com" target="_blank">Refaktor</a>'
