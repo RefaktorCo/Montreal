@@ -1,8 +1,9 @@
 ===Montreal Changelog===
 
-1.0.2 (02/08/13)
+1.0.2 (02/18/13)
   *Removed block--recent-projects.tpl (not needed).
   *Edited block.tpl to fix missing block/view edit tools when logged in.
+  *Fixed a minor slider bug.
 
 1.0.1 (02/06/13)
   *Single portfolio item slider now handled by one image field (legacy support for previous method remains).
