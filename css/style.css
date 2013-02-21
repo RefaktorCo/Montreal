@@ -3569,6 +3569,7 @@ width: 100%;
 top: 0%;
 position: absolute;
 background: #999;
+filter: alpha(opacity=0);
 }
 
 .carousel_item_hover p {

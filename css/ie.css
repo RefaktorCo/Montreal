@@ -1,2 +1,15 @@
 /*IE 8 + 9*/
 #sidebar_wrap .form-actions {padding: 0px 0px 0px 0px \0/IE9;}
+
+.ie8 .carousel_item_image img {
+	height: 154px;
+	width: 300px;
+}
+
+.ie8 h5 {
+font-size: 18px !important;
+}
+
+.ie8 h6 {
+font-size: 15px !important;
+}
