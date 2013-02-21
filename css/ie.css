@@ -20,3 +20,14 @@ font-size: 15px !important;
 	width: 210px;
 	max-width: none;
 }
+
+.ie8 .griditem img {
+	height: 234px;
+	width: 460px;
+}
+
+.ie8 .gridblock img {
+	height: 171px;
+	width: 335px;
+}
+
