@@ -41,7 +41,12 @@ Option 2:
 <li>Copy the entire contents of the Drupal_7 folder to the location on your web server where you want your site to be accessed. If you want your primary domain to point to your install of Montreal, copy everything to the root folder. If you want your site to be accessed as a subsection of your domain (for example: yourdomain.com/drupal) then simply rename the Drupal_7 folder to the desired name and upload to the root of your server. Also be sure to copy over the settings.php file mentioned in the previous step</li>
 <li>Login to your site with the username <strong>Steve</strong> and the password <strong>admin</strong> and visit /admin/people to change the admin username and password.</li>
 <li>Go through the Drupal configuration found in /admin/config options and update all the necessary information to reflect your website. Also be sure to visit /admin/config/media/file-system and change the Temporary Directory.</li>
-    
+
+</ol>
+<h2>Quebec Sub-Theme</h2>
+<p>Montreal comes with a shell sub-theme called Quebec that you can use to make customizations to the style and template structure of the parent theme without having to modify the parent theme itself. This is useful if you plan on updating the parent theme as we release updates on ThemeForest. If you performed the full install you will already see Quebec in the list of themes available. If you did the standalone install you can find the Quebec.zip file in the root of the download files and you can install it like any other theme. </p>
+<p>There is an empty stylesheet already defined which is /css/custom.css (inside the Quebec folder). Use this file to add all of the custom CSS that you plan on using. You can also copy any template file from the /montreal/templates folder into the /quebec/templates folder and it will listen to the sub-themes template file first. This will allow you to update the parent theme as we make updates without losing your customizations. Just pay attention to the changelog and compare the parent theme files with yours and make any adjustments as needed.</p>
+<p>You will need to configure the sub-themes theme settings separately from the parent theme's, so visit /admin/appearance/settings/quebec to configure the theme settings for the sub-theme.</p>
 </ol>  
 <h2>Menu</h2>
 <p>To edit your menu visit yourdomain.com/admin/structure/menu (pictured below)</p>

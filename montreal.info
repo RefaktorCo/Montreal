@@ -36,7 +36,7 @@ regions[footer_full]    = Footer Full Width
 settings[branding_type] = 'text'
 
 settings[enable_highlight] = '1'
-settings[highlight_text] = '"There's no such thing as simple. Simple is hard"'
+settings[highlight_text] = "There's no such thing as simple. Simple is hard"
 
 settings[enable_slider] = '0'
 settings[slides_number] = '3'
@@ -45,9 +45,6 @@ settings[slider_caption] = '<h1 class="bigtoppadding whitetext"><span class="lig
 settings[enable_services] = '1'
 
 settings[enable_information] = '1'
-
-settings[enable_highlight] = '1'
-settings[highlight_text] = 'Haiku is modern.  A clean layout for your site. Fast and responsive.'
 
 settings[enable_recent_posts] = '0'
 settings[recent_posts_title] = 'Our Recent Notes'
