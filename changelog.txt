@@ -6,7 +6,7 @@
 	*Added example sub-theme and sub-theme documentation.
   *Removed block--recent-projects.tpl (not needed).
   *Edited block.tpl to fix missing block/view edit tools when logged in.
-  *Additional IE fixes.
+  *Additional style fixes and IE improvements.
 
 1.0.1 (02/06/13)
   *Single portfolio item slider now handled by one image field (legacy support for previous method remains).

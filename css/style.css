@@ -328,13 +328,11 @@ color:#fff;
 }
 
 h5{
-font-size:1.8px;
 font-size:1.8rem;
 font-weight:400;
 }
 
 h6{
-font-size:1.5px;
 font-size:1.5rem;
 font-weight:300;
 }
@@ -1142,6 +1140,7 @@ box-shadow: -3px 0 2px rgba(0,0,0,0.3);
 -o-transition-duration: .6s;
 -ms-transition-duration: .6s;
 -webkit-filter: grayscale();
+max-width: none;
 }
 
 .itemstripe:hover img {
@@ -3522,6 +3521,7 @@ height: 150px;
 
 .greyvertical img {
 margin-bottom: 10px;
+max-width: none;
 }
 
 footer form .field {
@@ -3644,6 +3644,12 @@ cursor: pointer;
 -moz-transition-duration: 0.4s;
 -o-transition-duration: 0.4s;
 -ms-transition-duration: 0.4s;	
+}
+
+#main_title_text {
+color: #FFF; 
+font-size: 24px;
+margin-top: 15px;
 }
 
 /*Scroll to Top*/
