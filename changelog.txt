@@ -3,7 +3,7 @@
 1.0.2 (02/21/13)
 	*Updated Drupal Core in full install to 7.20.
 	*Added HTML files to download file.
-	*Added example sub-theme and sub-theme documentation.
+	*Added example sub-theme (Quebec) and sub-theme documentation.
   *Removed block--recent-projects.tpl (not needed).
   *Edited block.tpl to fix missing block/view edit tools when logged in.
   *Additional style/bug fixes and IE improvements.
