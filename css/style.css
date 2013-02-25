@@ -1145,7 +1145,6 @@ box-shadow: -3px 0 2px rgba(0,0,0,0.3);
 -o-transition-duration: .6s;
 -ms-transition-duration: .6s;
 -webkit-filter: grayscale();
-max-width: none;
 }
 
 .itemstripe:hover img {
