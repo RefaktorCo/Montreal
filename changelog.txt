@@ -2,7 +2,8 @@
 
 1.0.4 (03/25/13)
   *Updated Drupal Core to 7.21.
-  
+  *Updated Google Font embeds to support extended latin characters (where applicable).
+  *Firefox-specifc CSS fix for "Portfolio Drag" template.
 
 1.0.3 (02/25/13)
   *Fix for minor stripe portfolio bug caused by previous update.

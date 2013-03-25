@@ -3693,6 +3693,10 @@ margin-top: 22px;
   outline:none;
 }
 
+@-moz-document url-prefix() {
+  .drag .greyvertical img {height: 154px !important; width: 300px !important; }
+}
+
 @media screen and (max-width: 1024px) { 
 	.mobile-menu {
 	display: block;  
