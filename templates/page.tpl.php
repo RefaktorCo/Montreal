@@ -1,5 +1,4 @@
-<?php montreal_header($page);  global $root; 
-  $slide_number = theme_get_setting('slides_number');?>  
+<?php montreal_header($page); ?>  
 <!-- STRIPES BACKGROUND -->
 <div class="bigpadding_back"></div>
  
