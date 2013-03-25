@@ -1,5 +1,5 @@
-<?php montreal_header($page);?>
-  
+<?php montreal_header($page);  global $root; 
+  $slide_number = theme_get_setting('slides_number');?>  
 <!-- STRIPES BACKGROUND -->
 <div class="bigpadding_back"></div>
  
@@ -45,5 +45,4 @@
   </div>
   </div>
 <?php print $messages; ?>
-  
 <?php montreal_footer($page);?>

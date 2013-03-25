@@ -1,5 +1,9 @@
 ===Montreal Changelog===
 
+1.0.4 (03/25/13)
+  *Updated Drupal Core to 7.21.
+  
+
 1.0.3 (02/25/13)
   *Fix for minor stripe portfolio bug caused by previous update.
 
