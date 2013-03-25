@@ -3697,6 +3697,8 @@ margin-top: 15px;
   .drag .greyvertical img {height: 154px !important; width: 300px !important; }
 }
 
+.error_wrap, .error_wrap p {text-align: center;}
+
 @media screen and (max-width: 1024px) { 
 	.mobile-menu {
 	display: block;  
