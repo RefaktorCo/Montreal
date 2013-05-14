@@ -50,8 +50,6 @@ settings[recent_posts_title] = 'Our Recent Notes'
 settings[enable_recent_projects] = '0'
 settings[recent_projects_title] = 'Recent Projects'
 
-settings[color_scheme] = 'black'
-
 settings['font_family'] = '"Oswald", sans-serif'
 
 settings[h1] = '36px'
