@@ -1,0 +1,64 @@
+body, 
+header,
+footer,
+.color {
+background: #111;
+}
+
+::selection,
+::-moz-selection,
+.white p.dropcaps:first-letter,
+.colortext,
+.white a.greytext:hover {
+color:#111;
+}
+
+::-webkit-scrollbar {
+border-left:1px solid #111;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background-color:#111;
+}
+
+::-moz-scrollbar {
+border-left:1px solid #111;
+
+}
+
+.white .drawer{
+border-top: 4px solid #111;
+}
+
+.slideshow{
+border-bottom:6px solid #111;
+}
+
+.colorvertical{
+border-right:1px solid #111;
+}
+
+::-moz-scrollbar-thumb:vertical,
+.colorhorizontal{
+background-color:#111;
+}
+
+.white blockquote{
+border-left:2px solid #111;
+}
+
+.tabs ul {
+border-bottom: 1px solid #111 !important;
+}
+
+.tabs li a {
+border: 1px solid #111 !important;
+}
+
+.tabs li.active a {
+background: #111 !important;
+}
+
+.client:hover{
+border-bottom:3px solid #111;
+}

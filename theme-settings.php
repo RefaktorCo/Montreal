@@ -357,14 +357,9 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Color'),
   );  
   
-    // Colors
-    $form['options']['color']['colors'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<h3 class="options_heading">Color Scheme</h3>',
-    );
-  
+      
       // Color Scheme
-      $form['options']['color']['colors']['color_scheme'] = array(
+      $form['options']['color']['color_scheme'] = array(
         '#type' => 'select',
         '#title' => 'Color Scheme',
         '#default_value' => theme_get_setting('color_scheme'),
@@ -374,15 +369,15 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
           'green' => t('Green'),
           'brown' => t('Brown'),
           'purple' => t('Purple'),
-          'orange' => t('Orange (default)'),
+          'orange' => t('Orange'),
           'red' => t('Red'),
-          'black' => t('Black'),
+          'black' => t('Black (default)'),
           'custom' => t('Custom'),
         ),
       );
       
       // Custom Color
-      $form['options']['color']['colors']['custom_color'] = array(
+      $form['options']['color']['custom_color'] = array(
 		    '#type' => 'jquery_colorpicker',
 		    '#title' => t('Color'),
 		    '#default_value' => theme_get_setting('custom_color'),
