@@ -40,7 +40,7 @@ settings[highlight_text] = "There's no such thing as simple. Simple is hard"
 
 settings[enable_slider] = '0'
 settings[slides_number] = '3'
-settings[slider_caption] = '<h1 class="bigtoppadding whitetext"><span class="light">WE CREATE</span><br/>BRANDS PEOPLE LOVE</h1><h5 class="white blacktext smallsidepadding">MONTREAL DESIGN STUDIO</h5><p class="whitetext meta">We've cleaned up the air, but polluted the soul. We write more, but learn less. We plan more, but accomplish less. We've learned to rush, but not to wait. We write more, but learn less. We plan more, but accomplish less.</p>'
+settings[slider_caption] = 'Default Slider Caption'
 
 settings[enable_services] = '1'
 
