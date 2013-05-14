@@ -1,14 +1,4 @@
 // Initialize the plugin with no custom options
-		  jQuery(document).ready(function ($) {
-			// I just set some of the options
-			$("#scroll").smoothDivScroll({
-                                mousewheelScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: true,
-				hotSpotScrolling: false,
-
-			});
-		});
 
 
 

@@ -350,35 +350,49 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
           )
         )
       );  
-   
-     
-  // Layout
-  $form['options']['layout'] = array(
+      
+  // Color
+  $form['options']['color'] = array(
     '#type' => 'fieldset',
-    '#title' => 'Layout',
-  );
-            
-    // Page Layout
-    $form['options']['layout']['page_layout'] = array(
-      '#type' => 'radios',
-      '#title' => 'Select a basic page layout:',
-      '#default_value' => theme_get_setting('page_layout'),
-      '#options' => array(
-        'sidebar_right' => 'Sidebar Right',
-        'full_width' => 'Full Width',
-      ),
+    '#title' => t('Color'),
+  );  
+  
+    // Colors
+    $form['options']['color']['colors'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<h3 class="options_heading">Color Scheme</h3>',
     );
+  
+      // Color Scheme
+      $form['options']['color']['colors']['color_scheme'] = array(
+        '#type' => 'select',
+        '#title' => 'Color Scheme',
+        '#default_value' => theme_get_setting('color_scheme'),
+        '#options' => array(
+          'dark-blue' => t('Dark Blue'),
+          'light-blue' => t('Light Blue'),
+          'green' => t('Green'),
+          'brown' => t('Brown'),
+          'purple' => t('Purple'),
+          'orange' => t('Orange (default)'),
+          'red' => t('Red'),
+          'black' => t('Black'),
+          'custom' => t('Custom'),
+        ),
+      );
+      
+      // Custom Color
+      $form['options']['color']['colors']['custom_color'] = array(
+		    '#type' => 'jquery_colorpicker',
+		    '#title' => t('Color'),
+		    '#default_value' => theme_get_setting('custom_color'),
+		    '#states' => array (
+          'visible' => array(
+            'select[name=color_scheme]' => array('value' => 'custom')
+          )
+        )
+      );
     
-    // Blog Layout
-    $form['options']['layout']['blog_layout'] = array(
-      '#type' => 'radios',
-      '#title' => 'Select a blog post (single) layout:',
-      '#default_value' => theme_get_setting('blog_layout'),
-      '#options' => array(
-        'sidebar_right' => 'Sidebar Right',
-        'full_width' => 'Full Width',
-      ),
-    );
    
   // Design
   $form['options']['design'] = array(
@@ -475,45 +489,6 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('h6'),
       );
       
-  // Footer
-  $form['options']['footer'] = array(
-    '#type' => 'fieldset',
-    '#title' => 'Footer',
-  );
-      
-    // Enable Primary Footer
-    $form['options']['footer']['enable_primary_footer'] = array(
-      '#type' => 'checkbox',
-      '#title' => 'Enable Primary Footer',
-      '#default_value' => theme_get_setting('enable_primary_footer'),
-    );
-      
-    
-    // Secondary Footer
-    $form['options']['footer']['secondary_footer'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Secondary Footer</h3>',
-    ); 
-    
-      // Enable Secondary Footer
-      $form['options']['footer']['secondary_footer']['enable_secondary_footer'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Secondary Footer',
-        '#default_value' => theme_get_setting('enable_secondary_footer'),
-      );
-      
-      // Secondary Footer Left
-      $form['options']['footer']['secondary_footer']['secondary_footer_text'] = array(
-        '#type' => 'textfield',
-        '#title' => 'Secondary Footer Text',
-        '#default_value' => theme_get_setting('secondary_footer_text'),
-        '#states' => array (
-          'invisible' => array(
-            'input[name="enable_secondary_footer"]' => array('checked' => FALSE)
-          )
-        )
-      );
-        
   // Submit Button
   $form['#submit'][] = 'montreal_settings_submit';
   $form['#submit'][] = 'montreal_background_settings_submit';
