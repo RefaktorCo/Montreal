@@ -1,7 +1,7 @@
 <?php
 /* Define $root as a global variable */
 global $root;
-$root = base_path() . path_to_theme();
+$root = base_path() . drupal_get_path('theme', 'montreal');
 
 include_once(drupal_get_path('theme', 'montreal').'/includes/init.php');
 
@@ -23,10 +23,7 @@ function montreal_menu_link(array $variables) {
   $element = $variables['element'];
   static $item_id = 0;
   $menu_name = $element['#original_link']['menu_name'];
-  
-  
-  
-  
+
   if ($element['#below']) {
     $element['#attributes']['class'][] = 'dropdown';
   }

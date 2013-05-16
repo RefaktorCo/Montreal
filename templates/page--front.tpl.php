@@ -18,10 +18,9 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <!-- END SLIDESHOW CONTAINER -->	
 <?php endif; ?>
 
-<?php if (theme_get_setting('enable_recent_projects') == '1') : ?>	
+<?php if (render($page['recent_projects'])): ?>
 <!-- THICK STRIPE BORDER -->
-<div class="smallpadding" style="background: url('<?php echo $root; ?>/img/stripes.png');">
-</div>
+<div class="smallpadding" style="background: url('<?php echo $root; ?>/img/stripes.png');"></div>
 <!-- PORTFOLIO CONTAINER -->
 <div class="container white bigpadding">
 	<section class="row smallbottompadding">
@@ -35,15 +34,12 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 		</p>
 	</div>
 	</section>
+	
 	<!-- BASIC PORTFOLIO ITEM ROW -->
 	<section class="row midbottompadding recent_projects">
-	<?php if(!$page['recent_projects']) {?>
-	
-	  <h4>Refer to the /documentation folder inside the theme for instructions on how to properly use this section.</h4>
-
-	<?php } else { print render($page['recent_projects']); } ?>
-
+	  <?php print render($page['recent_projects']); ?>
 	</section>
+	
 </div>
 <!-- end of  portfolio container -->    
 <?php endif; ?>
@@ -69,7 +65,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 </div>
 <?php endif; ?>
 
-<?php if (theme_get_setting('enable_recent_posts') == '1') : ?>
+<?php if (render($page['front_blog'])): ?>
 <!-- BLOG CONTENT CONTAINER WITH STRIPE PAGE BACKGROUND -->
 <div class="container midpadding" style="background: url('<?php echo $root; ?>/img/stripes.png');">
 
@@ -82,14 +78,9 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 			</p>
 		</div>
 	</section>
-	<?php if(!$page['front_blog']) {?>
 	
-	<div class="row white">
-	  <h4>Refer to the /documentation folder inside the theme for instructions on how to properly use this section.</h4>
-	</div>
-	
-	<?php } else { print render($page['front_blog']); } ?>
-	
+	<?php print render($page['front_blog']); ?>
+		
 </div>
 <!-- END BLOG CONTAINER -->
 <?php endif;?>

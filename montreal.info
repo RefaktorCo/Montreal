@@ -34,21 +34,18 @@ regions[footer_full]    = Footer Full Width
 settings[branding_type] = 'text'
 
 settings[enable_highlight] = '1'
-settings[highlight_text] = "There's no such thing as simple. Simple is hard"
+settings[highlight_text] = "Default highlight text"
 
 settings[enable_slider] = '0'
 settings[slides_number] = '3'
 settings[slider_caption] = 'Default Slider Caption'
 
-settings[enable_services] = '1'
-
-settings[enable_information] = '1'
-
-settings[enable_recent_posts] = '0'
 settings[recent_posts_title] = 'Our Recent Notes'
 
-settings[enable_recent_projects] = '0'
 settings[recent_projects_title] = 'Recent Projects'
+
+settings[enable_twitter_feed] = '1'
+settings[twitter_handle] = 'Envato'
 
 settings['font_family'] = '"Oswald", sans-serif'
 

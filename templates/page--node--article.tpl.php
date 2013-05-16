@@ -3,7 +3,7 @@
 <div class="container" style="background:url(<?php echo $root; ?>/img/stripes.png);">            
   <section class="row white">
     
-    <div class="seven columns blogpost">
+    <div class="<?php if (($page['sidebar_first']) OR ($page['sidebar_second'])) { echo "seven columns blogpost";} else { echo "twelve columns blogpost"; } ?>">
       <?php print render($title_prefix); ?>
       <?php print render($title_suffix); ?>
        <?php if ($tabs = render($tabs)): ?>
@@ -19,22 +19,23 @@
 	      <?php endif; ?>
       <?php print render($page['content']); ?>
     </div>
-
-    <div class="four columns push_one grey sidebar">
-
-    	<?php if ($page['sidebar_first']): ?>
-    	<aside id="sidebar-first" role="complementary" >
-      <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-      <?php endif; ?>
-      <?php if ($page['sidebar_second']): ?>
-      <aside id="sidebar-second" role="complementary">
-      <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-first -->
-      <?php endif; ?>
-      
-    </div>
-   
+    
+    <?php if (($page['sidebar_first']) OR ($page['sidebar_second'])): ?>
+	    <div class="four columns push_one grey sidebar">
+	
+	    	<?php if ($page['sidebar_first']): ?>
+	    	<aside id="sidebar-first" role="complementary" >
+	      <?php print render($page['sidebar_first']); ?>
+	      </aside>  <!-- /#sidebar-first -->
+	      <?php endif; ?>
+	      <?php if ($page['sidebar_second']): ?>
+	      <aside id="sidebar-second" role="complementary">
+	      <?php print render($page['sidebar_second']); ?>
+	      </aside>  <!-- /#sidebar-first -->
+	      <?php endif; ?>
+	      
+	    </div>
+    <?php endif; ?>
   </section>
 </div>    
      

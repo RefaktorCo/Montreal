@@ -228,13 +228,6 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
       
     );
     
-      // Enable Recent Projects
-      $form['options']['front_page']['recent_projects']['enable_recent_projects'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Recent Projects Section',
-        '#default_value' => theme_get_setting('enable_recent_projects'),
-      );
-      
       // Recent Projects Title
       $form['options']['front_page']['recent_projects']['recent_projects_title'] =array(
         '#type' => 'textfield',
@@ -292,14 +285,7 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title' => '<div class="plus"></div><h3 class="options_heading">Recent Posts</h3>',
       
     );
-    
-      // Enable Recent Posts
-      $form['options']['front_page']['recent_posts']['enable_recent_posts'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Recent Posts Section',
-        '#default_value' => theme_get_setting('enable_recent_posts'),
-      );
-      
+          
       //Recent Posts Title
       $form['options']['front_page']['recent_posts']['recent_posts_title'] =array(
         '#type' => 'textfield',
