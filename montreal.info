@@ -7,7 +7,6 @@ stylesheets[all][] = /css/text.css
 stylesheets[all][] = /css/imports.css
 stylesheets[all][] = /css/ie.css
 
-scripts[] = js/gumby.js
 scripts[] = js/modernizr-2.0.6.min.js
 
 scripts[] = js/mobile-menu.js
