@@ -48,7 +48,7 @@
 <script type="text/javascript">
 //<![CDATA[
     var map;
-    $(document).ready(function(){
+   jQuery(document).ready(function ($) {
     prettyPrint();
     map = new GMaps({
     div: '#map',
