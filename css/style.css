@@ -3663,6 +3663,12 @@ font-size: 24px;
 margin-top: 15px;
 }
 
+#admin-menu-wrapper .dropdown li {
+width: auto;
+line-height: 22px;
+}
+
+
 /*Scroll to Top*/
 #toTop { 
   display:none; 
@@ -3751,4 +3757,4 @@ margin-top: 15px;
   .blog h4 {
 	  font-size: 20px;
   }
-  
+}  
