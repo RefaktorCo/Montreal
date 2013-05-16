@@ -3,7 +3,6 @@ function montreal_footer($page){
   global $root; 
 ?>
 <!-- begin footer -->   
-  <!-- FOOTER -->
 <footer class="black">
 	<div class="container">
 	  
@@ -44,6 +43,6 @@ function montreal_footer($page){
 	   <?php } ?> 
 	</div>
 </footer>
-    
+<!-- end footer -->      
    <?php }
 ?>

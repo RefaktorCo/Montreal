@@ -4,12 +4,12 @@
   
 <div class="container black nopadding">
 	<section class="row bigtoppadding">
-	<h3 class="whitetext bold midbottommargin center">SOME OF OUR WORK</h3>
+	<h3 class="whitetext bold midbottommargin center"><?php echo t('SOME OF OUR WORK'); ?></h3>
 	<div class="five columns alpha centered whitehorizontal">
 	</div>
 	<div class="four columns centered smalltoppadding">
 		<p class="center meta">
-			Click and drag portfolio items to left or right.
+			<?php echo t('Click and drag portfolio items to left or right.'); ?>
 		</p>
 	</div>
 	</section>

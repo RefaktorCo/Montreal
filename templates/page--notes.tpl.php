@@ -2,7 +2,7 @@
     
 <div class="container bigtoppadding bigbottompadding" style="background:url(<?php echo $root;?>/img/stripes.png);">
 	<section class="row white bigpadding smallbottommargin">
-  	<h2 class="center italic blacktext">Our daily ramblings about stuff</h2>
+  	<h2 class="center italic blacktext"><?php echo t('Our daily ramblings about stuff'); ?></h2>
   </section>
         
   <div class="row">

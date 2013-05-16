@@ -30,7 +30,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	<div class="four columns centered smalltoppadding">
 		<p class="center">
-			<a class="smallfont greytext" href="<?php echo theme_get_setting('recent_projects_link');?>">VIEW ALL PORTFOLIO</a>
+			<a class="smallfont greytext" href="<?php echo theme_get_setting('recent_projects_link');?>"><?php echo t('VIEW ALL PORTFOLIO'); ?></a>
 		</p>
 	</div>
 	</section>
@@ -74,7 +74,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 		<div class="three columns alpha centered blackhorizontal"></div>
 		<div class="four columns centered smalltoppadding">
 			<p class="center">
-				<a class="smallfont greytext" href="<?php echo theme_get_setting('recent_posts_link');?>">VIEW ALL NOTES</a>
+				<a class="smallfont greytext" href="<?php echo theme_get_setting('recent_posts_link');?>"><?php echo t('VIEW ALL NOTES');?></a>
 			</p>
 		</div>
 	</section>

@@ -1,5 +1,15 @@
 ===Montreal Changelog===
 
+1.1 (05/16/13)
+  *Updated Drupal Core to 7.22.
+  *Removed theme jQuery library in favor of using jQuery Update module (better module compatibility).
+  *Removed unecessary Layout and Footer theme settings in favor of using block visibility settings.
+  *Added translation function wrappers around all theme-generated text.
+  *Sub-theme no longer requires parent theme CSS and JS files to function.
+  *Fixed theme setting defaults in .info file causing issues with WAMP installs.
+  *Minor CSS tweaks.
+  *Updated documentation to reflect changes.
+
 1.0.4 (03/25/13)
   *Updated Drupal Core to 7.21.
   *Updated Google Font embeds to support extended latin characters (where applicable).

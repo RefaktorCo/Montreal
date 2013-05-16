@@ -2,7 +2,7 @@
       
 <div class="container bigtoppadding midtoppadding" style="background:url(<?php echo $root;?>/img/stripes.png);">
 	<section class="row midbottompadding bigtoppadding">
-	<h2 class="black whitetext bold leftpadding rightpadding">SOME OF OUR WORK</h2>
+	<h2 class="black whitetext bold leftpadding rightpadding"><?php echo t('SOME OF OUR WORK'); ?></h2>
 	</section>
 </div>
   

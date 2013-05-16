@@ -4,12 +4,12 @@
   
 <div class="container black bigpadding">
   <section class="row">
-  	<h3 class="whitetext bold midbottommargin center">OUR RECENT WORK</h3>
+  	<h3 class="whitetext bold midbottommargin center"><?php echo t('OUR RECENT WORK');?></h3>
 		<div class="five columns alpha centered whitehorizontal">
 		</div>
 		<div class="four columns alpha centered midtopmargin">
 			<p class="center meta">
-				We have worked on some amazing project with some great clients.
+				<?php echo t('We have worked on some amazing project with some great clients.'); ?>
 			</p>
 		</div>
   </section>
