@@ -15,6 +15,7 @@ function montreal_preprocess_page(&$vars, $hook) {
   if($status == "404 Not Found") {      
     $vars['theme_hook_suggestions'][] = 'page__404';
   }
+  
 }
 
 /* Assign top level menu list items an ascending class of menu_$number  */

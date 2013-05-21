@@ -9,7 +9,6 @@ stylesheets[all][] = /css/ie.css
 
 scripts[] = js/jquery-ui-1.8.23.custom.min.js
 scripts[] = js/modernizr-2.0.6.min.js
-
 scripts[] = js/mobile-menu.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/easing.js
