@@ -3,11 +3,10 @@ description = A Responsive Parallax Drupal 7 Theme
 core = 7.x
 engine = phptemplate
 
-stylesheets[all][] = /css/text.css
-stylesheets[all][] = /css/imports.css
 stylesheets[all][] = /css/ie.css
 
 scripts[] = js/jquery-ui-1.8.23.custom.min.js
+scripts[] = js/gumby.js
 scripts[] = js/modernizr-2.0.6.min.js
 scripts[] = js/mobile-menu.js
 scripts[] = js/jquery.ui.totop.js
@@ -47,15 +46,3 @@ settings[enable_twitter_feed] = '1'
 settings[twitter_handle] = 'Envato'
 
 settings['font_family'] = '"Oswald", sans-serif'
-
-settings[h1] = '36px'
-settings[h2] = '30px'
-settings[h3] = '24px'
-settings[h4] = '18px'
-settings[h5] = '14px'
-settings[h6] = '12px'
-
-settings[enable_primary_footer] = '1'
-
-settings[enable_secondary_footer] = '1'
-settings[secondary_footer_text] = 'Design by <a href="http://refaktorthemes.com" target="_blank">Refaktor</a>'

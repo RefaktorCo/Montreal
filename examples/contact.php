@@ -47,24 +47,24 @@
 </script>
 <script type="text/javascript">
 //<![CDATA[
-    var map;
-   jQuery(document).ready(function ($) {
-    prettyPrint();
-    map = new GMaps({
-    div: '#map',
-    lat: 48.8584,
-    lng: 2.2946,
-    });
-    map.addMarker({
-    lat: 48.8584,
-    lng: 2.2946,
-    title: 'MONTREAL Html Template',
-    click: function(e){
-    if(console.log)
-    console.log(e);
-    alert('You clicked in this marker');
-    }
-    });
-    });
-    //]]>
-    </script>
+  var map;
+ jQuery(document).ready(function ($) {
+  prettyPrint();
+  map = new GMaps({
+  div: '#map',
+  lat: 48.8584,
+  lng: 2.2946,
+  });
+  map.addMarker({
+  lat: 48.8584,
+  lng: 2.2946,
+  title: 'MONTREAL Html Template',
+  click: function(e){
+  if(console.log)
+  console.log(e);
+  alert('You clicked in this marker');
+  }
+  });
+  });
+  //]]>
+</script>

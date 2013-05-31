@@ -1,5 +1,10 @@
 ===Montreal Changelog===
 
+1.1.1 (06/01/13)
+  *Fixed issue with duplicate stylesheet calls.
+  *Removed heading tag theme settings.
+  *Removed some obsolute setting defaults in .info file.
+
 1.1 (05/16/13)
   *Updated Drupal Core to 7.22.
   *Removed theme jQuery library in favor of using jQuery Update module (better module compatibility).

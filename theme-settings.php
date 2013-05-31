@@ -384,54 +384,6 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
         ),
       );
     
-    //Headings
-    $form['options']['typography']['headings'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Headings</h3>',
-    );
-    
-      //H1
-      $form['options']['typography']['headings']['h1'] =array(
-        '#type' => 'textfield',
-        '#title' => 'h1 Size',
-        '#default_value' => theme_get_setting('h1'),
-      );
-      
-      //H2
-      $form['options']['typography']['headings']['h2'] =array(
-        '#type' => 'textfield',
-        '#title' => 'h2 Size',
-        '#default_value' => theme_get_setting('h2'),
-      );
-      
-      //H3
-      $form['options']['typography']['headings']['h3'] =array(
-        '#type' => 'textfield',
-        '#title' => 'h3 Size',
-        '#default_value' => theme_get_setting('h3'),
-      );
-      
-      //H4
-      $form['options']['typography']['headings']['h4'] =array(
-        '#type' => 'textfield',
-        '#title' => 'h4 Size',
-        '#default_value' => theme_get_setting('h4'),
-      );
-      
-      //H5
-      $form['options']['typography']['headings']['h5'] =array(
-        '#type' => 'textfield',
-        '#title' => 'h5 Size',
-        '#default_value' => theme_get_setting('h5'),
-      );
-      
-      //H6
-      $form['options']['typography']['headings']['h6'] =array(
-        '#type' => 'textfield',
-        '#title' => 'h6 Size',
-        '#default_value' => theme_get_setting('h6'),
-      );
-      
   // Submit Button
   $form['#submit'][] = 'montreal_settings_submit';
   $form['#submit'][] = 'montreal_background_settings_submit';

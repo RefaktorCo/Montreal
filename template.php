@@ -197,21 +197,21 @@ function montreal_preprocess_html(&$vars){
       'type' => 'text/css',
     ),
   );
-  $ui = array(
+  $gumby = array(
     '#tag' => 'link', 
     '#weight' => 6,
     '#attributes' => array( 
-      'href' => ''.$root.'/css/ui.css', 
+      'href' => ''.$root.'/css/gumby.css', 
       'rel' => 'stylesheet',
       'type' => 'text/css',
       'media' => 'screen',
     ),
   );
-  $gumby = array(
+  $ui = array(
     '#tag' => 'link', 
     '#weight' => 7,
     '#attributes' => array( 
-      'href' => ''.$root.'/css/gumby.css', 
+      'href' => ''.$root.'/css/ui.css', 
       'rel' => 'stylesheet',
       'type' => 'text/css',
       'media' => 'screen',
@@ -227,9 +227,19 @@ function montreal_preprocess_html(&$vars){
       'media' => 'screen',
     ),
   );
-  $color = array(
+   $text = array(
     '#tag' => 'link', 
     '#weight' => 9,
+    '#attributes' => array( 
+      'href' => ''.$root.'/css/text.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
+  );
+  $color = array(
+    '#tag' => 'link', 
+    '#weight' => 10,
     '#attributes' => array( 
       'href' => ''.$root.'/css/colors/'.theme_get_setting('color_scheme').'.css', 
       'rel' => 'stylesheet',
@@ -240,7 +250,7 @@ function montreal_preprocess_html(&$vars){
   $viewport = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
-    '#weight' => 10,
+    '#weight' => 11,
     '#attributes' => array(
       'name' => 'viewport',
       'content' =>  'width=device-width, initial-scale=1',
@@ -249,15 +259,9 @@ function montreal_preprocess_html(&$vars){
   $font_family = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {font-family:".theme_get_setting('font_family')." !important;}</style> ",
-    '#weight' => 11,
-  );
-  $headings = array(
-    '#type' => 'markup',
-    '#markup' => "<style type='text/css'>h1 {font-size:".theme_get_setting('h1').";} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
     '#weight' => 12,
   );
-  
-  
+   
   if (theme_get_setting('seo_title') != "") {
     drupal_add_html_head( $meta_title, 'meta_title' );
   }
@@ -274,13 +278,13 @@ function montreal_preprocess_html(&$vars){
 
   drupal_add_html_head( $font, 'google_font_open_sans' );
   drupal_add_html_head( $condensed, 'google_font_condensed' );
-  drupal_add_html_head( $ui, 'ui_style' );
   drupal_add_html_head( $gumby, 'gumby_style' );
+  drupal_add_html_head( $ui, 'ui_style' );
   drupal_add_html_head( $style, 'main_style' );
+  drupal_add_html_head( $text, 'text' );
   drupal_add_html_head( $viewport, 'meta_viewport' );
   drupal_add_html_head( $font_family, 'font_family');
-  drupal_add_html_head( $headings, 'headings');
-    
+  
 }
 
 /* Separate from montreal_preprocess_html so function can be called directly before </head> tag. */

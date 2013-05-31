@@ -1,14 +1,14 @@
 // Initialize the plugin with no custom options
-		  jQuery(document).ready(function ($) {
-			// I just set some of the options
-			$("#scroll").smoothDivScroll({
-                                mousewheelScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: true,
-				hotSpotScrolling: false,
-
-			});
-		});
+jQuery(document).ready(function ($) {
+	// I just set some of the options
+	$("#scroll").smoothDivScroll({
+	                          mousewheelScrolling: false,
+		touchScrolling: true,
+		manualContinuousScrolling: true,
+		hotSpotScrolling: false,
+	
+	});
+});
 
 
 
@@ -95,12 +95,13 @@ return (false); /// means not selected
 return (true); /// means selected
 }
 
-  jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) {
   $('.flexslider').flexslider({
+    
     animation: "slide"
   });
 });
 
-  jQuery(document).ready(function ($) {
-		$("a[rel^='prettyPhoto']").prettyPhoto();
-	});
+jQuery(document).ready(function ($) {
+	$("a[rel^='prettyPhoto']").prettyPhoto();
+});
