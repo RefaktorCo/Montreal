@@ -4,6 +4,7 @@
   *Fixed issue with duplicate stylesheet calls.
   *Removed heading tag theme settings.
   *Removed some obsolete setting defaults in .info file.
+  *Improved how the slideshow images respond to different screen sizes.
   *Updated Twitter widget, theme settings and docs for Twitter API 1.1 compatibility. 
 
 1.1 (05/16/13)
