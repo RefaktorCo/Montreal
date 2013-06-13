@@ -3648,6 +3648,8 @@ display: block;
 text-align: center;
 background: #111;
 -webkit-transition-duration: 0.4s;	
+display:inline;
+margin-right: 10px;
 }
 
 input:hover[type="submit"] {
