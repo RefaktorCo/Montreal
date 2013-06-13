@@ -6,6 +6,8 @@
   *Removed some obsolete setting defaults in .info file.
   *Improved how the slideshow images respond to different screen sizes.
   *Updated Twitter widget, theme settings and docs for Twitter API 1.1 compatibility. 
+  *Fixed pagination style bug.
+  *Defined $theme_root global for use in sub-themes.
 
 1.1 (05/16/13)
   *Updated Drupal Core to 7.22.

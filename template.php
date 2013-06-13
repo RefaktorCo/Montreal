@@ -1,6 +1,7 @@
 <?php
 /* Define $root as a global variable */
-global $root, $twitter_var;
+global $root;
+$theme_root = base_path() . path_to_theme();
 $root = base_path() . drupal_get_path('theme', 'montreal');
 
 include_once(drupal_get_path('theme', 'montreal').'/includes/init.php');

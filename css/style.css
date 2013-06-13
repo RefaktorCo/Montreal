@@ -3416,8 +3416,12 @@ font-size:1.2rem !important;
 }
 
 .pager-current {border-bottom: solid 2px #3a3a3a;}
-.item-list .pager {overflow: auto; height: 35px;}
-.item-list .pager li {padding: 0px; }
+.item-list .pager {overflow: auto; }
+.item-list .pager li {padding: 0px; margin: 0px;}
+li.pager-current.first, li.pager-current.last {
+	padding: 6px 12px 4px !important;
+  margin-top: 8px;
+}
 ul.pager { display: block; margin-left: -5px; }
 ul.pager li { float: left; display: block;  color: #999; font-size: 15px; margin-left: 5px; }
 ul.pager li a, ul.pager .pager-current { display: block; padding: 6px 12px 4px; color: #555; font-family:inherit;font-size:12px; background:#fff;}
