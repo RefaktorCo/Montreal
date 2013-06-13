@@ -311,21 +311,69 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
       );  
       
       
-    // Clients
+    // Twitter
     $form['options']['front_page']['twitter_feed'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">Twitter Feed</h3>',
       
     );
     
-      // Enable clients
+      // Enable Twitter
       $form['options']['front_page']['twitter_feed']['enable_twitter_feed'] = array(
         '#type' => 'checkbox',
         '#title' => 'Enable Twitter Feed',
         '#default_value' => theme_get_setting('enable_twitter_feed'),
       );
       
-      //Clients Title
+      // Twitter App Consumer Key
+      $form['options']['front_page']['twitter_feed']['twitter_app_consumer_key'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Twitter App Consumer Key',
+        '#default_value' => theme_get_setting('twitter_app_consumer_key'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_twitter_feed"]' => array('checked' => FALSE)
+          )
+        )
+      );
+      
+      // Twitter App Consumer Secret
+      $form['options']['front_page']['twitter_feed']['twitter_app_consumer_secret'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Twitter App Consumer Secret',
+        '#default_value' => theme_get_setting('twitter_app_consumer_secret'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_twitter_feed"]' => array('checked' => FALSE)
+          )
+        )
+      );
+      
+      // Twitter App Access Token
+      $form['options']['front_page']['twitter_feed']['twitter_app_access_token'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Twitter App Access Token',
+        '#default_value' => theme_get_setting('twitter_app_user_token'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_twitter_feed"]' => array('checked' => FALSE)
+          )
+        )
+      );
+      
+      // Twitter App Access Token Secret
+      $form['options']['front_page']['twitter_feed']['twitter_app_access_secret'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Twitter App Access Token Secret',
+        '#default_value' => theme_get_setting('twitter_app_access_secret'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_twitter_feed"]' => array('checked' => FALSE)
+          )
+        )
+      );
+      
+      // Twitter Handle
       $form['options']['front_page']['twitter_feed']['twitter_handle'] =array(
         '#type' => 'textfield',
         '#title' => 'Twitter Handle',

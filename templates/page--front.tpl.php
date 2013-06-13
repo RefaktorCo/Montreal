@@ -93,7 +93,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	<div class="alpha seven columns centered">
 		<div class="tweet">
 		</div>
-		<a href="#" class="blacktext">
+		<a href="http://twitter.com/<?php echo theme_get_setting('twitter_handle');?>" class="blacktext">
 		<h6 class="center bold meta"><?php echo theme_get_setting('twitter_handle');?></h6>
 		</a>
 	</div>
@@ -104,6 +104,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <script type="text/javascript">
 jQuery(document).ready(function ($) {
   $(".tweet").tweet({
+    modpath: '<?php echo $root;?>/includes/twitter/',
     username: "<?php echo theme_get_setting('twitter_handle');?>",
     join_text: "auto",
     avatar_size: null,

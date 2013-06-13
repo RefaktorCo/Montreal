@@ -12,6 +12,7 @@ scripts[] = js/mobile-menu.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/easing.js
 scripts[] = js/plugins.js
+scripts[] = includes/twitter/jquery.tweet.js
 scripts[] = js/main.js
 scripts[] = js/montreal.js
 
