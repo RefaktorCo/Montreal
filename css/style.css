@@ -405,7 +405,7 @@ height:100%;
 
 .slideshow{
 border-bottom:6px solid #111;
-height:80%;
+height:100%;
 background: url('../img/stripesblack.png'); 
 }
 
@@ -3417,7 +3417,7 @@ font-size:1.2rem !important;
 
 .pager-current {border-bottom: solid 2px #3a3a3a;}
 .item-list .pager {overflow: auto; }
-.item-list .pager li {padding: 0px; margin: 0px;}
+.item-list .pager li {margin: 0px;}
 li.pager-current.first, li.pager-current.last {
 	padding: 6px 12px 4px !important;
   margin-top: 8px;

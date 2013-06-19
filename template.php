@@ -16,7 +16,7 @@ function montreal_preprocess_page(&$vars, $hook) {
   if($status == "404 Not Found") {      
     $vars['theme_hook_suggestions'][] = 'page__404';
   }
-  
+    
 }
 
 /* Assign top level menu list items an ascending class of menu_$number  */
@@ -151,6 +151,7 @@ function montreal_preprocess_html(&$vars){
       'content' => theme_get_setting('seo_title')
     )
   );
+  
   $meta_description = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
@@ -160,6 +161,7 @@ function montreal_preprocess_html(&$vars){
       'content' => theme_get_setting('seo_description')
     )
   );
+  
   $meta_keywords = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
@@ -169,17 +171,7 @@ function montreal_preprocess_html(&$vars){
       'content' => theme_get_setting('seo_keywords')
     )
   );
-  /* Commenting out for now
-  $meta_ie_render_engine = array(
-    '#type' => 'html_tag',
-    '#tag' => 'meta',
-    '#weight' => 0,
-    '#attributes' => array(
-      'content' =>  'IE=edge,chrome=1',
-      'http-equiv' => 'X-UA-Compatible',
-    )
-  );
-  */
+  
   $font = array(
     '#tag' => 'link', 
     '#weight' => 4,
@@ -189,6 +181,7 @@ function montreal_preprocess_html(&$vars){
       'type' => 'text/css',
     ),
   );
+  
   $condensed= array(
     '#tag' => 'link', 
     '#weight' => 5,
@@ -198,49 +191,10 @@ function montreal_preprocess_html(&$vars){
       'type' => 'text/css',
     ),
   );
-  $gumby = array(
-    '#tag' => 'link', 
-    '#weight' => 6,
-    '#attributes' => array( 
-      'href' => ''.$root.'/css/gumby.css', 
-      'rel' => 'stylesheet',
-      'type' => 'text/css',
-      'media' => 'screen',
-    ),
-  );
-  $ui = array(
-    '#tag' => 'link', 
-    '#weight' => 7,
-    '#attributes' => array( 
-      'href' => ''.$root.'/css/ui.css', 
-      'rel' => 'stylesheet',
-      'type' => 'text/css',
-      'media' => 'screen',
-    ),
-  );
-  $style = array(
-    '#tag' => 'link', 
-    '#weight' => 8,
-    '#attributes' => array( 
-      'href' => ''.$root.'/css/style.css', 
-      'rel' => 'stylesheet',
-      'type' => 'text/css',
-      'media' => 'screen',
-    ),
-  );
-   $text = array(
-    '#tag' => 'link', 
-    '#weight' => 9,
-    '#attributes' => array( 
-      'href' => ''.$root.'/css/text.css', 
-      'rel' => 'stylesheet',
-      'type' => 'text/css',
-      'media' => 'screen',
-    ),
-  );
+
   $color = array(
     '#tag' => 'link', 
-    '#weight' => 10,
+    '#weight' => 6,
     '#attributes' => array( 
       'href' => ''.$root.'/css/colors/'.theme_get_setting('color_scheme').'.css', 
       'rel' => 'stylesheet',
@@ -248,19 +202,21 @@ function montreal_preprocess_html(&$vars){
       'media' => 'screen',
     ),
   );
+  
   $viewport = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
-    '#weight' => 11,
+    '#weight' => 7,
     '#attributes' => array(
       'name' => 'viewport',
       'content' =>  'width=device-width, initial-scale=1',
     )
   );
+  
   $font_family = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {font-family:".theme_get_setting('font_family')." !important;}</style> ",
-    '#weight' => 12,
+    '#weight' => 8,
   );
    
   if (theme_get_setting('seo_title') != "") {
@@ -279,10 +235,6 @@ function montreal_preprocess_html(&$vars){
 
   drupal_add_html_head( $font, 'google_font_open_sans' );
   drupal_add_html_head( $condensed, 'google_font_condensed' );
-  drupal_add_html_head( $gumby, 'gumby_style' );
-  drupal_add_html_head( $ui, 'ui_style' );
-  drupal_add_html_head( $style, 'main_style' );
-  drupal_add_html_head( $text, 'text' );
   drupal_add_html_head( $viewport, 'meta_viewport' );
   drupal_add_html_head( $font_family, 'font_family');
   

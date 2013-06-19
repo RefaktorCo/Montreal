@@ -353,7 +353,7 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
       $form['options']['front_page']['twitter_feed']['twitter_app_access_token'] =array(
         '#type' => 'textfield',
         '#title' => 'Twitter App Access Token',
-        '#default_value' => theme_get_setting('twitter_app_user_token'),
+        '#default_value' => theme_get_setting('twitter_app_access_token'),
         '#states' => array (
           'invisible' => array(
             'input[name="enable_twitter_feed"]' => array('checked' => FALSE)

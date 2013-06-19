@@ -1,5 +1,9 @@
 ===Montreal Changelog===
 
+1.1.2 (06/19/13)
+  *Stylesheets called in .info file instead of preprocess function to fix issue with caching.
+  *Twitter region disabled by default due to JS conflict caused by empty settings. 
+
 1.1.1 (06/13/13)
   *Fixed issue with duplicate stylesheet calls.
   *Removed heading tag theme settings.

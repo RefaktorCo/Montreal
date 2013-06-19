@@ -3,7 +3,11 @@ description = A Responsive Parallax Drupal 7 Theme
 core = 7.x
 engine = phptemplate
 
-stylesheets[all][] = /css/ie.css
+stylesheets[all][] = css/gumby.css
+stylesheets[all][] = css/ui.css
+stylesheets[all][] = css/ie.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/text.css
 
 scripts[] = js/jquery-ui-1.8.23.custom.min.js
 scripts[] = js/gumby.js
@@ -43,7 +47,7 @@ settings[recent_posts_title] = 'Our Recent Notes'
 
 settings[recent_projects_title] = 'Recent Projects'
 
-settings[enable_twitter_feed] = '1'
+settings[enable_twitter_feed] = '0'
 settings[twitter_handle] = 'Envato'
 
 settings['font_family'] = '"Oswald", sans-serif'

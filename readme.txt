@@ -14,7 +14,7 @@ jQuery Easing(http://gsgd.co.uk/sandbox/jquery.easIng.php) by George Smith and r
 UItoTop jQuery Plugin(https://github.com/sksmatt/UItoTop-jQuery-Plugin/) by Matt Varone and released under the GNU(3).
 GMaps(https://c9.io/hermanvandermaas/fitmaps) by Gustavo Leon and released under the MIT license(2). 
 SmoothDivScroll(http://www.smoothdivscroll.com/) by Thomas Khan and released under the GNU(3).
-Twitter Plugin(https://github.com/seaofclouds/tweet) by Sea Of Clouds (licenses/Tweet.txt).
+Twitter Plugin(https://github.com/seaofclouds/tweet) by Sea Of Clouds (licenses/Tweet.txt) and modified via https://github.com/StanScates/Tweet.js-Mod.
 SelectNav(https://github.com/lukaszfiszer/selectnav.js) released under the MIT license(2). 
 jQuery.kinetic(http://the-taylors.org/jquery.kinetic) by Dave Taylor and released under the MIT license(2).
 FlexSlider(http://www.woothemes.com/flexslider/) released under the GNU(3).

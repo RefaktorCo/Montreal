@@ -39,10 +39,6 @@
 <div class="container white bigpadding">
   <section class="row">      
 
-	  <?php print render($title_prefix); ?>
-	  <?php print render($title_suffix); ?>
-	  
-	     
 	  <?php print render($page['content']); ?>
 	  
   </section>
