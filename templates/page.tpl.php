@@ -9,7 +9,7 @@
       <?php print render($title_suffix); ?>
      	 
      	<?php if ($tabs = render($tabs)): ?>
-		    <div id="drupal_tabs" class="tabs bigpadding">
+		    <div id="drupal_tabs" class="tabs midbottompadding">
 		      <?php print render($tabs); ?>
 		    </div>
 		  <?php endif; ?>

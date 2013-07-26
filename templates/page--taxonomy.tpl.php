@@ -1,13 +1,21 @@
 <?php montreal_header($page); ?>  
 <!-- STRIPES BACKGROUND -->
 <div class="bigpadding_back"></div>
+  <div class="container white">
+    <div class="row">
+      <div class="twelve columns">
+	      <?php print render($title_prefix); ?>
+	      <h3>Category: <?php print $title; ?> </h3>
+	      <?php print render($title_suffix); ?>
+	      <hr>
+      </div>
+    </div>
+  </div>  
  
   <div class="container midtoppadding white">      
     <div class="row">
      <div class="<?php if (($page['sidebar_first']) OR ($page['sidebar_second'])) { echo "eight columns";} else { echo "twelve columns"; } ?>">
-        <?php print render($title_prefix); ?>
-        <h2>Category: <?php print $title; ?> </h2>
-        <?php print render($title_suffix); ?>
+       
        	 
        	<?php if ($tabs = render($tabs)): ?>
 			    <div id="drupal_tabs" class="tabs bigpadding">
@@ -42,6 +50,7 @@
       <?php endif; ?>
 
     </div>
+  </div>
   </div>
 <?php print $messages; ?>
 <?php montreal_footer($page);?>

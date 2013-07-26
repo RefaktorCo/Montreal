@@ -38,11 +38,11 @@ global $root, $base_url;
     ?>
   </div>
  
-	<?php if($teaser): ?>
+
 	<p class="meta">
 	  <i class="greytext icon-link"></i>
 		<a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
 	</p>
-  <?php endif;?>
+
 
   <?php print render($content['comments']); ?>

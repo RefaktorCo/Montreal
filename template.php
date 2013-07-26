@@ -6,15 +6,7 @@ $root = base_path() . drupal_get_path('theme', 'montreal');
 
 include_once(drupal_get_path('theme', 'montreal').'/includes/init.php');
 
-/* Update Drupal's version of jQuery */
-function montreal_js_alter(&$js) {
-  if (isset($js['misc/jquery.js'])) {
-	  $jsPath = 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js';
-	  $js['misc/jquery.js']['version'] = '1.8.2';
-    $js['misc/jquery.js']['data'] = $jsPath;
-  }
-}
-
+/* Template naming suggestions */
 function montreal_preprocess_page(&$vars, $hook) {
   if (isset($vars['node'])) {
     $suggest = "page__node__{$vars['node']->type}";
@@ -64,14 +56,11 @@ function montreal_field($variables) {
  
   $output = '';
  
-  // Render the label, if it's not hidden.
+   // Render the label, if it's not hidden.
   if (!$variables['label_hidden']) {
-    
+    $output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';  
   }
  
-  // Render the items.
- 
-
   if ($variables['element']['#field_name'] == 'field_tags') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
