@@ -218,6 +218,12 @@ function montreal_form_system_theme_settings_alter(&$form, &$form_state) {
             '#description' => 'Upload a slide image.',
           );
           
+          $form['options']['front_page']['slider']['slide_'.$i.'']['slide_url_'.$i.''] = array(
+            '#type' => 'textfield',
+            '#title' => 'URL for Slide '.$i.'',
+            '#default_value' => theme_get_setting('slide_url_'.$i.''),
+          );
+          
 	    $i++;    
       }
       

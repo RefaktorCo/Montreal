@@ -2,12 +2,10 @@
 global $root, $base_url;
 ?>
 
-<?php if (!$page): ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
-<?php endif; ?>
+
 
   <?php print render($title_prefix); ?>
-    <h2 class="blacktext bold node_title"<?php print $title_attributes; ?>><?php print $title; ?></h2>
+  <a href="<?php print $node_url; ?>"><h2 class="blacktext bold node_title"<?php print $title_attributes; ?>><?php print $title; ?></h2></a>
   <?php print render($title_suffix); ?>
     
   <?php if ($user_picture || $display_submitted || !$page): ?>
@@ -48,7 +46,3 @@ global $root, $base_url;
   <?php endif;?>
 
   <?php print render($content['comments']); ?>
-
-<?php if (!$page): ?>
-</article> <!-- /.node -->
-<?php endif; ?>

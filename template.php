@@ -6,6 +6,15 @@ $root = base_path() . drupal_get_path('theme', 'montreal');
 
 include_once(drupal_get_path('theme', 'montreal').'/includes/init.php');
 
+/* Update Drupal's version of jQuery */
+function montreal_js_alter(&$js) {
+  if (isset($js['misc/jquery.js'])) {
+	  $jsPath = 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js';
+	  $js['misc/jquery.js']['version'] = '1.8.2';
+    $js['misc/jquery.js']['data'] = $jsPath;
+  }
+}
+
 function montreal_preprocess_page(&$vars, $hook) {
   if (isset($vars['node'])) {
     $suggest = "page__node__{$vars['node']->type}";
@@ -106,11 +115,15 @@ function montreal_field($variables) {
   }
    
   else {
+    $output .= '<div class="field-items"' . $variables['content_attributes'] . '>';
     // Default rendering taken from theme_field().
     foreach ($variables['items'] as $delta => $item) {
       $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
       $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
     }
+    $output .= '</div>';
+    // Render the top-level DIV.
+    $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
   }
   
   // Render the top-level DIV.

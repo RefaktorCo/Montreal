@@ -157,7 +157,7 @@ jQuery(document).ready(function ($) {
 	  slides :  	
 	  	[	// Slideshow Images
         <?php $i = '1'; while ($i <= $slide_number) { ?>
-				{image : '<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>'}<?php if ($i < $slide_number) { echo "," ; } ?>
+				{image : '<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>', url : '<?php print theme_get_setting('slide_url_'.$i.''); ?>' }<?php if ($i < $slide_number) { echo "," ; } ?>
 				<?php $i++; } ?>
 			],						
 									
