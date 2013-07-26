@@ -7,7 +7,7 @@ global $root, $base_url;
 <?php endif; ?>
 
   <?php print render($title_prefix); ?>
-    <h2 class="blacktext bold node_title"<?php print $title_attributes; ?>><?php print $title; ?></h2>
+    <h3 class="blacktext bold node_title"<?php print $title_attributes; ?>><?php print $title; ?></h3>
   <?php print render($title_suffix); ?>
     
   <?php if ($user_picture || $display_submitted || !$page): ?>

@@ -2,7 +2,7 @@
 <!-- STRIPES BACKGROUND -->
 <div class="bigpadding_back"></div>
  
-<div class="container white">      
+<div class="container white page-wrap">      
   <div class="row">
     <div class="<?php if (($page['sidebar_first']) OR ($page['sidebar_second'])) { echo "eight columns";} else { echo "twelve columns"; } ?>">
       <?php print render($title_prefix); ?>

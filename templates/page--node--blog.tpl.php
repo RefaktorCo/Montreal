@@ -20,7 +20,7 @@
       <?php print render($page['content']); ?>
     </div>
 
-    <div class="four columns push_one grey sidebar">
+    <div class="four columns push_one grey sidebar-note">
 
     	<?php if ($page['sidebar_first']): ?>
     	<aside id="sidebar-first" role="complementary" >

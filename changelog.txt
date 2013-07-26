@@ -1,5 +1,9 @@
 ===Montreal Changelog===
 
+1.1.3 (07/27/13)
+  *New theme jQuery update function negating the need for the jQuery Update module.
+  *Improvements to page and node template files.
+
 1.1.2 (06/27/13)
   *Stylesheets called in .info file instead of preprocess function to fix issue with caching.
   *Twitter region disabled by default due to JS conflict caused by empty settings. 
