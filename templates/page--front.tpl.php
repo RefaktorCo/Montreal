@@ -3,6 +3,7 @@
 <?php
   global $root; 
   $slide_number = theme_get_setting('slides_number');
+  $highlight_text = t("%string", array('%string' => theme_get_setting('highlight_text')) );
 ?>
 
 <?php if (theme_get_setting('enable_slider') == '1') : ?>
@@ -24,7 +25,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <!-- PORTFOLIO CONTAINER -->
 <div class="container white bigpadding">
 	<section class="row smallbottompadding">
-	<h3 class="blacktext bold midbottommargin center"><?php echo theme_get_setting('recent_projects_title');?></h3>
+	<h3 class="blacktext bold midbottommargin center"><?php echo t("%string", array('%string' => theme_get_setting('recent_projects_title')) );?></h3>
 	<!-- BLACKHORIZONTAL -->
 	<div class="three columns alpha centered blackhorizontal">
 	</div>
@@ -56,7 +57,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 	</div>
 	<!-- QUOTE -->
 	<div class="alpha eleven columns centered">
-		<h2 class="italic center whitetext highlight_text"><?php echo t(theme_get_setting('highlight_text'));?></h2>
+		<h2 class="italic center whitetext highlight_text"><?php echo t("%string", array('%string' => theme_get_setting('highlight_text')) );?></h2>
 	</div>
 	<!-- WHITE HORIZONTAL -->
 	<div class="alpha centered six columns whitehorizontal smallmargin">
@@ -70,7 +71,7 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <div class="container midpadding" style="background: url('<?php echo $root; ?>/img/stripes.png');">
 
 	<section class="row midpadding white smallbottommargin">
-		<h3 class="blacktext bold midmargin center"><?php echo theme_get_setting('recent_posts_title');?></h3>
+		<h3 class="blacktext bold midmargin center"><?php echo t("%string", array('%string' => theme_get_setting('recent_posts_title')) ); ?></h3>
 		<div class="three columns alpha centered blackhorizontal"></div>
 		<div class="four columns centered smalltoppadding">
 			<p class="center">
