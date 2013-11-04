@@ -22,23 +22,27 @@ function montreal_preprocess_page(&$vars, $hook) {
 
 /* Assign top level menu list items an ascending class of menu_$number  */
 function montreal_menu_link(array $variables) {
+  //unset all the classes
   unset($variables['element']['#attributes']['class']);
   $element = $variables['element'];
-  static $item_id = 0;
-  $menu_name = $element['#original_link']['menu_name'];
+  $sub_menu = '';
+  
+  if($variables['element']['#attributes']) {
+    $sub_menu = '';
+  }
 
   if ($element['#below']) {
-    $element['#attributes']['class'][] = 'dropdown';
+    $sub_menu = drupal_render($element['#below']);
   }
   
-  if ($element['#href'] == '<front>' && drupal_is_front_page()) {
-    $element['#attributes']['class'][] = 'active-trail';
-  }
-  
-  $sub_menu = $element['#below'] ? drupal_render($element['#below']) : '';
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . '</li>';
+  
+  // if link class is active, make li class as active too
+  if(strpos($output,"active")>0){
+    $element['#attributes']['class'][] = "active";
+  }
+  
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
 /* Allow sub-menu items to be displayed */

@@ -15,7 +15,7 @@ global $root, $base_url;
     <?php if ($display_submitted): ?>
       <!-- POST META -->
 			<p class="post_meta">
-			  <i class="greytext icon-user"></i><span class="smallfont greytext"> by <?php print $name; ?></span> &nbsp; &nbsp;
+			  <i class="greytext icon-user"></i><span class="smallfont greytext"> <?php echo t('by'); ?> <?php print $name; ?></span> &nbsp; &nbsp;
 				<i class="greytext icon-time"></i><span class="smallfont greytext"> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></span> &nbsp; &nbsp;
 				<i class="greytext icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a>&nbsp; &nbsp; 
 				<?php if (render($content['field_tags'])): ?>
@@ -43,7 +43,7 @@ global $root, $base_url;
 	<?php if($teaser): ?>
 	<p class="meta">
 	  <i class="greytext icon-link"></i>
-		<a class="smallfont greytext" href="<?php print $node_url;?>">READ POST</a>
+		<a class="smallfont greytext" href="<?php print $node_url;?>"><?php echo t('READ POST'); ?></a>
 	</p>
   <?php endif;?>
 

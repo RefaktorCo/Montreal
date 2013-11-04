@@ -12,6 +12,6 @@
   
 	<?php print render($content['body']); ?>
     
-  <a href="<?php print $node_url;?>" class="whitetext smallfont leftpadding">VIEW PROJECT</a>
+  <a href="<?php print $node_url;?>" class="whitetext smallfont leftpadding"><?php echo t('VIEW PROJECT'); ?></a>
 
 </div>

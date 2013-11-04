@@ -11,14 +11,7 @@
     
     $().UItoTop({ easingType: 'easeOutQuart' });
     
-    $(".dragbig .content").unwrap();
     
-    $(".dragbig .itemstripe").unwrap();
-    
-    $(".scrollWrapper .content").unwrap();
-    
-    $(".scrollWrapper .greyvertical").unwrap();
-
     $('#project_planner .webform-component-textfield').addClass('six columns project_planner_item');
     
     $('.project_planner_item:even').addClass('alpha');
