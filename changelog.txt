@@ -1,10 +1,14 @@
 ===Montreal Changelog===
 
 1.1.3 (11/04/13)
+  *Updated Drupal core in full install to 7.23.
   *Improvements to page, node and taxonomy template files.
   *Fixed some broken image paths.
   *Portfolio improvements.
   *Additional improvements for translation.
+  *Comments display comment create date instead of node date. 
+  *Fixed missing call to Drupal links in node--article.tpl.
+  *Fixed issue with third level navigation.
 
 1.1.2 (06/27/13)
   *Stylesheets called in .info file instead of preprocess function to fix issue with caching.

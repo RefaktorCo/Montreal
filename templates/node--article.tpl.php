@@ -3,7 +3,7 @@ global $root, $base_url;
 ?>
 
 <?php if (!$page): ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix seven columns blogpost"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <?php endif; ?>
     
   <?php if ($user_picture || $display_submitted || !$page): ?>
@@ -46,6 +46,21 @@ global $root, $base_url;
 		<a class="smallfont greytext" href="<?php print $node_url;?>"><?php echo t('READ POST'); ?></a>
 	</p>
   <?php endif;?>
+  
+  <?php
+    // Remove the "Add new comment" link on the teaser page or if the comment
+    // form is being displayed on the same page.
+    if ($teaser || !empty($content['comments']['comment_form'])) {
+      unset($content['links']['comment']['#links']['comment-add']);
+    }
+    // Only display the wrapper div if there are links.
+    $links = render($content['links']);
+    if ($links):
+  ?>
+    <div class="link-wrapper">
+      <?php print $links; ?>
+    </div>
+  <?php endif; ?>
 
   <?php print render($content['comments']); ?>
 
