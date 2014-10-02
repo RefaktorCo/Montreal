@@ -2,7 +2,7 @@ name = Montreal
 description = A Responsive Parallax Drupal 7 Theme
 core = 7.x
 engine = phptemplate
-version = 1.1.3
+version = 1.1.4
 
 stylesheets[all][] = css/gumby.css
 stylesheets[all][] = css/ui.css

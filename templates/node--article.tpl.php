@@ -23,10 +23,10 @@ global $root, $base_url;
 			  <?php endif; ?>
 			</p>         
     <?php endif; ?>
-   
-    <?php print render($content['field_image']); ?> 
     
   <?php endif; ?>
+  
+  <?php print render($content['field_image']); ?> 
     
   <div class="article_content"<?php print $content_attributes; ?>>
     <?php
